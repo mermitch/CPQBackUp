@@ -1,0 +1,42 @@
+Guid,Name,CurrencyIsoCode,SBQQ__AggregateField__c,SBQQ__AggregateFunction__c,SBQQ__CombineWith__c,SBQQ__CompositeOperator__c,SBQQ__ConstraintField__c,SBQQ__FilterField__c,SBQQ__FilterValue__c,SBQQ__Operator__c,SBQQ__Scope__c,SBQQ__TargetObject__c,SBQQ__ValueElement__c,SummaryVariableExternalID__c
+0b5c8cce-52ad-41e1-ba5c-d296010b56b6,Count of PagerDuty Subscription Bundle,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,PDSUB-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+0c99a67d-2630-4cf4-b101-ef0863d85e1e,Max Expert Service Discount,USD,SBQQ__Discount__c,Max,#N/A,#N/A,#N/A,ServiceProduct__c,TRUE,equals,Quote,Quote Line,#N/A,a8c0t0000004Ft2AAE20190829021550Z20190829021534Z
+0d462a38-07b6-470a-b759-132664ff5303,Max of Gold Services Discount,USD,SBQQ__Discount__c,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Premium Support (Gold Services),contains,Quote,Quote Line,#N/A,#N/A
+172398b8-ef4e-4e1e-a5f9-5d34c05cb5d4,Count Of PagerDuty Advance Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,PDADV,starts with,Quote,Quote Line,#N/A,#N/A
+1948989a-d040-4eb9-89e7-e7dff9a4bfeb,AIOPs Overage Price,USD,fml_Overage_Price__c,Max,#N/A,#N/A,#N/A,Product Code,AIO,starts with,Quote,Quote Line,#N/A,#N/A
+1c681a9f-e42d-417f-b351-a7f6f316e248,Sum of Line Item Annual TCV,USD,AnnualTCV__c,Sum,#N/A,#N/A,#N/A,fml_IncludeInPercentOfTotal__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+1f11cf10-3045-4495-9560-b0d0d73380bb,Maximum Discount Approval Level,USD,DiscountApprovalLevel__c,Max,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Quote Line,#N/A,a8c0t0000004FWPAA220190703175651Z20190703175646Z
+29c79f28-99a4-4f18-a5d1-89e9ebb06373,Count Of Jeli Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,fml_JeliAdded__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+2a89f7b8-59d7-4e02-a1df-351cda88d5c1,Sum of New Percent Of Total Lines,USD,QuantityOfNewSilverGold__c,Sum,#N/A,#N/A,#N/A,SBQQ__SubscriptionPercent__c,#N/A,not equals,Quote,Quote Line,#N/A,#N/A
+3113e2d0-0961-4873-8b70-20a97e0117b6,Sum of Line Item Net Totals included in % of Total Calculation,USD,fml_Net_Contract_Amount__c,Sum,#N/A,#N/A,#N/A,fml_IncludeInPercentOfTotal__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+31a211ec-98bf-444c-8d43-524e63b2a256,Count of Products,USD,SBQQ__ProductFamily__c,Count,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Quote Line,#N/A,#N/A
+35890766-8d7a-4786-97c3-f34540fed6f8,Count of RunDeck Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,RD-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+3df34bd1-79dc-46a3-9a78-f707f08a28d6,# Licenses Entitled Rollup,USD,Licenses_Entitled__c,Sum,#N/A,#N/A,#N/A,RundeckProduct__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+43efd8da-c774-4720-b098-1d905a6180b3,Max Base Product Quantity (non-Stakeholder),USD,SBQQ__Quantity__c,Max,#N/A,#N/A,#N/A,NonStakeholderBaseProduct__c,TRUE,equals,Quote,Quote Line,#N/A,a8c0t0000004FrBAAU20190819204044Z20190819204042Z
+4c77f102-6481-4f77-8552-27217f69dea4,Count Of Line Items With Qty Increase,USD,Quantity,Count,#N/A,#N/A,#N/A,fml_QuantityChangeType__c,increase,equals,Quote,Quote Line,#N/A,#N/A
+4df709c6-ff07-4c36-9e74-88d2f36ae04d,Max Quantity Of Professional Quote Lines,USD,Quantity,Max,#N/A,#N/A,#N/A,Product_Category__c,Professional,equals,Quote,Quote Line,#N/A,#N/A
+4f68a761-8309-41b4-95a8-327673815a58,Count Of Gold Products,USD,Quantity,Sum,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Gold,contains,Quote,Quote Line,#N/A,#N/A
+5017ccaa-8332-4bc8-905d-6ceb7fdafc11,Max PDU Discount,USD,SBQQ__Discount__c,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,University,contains,Quote,Quote Line,#N/A,a8c0t0000004Ft7AAE20190829021707Z20190829021705Z
+51dea9d6-e293-449f-89c6-e6e799838512,Count Of Discount Tier Upper Bound Unpopulated,USD,Quantity,Count,#N/A,#N/A,#N/A,fml_LastDiscountTierUpperBoundPopulated__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+61808135-f700-4fa7-a1f0-f042a4d5b066,Max Base Product Quantity,USD,Quantity,Max,#N/A,#N/A,#N/A,Product Family,Base Product,equals,Quote,Quote Line,#N/A,a8c0t0000004FOhAAM20190627235400Z20190627235359Z
+61d76a3f-6a5e-4be9-a7e8-33a24e8180a0,Count of RunDeck Bundle,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,RD-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+62a6d8d1-bf25-4ea8-9548-c40d6aa743b2,Count of PD Analytics (non LU),USD,SBQQ__Quantity__c,Sum,#N/A,#N/A,#N/A,Product Code,PDA-AO-SS-CPQ,equals,Quote,Quote Line,#N/A,a8c0t0000004FtCAAU20190829235855Z20190829235853Z
+6b0f2da9-0a3b-43e7-88cc-ffde68dd0878,Max of Quote Line 100% Discount Requires Approval,USD,X100DiscountRequiresApproval__c,Max,#N/A,#N/A,#N/A,SBQQ__NetTotal__c,0,equals,Quote,Quote Line,#N/A,#N/A
+70a2a42c-4ddc-497a-948e-5d97a6706f64,Count of Jeli Subscription Product,USD,Quantity,Count,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,JLSUB-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+830c5943-b702-4376-94ab-808e487a6f8b,Quantity Of Primary Base Products,USD,Quantity,Max,#N/A,#N/A,#N/A,PrimaryBaseProduct__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+8bfd20cb-e163-45e6-8a2d-c45c0fcbf01f,Max Prorate Multiplier,USD,SBQQ__ProrateMultiplier__c,Max,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Quote Line,#N/A,a8c0t0000004FtqAAE20191009193657Z20191009193648Z
+9167077a-5cc1-4b69-a07a-4a2f39c8454a,Quantity of Customer Service Product,USD,Quantity,Max,#N/A,#N/A,#N/A,Product Code,CS,starts with,Quote,Quote Line,#N/A,#N/A
+9affef56-740c-47c5-aa8b-b84f9487c8c4,Rollup Is Evergreen field,USD,IsEvergreen__c,Max,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Quote Line,#N/A,a8c0t0000004Fu0AAE20191029194005Z20191029193958Z
+9ee05575-03a1-486a-a7f7-dc4c3f94fb71,Max of Silver Services Discount,USD,SBQQ__Discount__c,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Premium Support (Silver Services),contains,Quote,Quote Line,#N/A,#N/A
+a07f368b-92b7-401c-9a25-373c94824f8b,Count of Runbook Automation Bundle,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,RA-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+a2ad6085-38bc-44c5-a7d6-f1ec65fa9ebd,Max Quantity Of TAM,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,TAM,contains,Quote,Quote Line,#N/A,#N/A
+a9781d29-1a19-499f-8e88-564b3f4f12c9,Count Of Runbook Automation Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,RA-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+ac423b24-284f-4757-9901-c196e026e7db,Count of PD.Org Products,USD,Quantity,Count,#N/A,#N/A,#N/A,SBQQ__ProductName__c,PD.Org,contains,Quote,Quote Line,#N/A,a8c0t0000004Fp6AAE20190814063706Z20190814063659Z
+ae204ee8-7df3-4df1-989f-5446692f7fce,Count of Expert Services Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,ServiceProduct__c,TRUE,equals,Quote,Quote Line,#N/A,a8c0t0000004FtMAAU20190911221551Z20190911221546Z
+b4c75b04-9c30-4324-822e-985a7c7ea0bc,Sum Base Product Quantity (non-Stakeholder),USD,SBQQ__Quantity__c,Sum,#N/A,#N/A,#N/A,IncludeBaseProductForAddOnLevelUp__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+bb220639-d700-4495-9a13-73604ae24d4d,Count Of Subscription Gold Products,USD,fml_SubscriptionQuantity__c,Sum,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Gold,contains,Quote,Quote Line,#N/A,#N/A
+d423fb16-03e3-4834-bb5e-65f13975c0e5,Count of Existing Non Annual Quote Lines,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Non_Annual_Subscription__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+dc1991af-b650-4722-a72a-ed67b2c70062,Sum of Enterprise Quantity,USD,Quantity,Sum,#N/A,#N/A,#N/A,EnterpriseBaseProduct__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+dd833ff2-8952-4c18-be4b-1d58ec6085ac,Count Base Product Line Item Quantity (non-Stakeholder),USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,NonStakeholderBaseProduct__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+e4f51266-172a-432f-bd54-0a546bae285c,Base Product Total Discount,USD,TotalDiscountCustom__c,Max,#N/A,#N/A,#N/A,SBQQ__ProductFamily__c,Base Product,equals,Quote,Quote Line,#N/A,#N/A
+fe7e5363-6e47-4018-930a-29993f500d84,Count of Catalytic Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,WA-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
