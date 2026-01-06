@@ -1,0 +1,153 @@
+Guid,CurrencyIsoCode,sbaa__ApprovalRule__c,sbaa__EnableSmartApproval__c,sbaa__FilterField__c,sbaa__FilterType__c,sbaa__FilterValue__c,sbaa__FilterVariable__c,sbaa__Index__c,sbaa__Operator__c,sbaa__TestedField__c,sbaa__TestedVariable__c,ApprovalConditionExternalID__c
+01849116-7773-4431-8d33-120a406df981,USD,fbff4c02-3494-4ccc-ac6e-43ab79ec31e1,false,#N/A,Value,0,#N/A,2.0,greater than,#N/A,19c4df1c-3bd6-43bf-af6f-390af9abd6bb,#N/A
+07f6a72e-64f6-494b-a1a1-f4bcf0c782be,USD,57dfdd76-823a-4207-b648-c46025a7541c,true,#N/A,Value,100000,#N/A,10.0,greater than,ARR__c,#N/A,#N/A
+087c5466-a9aa-4030-bf0d-2f3971511c98,USD,510015b2-ebf0-410c-a78a-d0e1779270f1,true,#N/A,Value,0,#N/A,1.0,less than,One_Time_Credit__c,#N/A,#N/A
+0a2ba5b8-0942-49d3-a32e-56cc6aa12d90,USD,6909306f-c4b6-4da9-a962-cc055208acfc,true,#N/A,Value,TRUE,#N/A,1.0,equals,ContractExtension__c,#N/A,#N/A
+0ad85c70-4a08-4f45-bbb5-2b5e99105f69,USD,138e052a-c6c2-46ae-bc9f-c4cb20cfaced,true,#N/A,Value,0,#N/A,50.0,equals,SupportProductOFNetTotal__c,#N/A,#N/A
+0d5d4d6c-38aa-44f7-ad23-0fa9da2a9cd7,USD,d7709e5e-bc28-4e80-a963-9c11cf38bb01,true,#N/A,Value,#N/A,#N/A,6.0,not equals,FinanceApproverId__c,#N/A,#N/A
+0fc68096-5acd-4c4f-86b3-d3c50871c502,USD,bf7f6a26-a241-4673-8000-143eae30fbec,true,#N/A,Value,30,#N/A,1.0,greater or equals,MaximumDiscountApprovalLevel__c,#N/A,#N/A
+0fc77fe4-dbef-4ee2-ae1e-e118d339d533,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,FALSE,#N/A,5.0,equals,ContractExtension__c,#N/A,#N/A
+116cd837-d26b-4dfa-86e8-5639c4df74b5,USD,a7eb957a-8309-4361-8ee7-ebfda0328db6,true,#N/A,Value,#N/A,#N/A,20.0,not equals,NumberOfJeliLineItems__c,#N/A,#N/A
+11758d8d-a868-4075-85dc-b423c83ceb41,USD,d7709e5e-bc28-4e80-a963-9c11cf38bb01,true,#N/A,Value,Amendment,#N/A,2.0,not equals,SBQQ__Type__c,#N/A,#N/A
+129731e5-57bd-4211-8626-2e7018795705,USD,832a6d77-d23f-4347-ab5a-a3803a3bfad7,true,#N/A,Value,FALSE,#N/A,3.0,equals,fml_CustomerContractPaymentTermsAA__c,#N/A,#N/A
+1355c5d3-d132-4c10-bd2c-aa14ced585a7,USD,28a6cbad-24aa-493f-a55e-f4b49305305d,true,#N/A,Value,150000,#N/A,20.0,less than,ARR__c,#N/A,#N/A
+13c7d54b-1a1d-40e8-a3b9-eaa9bd793265,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,EMEA,#N/A,6.0,equals,Billing_Sub_Region__c,#N/A,#N/A
+1405ad12-1a1e-48c0-9397-c0ea2a4516d6,USD,7b1c7b6f-122c-4ca3-98b2-1be022ffcdf2,true,#N/A,Value,0,#N/A,1.0,greater than,NumberofExpertServicesProducts__c,#N/A,#N/A
+1aaa9799-e919-42e3-a3e4-a983d255dbf6,USD,a7eb957a-8309-4361-8ee7-ebfda0328db6,true,#N/A,Value,0,#N/A,10.0,greater than,NumberOfJeliLineItems__c,#N/A,#N/A
+1c67a851-c7d4-4269-bfe8-31424c0e9022,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,EMEA,#N/A,7.0,equals,Billing_Sub_Region__c,#N/A,#N/A
+1c8d5f3a-79ea-4ed0-b9f5-f9920bd4b0fa,USD,d72deb43-7f7a-44de-8cb9-1153ed35ef2b,true,#N/A,Value,FALSE,#N/A,1.0,equals,AutoRenew__c,#N/A,#N/A
+1ce5d950-6d6e-402b-ad87-01d03b37bc3d,USD,138e052a-c6c2-46ae-bc9f-c4cb20cfaced,true,#N/A,Value,0,#N/A,30.0,not equals,QuantityOfEnterpriseIncMgmtRollup__c,#N/A,#N/A
+1de84615-1028-43fc-9cf9-e35e9581f56c,USD,0b11c589-d51b-4704-80bc-1972fa027c2d,true,#N/A,Value,Quarterly,#N/A,2.0,equals,Billing_Frequency2__c,#N/A,#N/A
+205baaa0-9271-4746-89e9-9e7e744d0f5b,USD,84e594df-980d-47d5-9817-af2e7d4ffa91,true,#N/A,Value,150000,#N/A,20.0,less than,ARR__c,#N/A,#N/A
+22227840-b179-41a1-925b-a70257503b90,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,Amendment,#N/A,3.0,equals,SBQQ__Type__c,#N/A,#N/A
+22cecab8-7f61-4286-a964-895a115099cb,USD,132c4bb3-d897-468e-9db0-7e4cc848a302,true,#N/A,Value,FALSE,#N/A,3.0,equals,AutoRenew__c,#N/A,#N/A
+26b9ded4-461c-45e5-9866-4e0c8d314281,USD,fa00d871-e67e-429f-bf48-d9857576a452,true,Approved_One_Time_Credit__c,Field,#N/A,#N/A,2.0,less or equals,One_Time_Credit__c,#N/A,#N/A
+2a982d90-608a-4d91-9cb4-ec610de84b0a,USD,d7709e5e-bc28-4e80-a963-9c11cf38bb01,true,#N/A,Value,TRUE,#N/A,4.0,equals,EarlyRenewal__c,#N/A,#N/A
+2b5aaa9a-ad1b-465a-9baa-45cee42eadbb,USD,84e594df-980d-47d5-9817-af2e7d4ffa91,true,#N/A,Value,TRUE,#N/A,40.0,equals,ScheduledRenewal__c,#N/A,#N/A
+2dbf1425-93e8-4d13-950f-2f2b45f6a4f1,USD,19ddea58-5fa0-4b3e-aa8c-c97e72db38e6,true,#N/A,Value,0,#N/A,#N/A,greater than,Count_of_Removed_MSA_Quote_Terms__c,#N/A,#N/A
+2e848311-3728-46e7-9e8a-1c454f9291b6,USD,7924758b-2c36-4bde-988a-31730bedfb00,true,#N/A,Value,TRUE,#N/A,2.0,equals,RemovePremiumSupport__c,#N/A,#N/A
+331ec58e-6b92-415a-985f-fc1e28d10a09,USD,d72deb43-7f7a-44de-8cb9-1153ed35ef2b,true,#N/A,Value,Monthly,#N/A,2.0,not equals,SBQQ__BillingFrequency__c,#N/A,#N/A
+33b1ae1d-3d58-4545-9e22-fd8972279ffe,USD,0e23446a-375a-431d-83d1-4a1c3e015418,true,#N/A,Value,50000,#N/A,3.0,greater than,fml_Positive_Term_Credit__c,#N/A,#N/A
+34a6b1a6-62af-48d3-be5d-f2036905beba,USD,57dfdd76-823a-4207-b648-c46025a7541c,true,#N/A,Value,0,#N/A,30.0,greater or equals,fml_DaysUntilMasterContractEndDate__c,#N/A,#N/A
+363878b8-6a62-43aa-9409-1427ee004039,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,30,#N/A,2.0,greater than,PaymentTerminNumbers__c,#N/A,#N/A
+3d27c094-99f6-4e48-9cab-444588f3e5aa,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,AWS,#N/A,4.0,not equals,OpportunityPartnerTransactionType__c,#N/A,#N/A
+414ebfc1-219f-49ec-ba59-5c993e37c5e0,USD,132c4bb3-d897-468e-9db0-7e4cc848a302,true,#N/A,Value,FALSE,#N/A,50.0,equals,fml_Is_Partner_Opportunity__c,#N/A,#N/A
+455e4135-1170-4ed7-b91d-e09a23974dbb,USD,0e23446a-375a-431d-83d1-4a1c3e015418,true,Approved_One_Time_Credit__c,Field,#N/A,#N/A,2.0,less or equals,One_Time_Credit__c,#N/A,#N/A
+48935347-b7dd-4ec5-8d49-fc5658db3eb2,USD,d100e1a9-9f68-4039-bada-45b72bc15a79,true,#N/A,Value,-25000,#N/A,10.0,less than,OpportunityARRUpsell__c,#N/A,#N/A
+4b9bd547-9c7f-4862-9a02-ba48d44a6225,USD,733ddc75-0a51-4a83-8940-94f914b8940a,true,#N/A,Value,FALSE,#N/A,3.0,equals,ApprovedBillingFrequency__c,#N/A,#N/A
+4bc92d26-df2a-42d8-ade1-f4cdb1a50d43,USD,64f57d0c-ed15-4727-8dd0-4d03ebb93e69,true,#N/A,Value,20,#N/A,1.0,equals,PremiumSuccessBundleApprovalLevel__c,#N/A,#N/A
+4bde1cdb-7db0-4dcc-b6b4-a0621a4ba0a8,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,FALSE,#N/A,3.0,equals,fml_CustomerContractPaymentTermsAA__c,#N/A,#N/A
+4ca1af15-bf7e-4293-b0ef-6a759e1ec67a,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,FALSE,#N/A,5.0,equals,ContractExtension__c,#N/A,#N/A
+4cb72666-780e-4ae9-868f-adf2e7b5cb3c,USD,8e71cc50-6494-402a-81b2-091c0d0c709f,true,#N/A,Value,10,#N/A,1.0,greater than,PDUDiscount__c,#N/A,#N/A
+4f6985b5-b284-4baa-85c5-422adce7af2e,USD,d61dcfbf-8e85-4e61-aa7e-48c94e136d5a,true,Approved_One_Time_Credit__c,Field,#N/A,#N/A,#N/A,less or equals,One_Time_Credit__c,#N/A,#N/A
+5415bdff-3fa9-4be5-9448-9595b0ce879e,USD,1acb695b-a7e1-4d83-aa61-389f8b18723a,true,#N/A,Value,0,#N/A,10.0,greater than,PDUDiscount__c,#N/A,#N/A
+5487b309-a109-49f9-9340-94fc59ad1d3c,USD,138e052a-c6c2-46ae-bc9f-c4cb20cfaced,true,#N/A,Value,0,#N/A,40.0,greater than,Quantity_Net_New_Tier1_Product__c,#N/A,#N/A
+54a5b9c7-2751-4aba-a9a9-1befd3a1bf72,USD,5a4f4ab9-6e25-4616-8b84-412b7f45e8a0,true,#N/A,Value,0,#N/A,1.0,greater than,PDAnalyticsQuantity__c,#N/A,#N/A
+59669c39-9152-48cb-907c-7c9fcb490096,USD,718a1a68-8526-4e04-9bc1-d6ad36c46dd9,true,#N/A,Value,TRUE,#N/A,40.0,equals,ScheduledRenewal__c,#N/A,#N/A
+5cbf56f5-0c55-4c47-a20e-e8d775e4cba7,USD,0e23446a-375a-431d-83d1-4a1c3e015418,true,#N/A,Value,0,#N/A,1.0,less than,One_Time_Credit__c,#N/A,#N/A
+5f0e686c-036b-4d51-a8bf-17370b51ee4b,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,#N/A,#N/A,6.0,equals,FinanceApproverId__c,#N/A,#N/A
+602ebd14-48c4-47e9-a418-1f58dd91a073,USD,0b11c589-d51b-4704-80bc-1972fa027c2d,true,#N/A,Value,FALSE,#N/A,3.0,equals,ApprovedBillingFrequency__c,#N/A,#N/A
+61113e4f-4c66-4000-9aa4-8788c6b54474,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,TRUE,#N/A,7.0,equals,fml_IsPartnerToDirect__c,#N/A,#N/A
+61221136-b447-4b1b-bf16-83d04eda9ff1,USD,28a6cbad-24aa-493f-a55e-f4b49305305d,true,#N/A,Value,TRUE,#N/A,30.0,equals,EarlyRenewal__c,#N/A,#N/A
+613bd2f1-a0db-4716-a8c4-33e0cd37f5f3,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,Amendment,#N/A,3.0,equals,SBQQ__Type__c,#N/A,#N/A
+613fcb19-3643-469b-850e-2afb0f34b963,USD,86121402-aca5-44fa-ac0c-58a03f943cb3,true,#N/A,Value,0,#N/A,1.0,greater than,DiscountApprovalLevelRollup__c,#N/A,#N/A
+61543ccb-f455-47f9-adb6-c8413dabdcae,USD,de395a3e-d596-4123-9660-a1ec865c8f14,true,#N/A,Value,PagerDuty,#N/A,2.0,equals,LineOfBusiness__c,#N/A,#N/A
+61b6f1bd-96ae-4539-b21f-d21c33289f0b,USD,19ddea58-5fa0-4b3e-aa8c-c97e72db38e6,true,#N/A,Value,0,#N/A,#N/A,greater than,Number_of_Terms_Modified__c,#N/A,#N/A
+63799c2a-83f4-4ea9-b3d2-f1877e89a521,USD,5a4f4ab9-6e25-4616-8b84-412b7f45e8a0,true,X10ofBaseProducts__c,Field,#N/A,#N/A,2.0,less than,PDAnalyticsQuantity__c,#N/A,#N/A
+63d518b2-077f-4e03-b30f-7b706bab3261,USD,de395a3e-d596-4123-9660-a1ec865c8f14,true,#N/A,Value,0,#N/A,1.0,greater than,ExpertServicesDiscount__c,#N/A,#N/A
+6502adec-0fad-41cf-85b7-1a374b747ce3,USD,718a1a68-8526-4e04-9bc1-d6ad36c46dd9,true,#N/A,Value,150000,#N/A,20.0,less than,ARR__c,#N/A,#N/A
+6557bee9-aa29-4c68-bb62-e0a712a08e0d,USD,733ddc75-0a51-4a83-8940-94f914b8940a,true,#N/A,Value,EMEA,#N/A,5.0,not equals,Billing_Sub_Region__c,#N/A,#N/A
+65932729-dd3a-4c3c-9142-b9af12123546,USD,138e052a-c6c2-46ae-bc9f-c4cb20cfaced,true,#N/A,Value,0,#N/A,20.0,equals,SilverGoldBundleZuoraSubTotal__c,#N/A,#N/A
+665c9d98-b808-427c-bb7a-f907faf05d7f,USD,04c3d108-9da8-4ba6-863d-64ea5cc1fb6c,true,#N/A,Value,0,#N/A,2.0,greater than,X100DiscountRequiresApprovalRollup__c,#N/A,#N/A
+681446cb-8399-4063-8a03-52d5a7a515bb,USD,5ce0b9ac-4ba7-4fda-b94f-acf027a558ea,true,#N/A,Value,TRUE,#N/A,40.0,equals,ScheduledRenewal__c,#N/A,#N/A
+687b7cd7-94df-4ae3-ae53-6ac9175b1a54,USD,aa844ca9-429c-41bf-925b-34ff806ece90,true,#N/A,Value,FALSE,#N/A,2.0,equals,ApprovedPDorg__c,#N/A,#N/A
+69b9fe64-a02c-4c40-afee-3bd49f33ffc9,USD,d100e1a9-9f68-4039-bada-45b72bc15a79,true,#N/A,Value,TRUE,#N/A,40.0,equals,ScheduledRenewal__c,#N/A,#N/A
+6b742c57-fe5d-4377-92b3-4eec27a3059f,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,Amendment,#N/A,2.0,not equals,SBQQ__Type__c,#N/A,#N/A
+6df21b8d-4a77-4743-8cff-a8169b8cfe46,USD,3a34068a-32e9-45bb-8027-271bef73ad3b,true,#N/A,Value,10,#N/A,1.0,greater than,DiscountApprovalLevelRollup__c,#N/A,#N/A
+6f5f5df3-a860-4839-85bd-2d68f38609ef,USD,718a1a68-8526-4e04-9bc1-d6ad36c46dd9,true,#N/A,Value,-50000,#N/A,10.0,less than,OpportunityARRUpsell__c,#N/A,#N/A
+707b6a2f-b7b5-4c13-b364-19c6e9db2491,USD,84e594df-980d-47d5-9817-af2e7d4ffa91,true,#N/A,Value,TRUE,#N/A,30.0,equals,EarlyRenewal__c,#N/A,#N/A
+72a15459-7852-450c-9407-072b55ce6b04,USD,2e6abf7e-dc17-4ff0-9a75-a36732af32be,true,#N/A,Value,false,#N/A,2.0,equals,ApprovedPublicityOptOut__c,#N/A,#N/A
+73b2c098-5aec-4eb7-80c3-0d09dac892fc,USD,138e052a-c6c2-46ae-bc9f-c4cb20cfaced,true,#N/A,Value,TRUE,#N/A,10.0,equals,RemovePremiumSupport__c,#N/A,#N/A
+755499a4-947b-4cd0-92e4-974efe4765a6,USD,86c2bc15-6bc0-4332-97ab-8d261f4e6e28,true,#N/A,Value,True,#N/A,1.0,equals,HasMSA__c,#N/A,#N/A
+773d5845-fd28-440f-b614-6d437643b7e1,USD,832a6d77-d23f-4347-ab5a-a3803a3bfad7,true,#N/A,Value,AWS,#N/A,4.0,not equals,OpportunityPartnerTransactionType__c,#N/A,#N/A
+7788646f-13e9-4935-9160-ca83252adede,USD,21617114-7e63-4751-b95b-6f47844835b2,true,#N/A,Value,20,#N/A,1.0,greater than,ExpertServicesDiscount__c,#N/A,#N/A
+78e3a83f-79ff-478f-ab5a-df3634b0f727,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,EMEA,#N/A,6.0,not equals,Billing_Sub_Region__c,#N/A,#N/A
+7bbe0f46-9929-4263-938c-ef1f2bee967d,USD,196215c8-d603-4002-ba6c-ddac1b2af846,true,#N/A,Value,20,#N/A,1.0,greater than,DiscountApprovalLevelRollup__c,#N/A,#N/A
+7bd02991-fa44-417d-b17b-a9b220a78697,USD,d61dcfbf-8e85-4e61-aa7e-48c94e136d5a,true,#N/A,Value,0,#N/A,#N/A,less than,One_Time_Credit__c,#N/A,#N/A
+7d29208b-7f1e-48bd-a435-52bb35936e34,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,#N/A,#N/A,5.0,equals,FinanceApproverId__c,#N/A,#N/A
+7d848a07-ea1f-4c8c-8944-b41379298870,USD,21617114-7e63-4751-b95b-6f47844835b2,true,#N/A,Value,PagerDuty,#N/A,2.0,not equals,LineOfBusiness__c,#N/A,#N/A
+82b3a4bb-a657-4b83-b3fa-a2a101fc5e1b,USD,5ce0b9ac-4ba7-4fda-b94f-acf027a558ea,true,#N/A,Value,150000,#N/A,20.0,greater or equals,ARR__c,#N/A,#N/A
+84648762-4e30-409a-b6e5-15dcb63f60f3,USD,181702dd-563b-49a4-8cee-ffc8c3705c85,true,#N/A,Value,25,#N/A,1.0,greater than,DiscountApprovalLevelRollup__c,#N/A,#N/A
+85678468-7e36-4e8f-b582-f0abf3563659,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,FALSE,#N/A,3.0,equals,fml_CustomerContractPaymentTermsAA__c,#N/A,#N/A
+85fe25ab-f95c-4610-ac27-6b376441600e,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,30,#N/A,2.0,greater than,PaymentTerminNumbers__c,#N/A,#N/A
+8699bb2f-f5b6-4e3b-84d2-7d837414da37,USD,d100e1a9-9f68-4039-bada-45b72bc15a79,true,#N/A,Value,TRUE,#N/A,30.0,equals,EarlyRenewal__c,#N/A,#N/A
+86ecb71c-d673-4f83-a95a-9c5ea3a79365,USD,d90e841f-1a33-4d39-b83e-3deead974027,true,#N/A,Value,Quarterly,#N/A,2.0,equals,SBQQ__BillingFrequency__c,#N/A,#N/A
+876097f5-32c0-4820-b40f-deeabb76a5ff,USD,fa00d871-e67e-429f-bf48-d9857576a452,true,#N/A,Value,25001,#N/A,4.0,less than,fml_Positive_Term_Credit__c,#N/A,#N/A
+88e04edc-27df-49ba-8aa4-686af373e525,USD,1006313f-5052-4cc6-9965-3358f7a402ba,true,#N/A,Value,30,#N/A,1.0,greater than,DiscountApprovalLevelRollup__c,#N/A,#N/A
+896cbf72-edf2-48bf-bc3c-25e15c56ae65,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,#N/A,#N/A,5.0,equals,FinanceApproverId__c,#N/A,#N/A
+8ff2bbae-95cf-42f9-8fc2-80b3cb898e25,USD,d100e1a9-9f68-4039-bada-45b72bc15a79,true,#N/A,Value,150000,#N/A,20.0,less than,ARR__c,#N/A,#N/A
+9183ed07-0ab3-47cb-9ea2-494708017731,USD,510015b2-ebf0-410c-a78a-d0e1779270f1,true,#N/A,Value,25000,#N/A,3.0,greater than,fml_Positive_Term_Credit__c,#N/A,#N/A
+988b6f52-ce50-41bc-bb54-dcae90fc6f92,USD,7924758b-2c36-4bde-988a-31730bedfb00,true,#N/A,Value,50000,#N/A,1.0,greater than,ARR__c,#N/A,#N/A
+99435394-9868-4672-ab83-8c4bf15bd9c3,USD,ab73992a-674f-43cf-8320-596afd1881f4,true,#N/A,Value,0,#N/A,10.0,greater than,ServicesDiscountApprovalLevelRollup__c,#N/A,#N/A
+997300b2-ee6a-4104-b24c-6895a44ab3f5,USD,5ce0b9ac-4ba7-4fda-b94f-acf027a558ea,true,#N/A,Value,-50000,#N/A,10.0,less than,OpportunityARRUpsell__c,#N/A,#N/A
+99b3f5a3-a278-41d2-9821-0508f2166615,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,TRUE,#N/A,7.0,equals,fml_IsPartnerToDirect__c,#N/A,#N/A
+9a5f3476-17a4-4094-9008-d72b51903527,USD,84e594df-980d-47d5-9817-af2e7d4ffa91,true,#N/A,Value,-5000,#N/A,10.0,less than,OpportunityARRUpsell__c,#N/A,#N/A
+9b2de19e-39ba-473b-b89e-8659ed1234fc,USD,e76187bd-f092-4969-8351-a3fac6a7d4a6,true,#N/A,Value,20,#N/A,1.0,equals,PremiumSuccessBundleApprovalLevel__c,#N/A,#N/A
+9c0b972f-623c-4230-9019-ce9eae9cc71a,USD,d100e1a9-9f68-4039-bada-45b72bc15a79,true,#N/A,Value,-50000,#N/A,50.0,greater or equals,OpportunityARRUpsell__c,#N/A,#N/A
+9cee6e4b-a8cb-4e9c-b752-3addb6565450,USD,196215c8-d603-4002-ba6c-ddac1b2af846,true,#N/A,Value,#N/A,#N/A,2.0,not equals,SeniorVPApprover__c,#N/A,#N/A
+9f6011b3-91e1-4ab6-bc80-8db3bf687ad2,USD,fbff4c02-3494-4ccc-ac6e-43ab79ec31e1,true,#N/A,Value,TRUE,#N/A,1.0,equals,ScopeOfWorkDocNeeded__c,#N/A,#N/A
+9f9a8358-4596-434e-a158-dc8a99c7543e,USD,733ddc75-0a51-4a83-8940-94f914b8940a,true,#N/A,Value,Quarterly,#N/A,2.0,equals,SBQQ__BillingFrequency__c,#N/A,#N/A
+a05b9c69-20e6-4bc0-847f-3e1f7c24ecd0,USD,5ce0b9ac-4ba7-4fda-b94f-acf027a558ea,true,#N/A,Value,TRUE,#N/A,30.0,equals,EarlyRenewal__c,#N/A,#N/A
+a225d77a-96a3-4ee5-a0e8-6a5de83bb02a,USD,132c4bb3-d897-468e-9db0-7e4cc848a302,true,#N/A,Value,FALSE,#N/A,2.0,equals,fml_CustomerContractAutoRenewAA__c,#N/A,#N/A
+a32902af-edd4-4ae1-8cab-3c58d029b33c,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,0,#N/A,1.0,greater than,ChangeInNetTermsasanumbervalue__c,#N/A,#N/A
+a3b6ce2f-36c9-4660-8b75-979c82ef9c50,USD,57dfdd76-823a-4207-b648-c46025a7541c,true,#N/A,Value,TRUE,#N/A,20.0,equals,fml_DerivedContractExtension__c,#N/A,#N/A
+a4369700-0e25-41ec-9abd-8e843fc33985,USD,d7709e5e-bc28-4e80-a963-9c11cf38bb01,true,#N/A,Value,Amendment,#N/A,3.0,equals,SBQQ__Type__c,#N/A,#N/A
+a8497557-8c5e-446c-9f20-83117691d518,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,180,#N/A,1.0,less than,SBQQ__SubscriptionTerm__c,#N/A,#N/A
+a87a4f82-1d55-4551-8a8b-b56d685b0966,USD,510015b2-ebf0-410c-a78a-d0e1779270f1,true,#N/A,Value,50001,#N/A,4.0,less than,fml_Positive_Term_Credit__c,#N/A,#N/A
+a8e871d4-89a9-4557-94ef-cbbd0fe33688,USD,82e00d94-d2df-47ad-9b18-3127bd4a420c,false,#N/A,Value,Standard Grace Period,#N/A,1.0,equals,Grace_Period_Type__c,#N/A,#N/A
+aa255066-1bb7-409b-8d61-50bf848a32d1,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,TRUE,#N/A,4.0,equals,EarlyRenewal__c,#N/A,#N/A
+ad5ddde3-48b6-4492-ba68-61f6db13d217,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,Amendment,#N/A,2.0,not equals,SBQQ__Type__c,#N/A,#N/A
+b0e5abb8-8ea4-43a8-8c44-0eaa1f5e848e,USD,ef198e62-36ee-47dc-9a4c-dee47f70c936,true,#N/A,Value,TRUE,#N/A,4.0,equals,EarlyRenewal__c,#N/A,#N/A
+b1790684-7a43-43f1-b71f-bc59cb88fa87,USD,fa00d871-e67e-429f-bf48-d9857576a452,true,#N/A,Value,10000,#N/A,3.0,greater than,fml_Positive_Term_Credit__c,#N/A,#N/A
+b1fe0da3-4508-4694-a1f3-846ee1a19add,USD,aa844ca9-429c-41bf-925b-34ff806ece90,true,#N/A,Value,TRUE,#N/A,1.0,equals,PDorg__c,#N/A,#N/A
+b5dff988-a987-42e7-8068-03e13b1db1e1,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,#N/A,#N/A,6.0,equals,FinanceApproverId__c,#N/A,#N/A
+b89b3070-91a7-4ba3-b9ab-db1dd8c09456,USD,132c4bb3-d897-468e-9db0-7e4cc848a302,true,#N/A,Value,TRUE,#N/A,1.0,equals,PriorAutoRenew__c,#N/A,#N/A
+b9c85460-486a-411a-a111-fbe8f0efa7b1,USD,28a6cbad-24aa-493f-a55e-f4b49305305d,true,#N/A,Value,-10000,#N/A,10.0,less than,OpportunityARRUpsell__c,#N/A,#N/A
+bb522f92-e92f-4439-9575-1dc1e03e62fb,USD,7924758b-2c36-4bde-988a-31730bedfb00,true,#N/A,Value,0,#N/A,4.0,equals,QuantityOfEnterpriseIncMgmtRollup__c,#N/A,#N/A
+bdc24a9d-8dc4-4e6c-ab8b-edd896731ed4,USD,84e594df-980d-47d5-9817-af2e7d4ffa91,true,#N/A,Value,-10000,#N/A,50.0,greater or equals,OpportunityARRUpsell__c,#N/A,#N/A
+c05a1854-2624-40fa-b107-119ca386a36a,USD,0b11c589-d51b-4704-80bc-1972fa027c2d,true,#N/A,Value,#N/A,#N/A,4.0,equals,FinanceApproverId__c,#N/A,#N/A
+c19e92c1-2a49-4f76-b291-1b043e5922f5,USD,0d2132eb-5fa3-4c28-aceb-6d485930c549,true,#N/A,Value,TRUE,#N/A,1.0,equals,MOFApprovalRequired__c,#N/A,#N/A
+c1cf2540-7c23-44aa-92e7-9c910388f77d,USD,132c4bb3-d897-468e-9db0-7e4cc848a302,true,#N/A,Value,FALSE,#N/A,#N/A,equals,Is_Rundeck_Only__c,#N/A,#N/A
+c2828af2-5b87-4df6-a066-b328ec9ffb9e,USD,1705df55-ebcf-40c4-a146-1f876e6ed595,true,#N/A,Value,0,#N/A,1.0,greater than,ChangeInNetTermsasanumbervalue__c,#N/A,#N/A
+c5a87ccf-f1ee-4514-b661-738088896919,USD,e2312a02-f73a-4f50-a538-4a7b8f410d07,false,#N/A,Value,TRUE,#N/A,1.0,equals,AutoApproved__c,#N/A,#N/A
+c7eecf15-5485-459a-a885-d2472077be91,USD,d90e841f-1a33-4d39-b83e-3deead974027,true,#N/A,Value,Semiannual,#N/A,3.0,equals,SBQQ__BillingFrequency__c,#N/A,#N/A
+c99e0b59-4380-494c-a2b2-a0d7a7a218d7,USD,7924758b-2c36-4bde-988a-31730bedfb00,true,#N/A,Value,0,#N/A,3.0,equals,SilverGoldBundleZuoraSubTotal__c,#N/A,#N/A
+cc01b127-8978-4b1a-acb5-3f0dd5dcb1ed,USD,718a1a68-8526-4e04-9bc1-d6ad36c46dd9,true,#N/A,Value,TRUE,#N/A,30.0,equals,EarlyRenewal__c,#N/A,#N/A
+cd139624-90d5-48ba-8ed4-0d649c36f323,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,EMEA,#N/A,7.0,not equals,Billing_Sub_Region__c,#N/A,#N/A
+d2687d0b-4608-45aa-8ef2-a2bb1d4d08a1,USD,510015b2-ebf0-410c-a78a-d0e1779270f1,true,Approved_One_Time_Credit__c,Field,#N/A,#N/A,2.0,less or equals,One_Time_Credit__c,#N/A,#N/A
+d297c61d-09ed-4ebf-b8fe-9999794635f9,USD,2e6abf7e-dc17-4ff0-9a75-a36732af32be,true,#N/A,Value,true,#N/A,1.0,equals,RemovePublicityClause__c,#N/A,a920t0000004FcSAAU20190828032809Z20190828032809Z
+d2e21637-3145-471c-bf67-8b618f3c0783,USD,cb86d801-199b-42f7-af04-f0dcb903baf2,true,#N/A,Value,AWS,#N/A,4.0,not equals,OpportunityPartnerTransactionType__c,#N/A,#N/A
+d33c6d7d-2b4d-46d1-b4e7-b40c467b2146,USD,97761f60-95cb-4aa3-86c7-5544c9cbd67c,true,#N/A,Value,Non Commercial Renewal Approval Group,#N/A,10.0,equals,fml_DetermineRenewalNegARRApprovalGroup__c,#N/A,#N/A
+d51a0abe-82f7-4ffd-bb82-938634e1be6e,USD,832a6d77-d23f-4347-ab5a-a3803a3bfad7,true,#N/A,Value,#N/A,#N/A,5.0,not equals,FinanceApproverId__c,#N/A,#N/A
+d642326b-1369-4726-bc65-00972086c322,USD,733ddc75-0a51-4a83-8940-94f914b8940a,true,#N/A,Value,#N/A,#N/A,4.0,equals,FinanceApproverId__c,#N/A,#N/A
+d6fc2a94-efbc-4b1d-8c8d-c4255ad08f27,USD,d90e841f-1a33-4d39-b83e-3deead974027,true,#N/A,Value,#N/A,#N/A,4.0,not equals,FinanceApproverId__c,#N/A,#N/A
+d88203da-7ec9-414c-a244-8901758d0a52,USD,0b11c589-d51b-4704-80bc-1972fa027c2d,true,#N/A,Value,EMEA,#N/A,5.0,equals,Billing_Sub_Region__c,#N/A,#N/A
+d9a0349d-d3a5-419b-aa04-3ea0c6c5eadb,USD,0b11c589-d51b-4704-80bc-1972fa027c2d,true,#N/A,Value,Semiannual,#N/A,1.0,equals,Billing_Frequency2__c,#N/A,#N/A
+dd7f11cc-2bcc-4900-a6ea-71ce815e7b02,USD,832a6d77-d23f-4347-ab5a-a3803a3bfad7,true,#N/A,Value,0,#N/A,1.0,greater than,ChangeInNetTermsasanumbervalue__c,#N/A,#N/A
+def95e93-3221-4c0c-a442-e9677f541ec4,USD,28a6cbad-24aa-493f-a55e-f4b49305305d,true,#N/A,Value,-25000,#N/A,50.0,greater or equals,OpportunityARRUpsell__c,#N/A,#N/A
+df61ebf7-9382-45ab-ae47-862a1e38a859,USD,57dfdd76-823a-4207-b648-c46025a7541c,true,#N/A,Value,FALSE,#N/A,40.0,equals,AutoRenew__c,#N/A,#N/A
+dfd76e23-49fc-4b6d-897b-671f267c901e,USD,d7709e5e-bc28-4e80-a963-9c11cf38bb01,true,#N/A,Value,FALSE,#N/A,5.0,equals,ContractExtension__c,#N/A,#N/A
+e02c60c3-2bae-4f3d-9ac8-53aa19af46b1,USD,86ff06fd-85c0-4e6b-8e78-df1dc3a5d61c,true,#N/A,Value,Commercial Renewal Approval Group,#N/A,10.0,equals,fml_DetermineRenewalNegARRApprovalGroup__c,#N/A,#N/A
+e05d42ae-f3fe-4b14-b2d2-5dbcadbc92a3,USD,d61dcfbf-8e85-4e61-aa7e-48c94e136d5a,true,#N/A,Value,10001,#N/A,30.0,less than,fml_Positive_Term_Credit__c,#N/A,#N/A
+e49b3620-fd1b-4f9d-ab1c-02b8310cccbf,USD,832a6d77-d23f-4347-ab5a-a3803a3bfad7,true,#N/A,Value,30,#N/A,2.0,greater than,PaymentTerminNumbers__c,#N/A,#N/A
+e73e58c6-93ab-4376-9860-d35ea0a7f4e2,USD,d7709e5e-bc28-4e80-a963-9c11cf38bb01,true,#N/A,Value,180,#N/A,1.0,less than,SBQQ__SubscriptionTerm__c,#N/A,a920t0000004FMuAAM20190506224717Z20190430212334Z
+eaa4c680-3174-45e6-b8f7-0be151a8f76a,USD,fa00d871-e67e-429f-bf48-d9857576a452,true,#N/A,Value,0,#N/A,1.0,less than,One_Time_Credit__c,#N/A,#N/A
+ee46033e-523f-44f4-b6c6-30e00edddae3,USD,28a6cbad-24aa-493f-a55e-f4b49305305d,true,#N/A,Value,TRUE,#N/A,40.0,equals,ScheduledRenewal__c,#N/A,#N/A
+ee8ebce5-3492-44c6-8011-fe6d0b88b4b1,USD,5a4f4ab9-6e25-4616-8b84-412b7f45e8a0,true,#N/A,Value,FALSE,#N/A,3.0,equals,PriorPDAnalyticsApproval__c,#N/A,#N/A
+efce2344-9b73-4693-9c50-be5637fe192c,USD,2f9c927d-f51e-4c02-a1c0-802e2bf8f8c3,false,#N/A,Value,Exception Grace Period,#N/A,1.0,equals,Grace_Period_Type__c,#N/A,#N/A
+f135de23-5a16-4fc7-b610-4ee9e9424e25,USD,04c3d108-9da8-4ba6-863d-64ea5cc1fb6c,true,#N/A,Value,100,#N/A,1.0,equals,MaximumLineitemdiscount__c,#N/A,#N/A
+f216ee29-4e3f-4ca3-8a39-bcc94ff92b1f,USD,131d490b-484a-4147-be03-52ec66cb9f7b,true,#N/A,Value,180,#N/A,1.0,less than,SBQQ__SubscriptionTerm__c,#N/A,#N/A
+f5ad1f30-a481-4f59-a938-e95925a95973,USD,733ddc75-0a51-4a83-8940-94f914b8940a,true,#N/A,Value,Semiannual,#N/A,1.0,equals,SBQQ__BillingFrequency__c,#N/A,#N/A
+f7d7be1b-292b-430d-9056-67f1934afb52,USD,d90e841f-1a33-4d39-b83e-3deead974027,true,#N/A,Value,FALSE,#N/A,1.0,equals,ApprovedBillingFrequency__c,#N/A,#N/A
+fa0c5a00-b2ce-4dd5-8578-14cea62e8713,USD,8f4dc2de-f0c0-44c9-86f6-11c94dddbbef,true,#N/A,Value,10,#N/A,1.0,greater than,ServicesDiscountApprovalLevelRollup__c,#N/A,#N/A
+fbeca7fe-2ef6-4256-8e33-33c3e70fe6da,USD,2e6abf7e-dc17-4ff0-9a75-a36732af32be,true,#N/A,Value,false,#N/A,3.0,equals,fml_CustomerContractRemovePublicityAA__c,#N/A,#N/A
