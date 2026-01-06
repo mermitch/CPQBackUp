@@ -1,0 +1,21 @@
+Guid,Name,CurrencyIsoCode,sbaa__TargetObject__c,ApprovalChainExternalID__c
+06662062-bff6-4cce-b71a-13f1c8714783,Premium Support Removed,USD,SBQQ__Quote__c,#N/A
+13abb16b-b34e-499f-a113-7f68079c2708,PD Analytics Approval,USD,SBQQ__Quote__c,#N/A
+1be7137c-2526-4931-bedb-758e9aebce8a,PagerDuty University Discounts,USD,SBQQ__Quote__c,#N/A
+34ea20bd-26af-4c81-a1c9-7df992184d25,Renewal ARR Downgrade,USD,#N/A,#N/A
+4492455f-b392-4ae1-aea5-f68c6c1d14aa,Terms and Conditions,USD,SBQQ__Quote__c,#N/A
+4c25eba6-f453-4e58-81ea-f92e2bc7a567,Publicity Opt Out,USD,SBQQ__Quote__c,#N/A
+54c49773-a8fc-4c37-bd2a-80b8747db9c9,Auto Renew Opt Out,USD,SBQQ__Quote__c,#N/A
+64c61457-8e53-4cc0-89aa-b741073bc12c,CFO Approval,USD,SBQQ__Quote__c,#N/A
+6aa3135b-b142-46d6-8228-f3fdb1039a7b,Auto Approve,USD,SBQQ__Quote__c,#N/A
+7587ab3f-136d-4241-9505-373bb0e00958,One Time Credit Approval,USD,SBQQ__Quote__c,#N/A
+96479303-08a7-415b-956e-a5c786afdf66,Deal Desk Approval,USD,SBQQ__Quote__c,#N/A
+a41a91cc-3d16-476f-ad6e-3ee041ccbd43,Billing Frequency,USD,SBQQ__Quote__c,#N/A
+ab59b7e9-f521-4519-b0ab-2afd8d6ffd19,Order Form Manual Edit,USD,SBQQ__Quote__c,#N/A
+ab607359-f71e-4acc-821f-8a8d72ae89af,Contract Extension,USD,SBQQ__Quote__c,#N/A
+ac8cb6b0-d06c-45b8-a17b-6b26c5c50022,Professional Services Discounts,USD,SBQQ__Quote__c,#N/A
+b1107f09-5fca-417f-9e5a-5116744ae193,PD.Org,USD,SBQQ__Quote__c,#N/A
+b296d3cb-8a38-43b6-881b-869190add172,Payment Terms,USD,SBQQ__Quote__c,a910t0000008QLaAAM20190506224353Z20190418215618Z
+defb4c9b-a5be-4f1d-b77c-821a7fcc29df,Non Standard Subscription Term,USD,SBQQ__Quote__c,a910t0000008QQYAA220190506224353Z20190430211940Z
+e296eb2b-a1f3-4893-bbcd-e093389b6ee9,Discounting,USD,SBQQ__Quote__c,a910t0000008QM4AAM20190506224332Z20190418220420Z
+f028a346-d4f8-4171-87d0-162ca7647a30,Billing Frequency,USD,SBQQ__Quote__c,#N/A
