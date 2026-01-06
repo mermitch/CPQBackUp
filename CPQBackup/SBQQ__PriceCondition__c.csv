@@ -1,0 +1,379 @@
+Guid,CurrencyIsoCode,SBQQ__Rule__c,SBQQ__Field__c,SBQQ__FilterFormula__c,SBQQ__FilterType__c,SBQQ__FilterVariable__c,SBQQ__Index__c,SBQQ__Object__c,SBQQ__Operator__c,SBQQ__ParentRuleIsActive__c,SBQQ__RuleTargetsCalculator__c,SBQQ__TestedFormula__c,SBQQ__TestedVariable__c,SBQQ__Value__c,PriceConditionExternalID__c
+0053acad-60fd-4190-9278-159a0440c752,USD,426df93b-eca9-440d-82e2-e1d34becbf88,BaseLineDiscountLessThanAccountDiscount__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+00817e4c-8d38-4913-a12e-09f8046392f0,USD,ee0c21f6-b001-4493-9f78-4218bf0f7638,Tiered_Product__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+008bb039-2a72-41a3-b7ec-5512d6024b48,USD,d0127b1b-66a1-4376-8725-e3d1d7f0a57b,SBQQ__ProductCode__c,#N/A,Value,#N/A,20.0,Quote Line,starts with,true,true,#N/A,#N/A,AIO,#N/A
+00a1f640-fadc-4ad8-a74f-bb978e2947e9,USD,5e670777-4737-4962-8241-9423ad257373,SBQQ__Type__c,#N/A,Value,#N/A,100.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+0132a8d8-6209-4b4a-ac51-b44ea687ed98,USD,355266b0-d544-48e7-b08f-77a1fd8d859d,Tiered_Product__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+047ecc59-ce4f-4ead-9ff8-441691cdcf9a,USD,165ed002-328e-47fb-85ac-67dfe99fad3e,QuantityOfTier3IncidentResponse__c,#N/A,Variable,4df709c6-ff07-4c36-9e74-88d2f36ae04d,30.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+04cf3d13-1491-40f1-b02a-df39b7e6aaba,USD,cbe97e6c-04f8-4a66-83d8-1758568041ba,ApprovedDiscount__c,"IF(SBQQ__ProratedListPrice__c == 0, 0,
+IF(ISPICKVAL(SBQQ__DiscountScheduleType__c, 'Slab') && NOT(SBQQ__Existing__c),
+IF(SBQQ__Quantity__c == 0, 0, (SBQQ__ProratedListPrice__c * SBQQ__Quantity__c - SBQQ__CustomerPrice__c) / (SBQQ__Quantity__c * SBQQ__ProratedListPrice__c)),
+IF(ISPICKVAL(SBQQ__DiscountScheduleType__c, 'Slab') && SBQQ__Existing__c,
+IF(SBQQ__Quantity__c == SBQQ__PriorQuantity__c, 0, (SBQQ__ProratedListPrice__c * (SBQQ__Quantity__c-SBQQ__PriorQuantity__c) - SBQQ__CustomerPrice__c) / ((SBQQ__Quantity__c-SBQQ__PriorQuantity__c) * SBQQ__ProratedListPrice__c)),
+(SBQQ__ProratedListPrice__c - SBQQ__CustomerPrice__c) / SBQQ__ProratedListPrice__c)))",Formula,#N/A,1.0,Quote Line,greater or equals,false,true,#N/A,#N/A,#N/A,#N/A
+04fc8e94-efa4-43d9-9e1d-083d9ed51430,USD,5a486541-605e-4233-877a-f6289009d781,TotalDiscountCustom__c,#N/A,Value,#N/A,2.0,Quote Line,less or equals,true,true,#N/A,#N/A,50,#N/A
+0540868d-459e-4d85-8bbb-a57aa0d6f3e5,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,Master_Term_Period__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,Day,#N/A
+05f49218-f984-404e-a0fc-6a91781f9751,USD,66273d6a-8f84-4910-9edb-a41c6e8ee18d,SBQQ__ProductName__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,Credit,#N/A
+0648c207-95e1-4695-9c08-4cb508a18975,USD,5ea0e184-f6ed-417a-a68e-b55599b3fc40,Product Code,#N/A,Value,#N/A,#N/A,Quote Line,starts with,true,true,#N/A,#N/A,AIO,#N/A
+06676603-2a12-41b4-a404-2d4cf1f4e481,USD,3a9120ce-a4e1-4134-879c-3e3d4fa93cbc,ExpirationDateisafterStartDate__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+06d7c87a-940d-4222-a71f-d77eb2e3855d,USD,24c79be9-844c-4e24-a146-2e92dcad7380,MaximumLineitemdiscount__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,100,#N/A
+0753822c-1f6e-47f0-ad9b-ce322fed1ddc,USD,e95954e6-a1eb-4f0c-8ff1-66567dfe811c,ExistingBusinessNoApproval__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+07a95e2e-6770-4d81-a8cb-e731b58a8e87,USD,207ed962-ee62-4c76-ac02-27208894081a,Contract_Type__c,#N/A,Value,#N/A,30.0,Quote,contains,true,true,#N/A,#N/A,MSA,#N/A
+0a14a83c-6064-4c8a-98bf-c3d24cc6f582,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,Override_Non_Annual_Checkbox__c,#N/A,Value,#N/A,6.0,Quote,not equals,true,true,#N/A,#N/A,YES,#N/A
+0ace8e2a-83c0-4d5a-baec-553afc0fdf7d,USD,431e7ef9-0199-4261-ad6e-e35ee4a317f0,SBQQ__ProductCode__c,#N/A,Value,#N/A,30.0,Quote Line,equals,true,true,#N/A,#N/A,RESI-BP-XX-CPQ,#N/A
+0b3cf8da-71c7-4333-a934-c45b41339046,USD,bd36be01-51b4-4d65-a1ee-1a070c84f836,RundeckUser__c,#N/A,Value,#N/A,3.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+0cb17399-4544-4bb9-9938-d4cc03f753a1,USD,bd36be01-51b4-4d65-a1ee-1a070c84f836,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+0cd46e14-6ea7-4055-bdb8-5b4abab8da79,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,OverridePartnerDiscount__c,#N/A,Value,#N/A,60.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+0ea41482-9c26-4df8-9755-cdfd76d95d5e,USD,993493d9-3deb-4306-85d2-b709b870f1f6,Multi_Year_Billed_all_Upfront__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+0fe46ee4-e14e-4e3d-baa4-5c05574b8fb3,USD,d0127b1b-66a1-4376-8725-e3d1d7f0a57b,SBQQ__ProductCode__c,#N/A,Value,#N/A,40.0,Quote Line,starts with,true,true,#N/A,#N/A,PDADV,#N/A
+1094f0d1-11ac-4019-a05e-ca76285b70cd,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,SBQQ__MasterContract__c,#N/A,Value,#N/A,30.0,Quote,equals,true,true,#N/A,#N/A,#N/A,#N/A
+119190da-d39e-4963-816e-b941b8495eb9,USD,9c6d36f2-cd80-4a6b-82ce-af8c6ab3b646,#N/A,#N/A,Value,#N/A,#N/A,Summary Variable,greater than,true,true,#N/A,43efd8da-c774-4720-b098-1d905a6180b3,25,#N/A
+11c4196d-4697-4e59-bd39-72dfbbb5bb35,USD,2d9b0eb2-85ad-4eba-b84e-10601946f4e9,CountOfPagerDutyAdvance__c,#N/A,Variable,172398b8-ef4e-4e1e-a5f9-5d34c05cb5d4,10.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+134e80ce-aa46-4ba8-9dd0-1ec1cc313b94,USD,280fbad3-6cd0-4a1e-a2a8-0554dab4fe24,fml_JeliAdded__c,#N/A,Value,#N/A,10.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+1359c229-aa2c-4a87-94b9-e3a9bb0201f4,USD,c0bb0c4b-026d-4115-8bd0-8957b6269fc7,#N/A,#N/A,Value,#N/A,1.0,Quote,equals,false,true,"IF(
+AND(AND(Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 24) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 36) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 48) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 60) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 72) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 84) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 96) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 108)||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 120) ||
+Master_Prorate_Multiplier__c = 2 || Master_Prorate_Multiplier__c = 3 || Master_Prorate_Multiplier__c = 4 || Master_Prorate_Multiplier__c = 5 || Master_Prorate_Multiplier__c = 6 || Master_Prorate_Multiplier__c = 7 || Master_Prorate_Multiplier__c = 8 || Master_Prorate_Multiplier__c = 9 || Master_Prorate_Multiplier__c = 10 || SBQQ__SubscriptionTerm__c/365 = 2 || SBQQ__SubscriptionTerm__c/365 = 3 || SBQQ__SubscriptionTerm__c/365 = 4 || SBQQ__SubscriptionTerm__c/365 = 5 || SBQQ__SubscriptionTerm__c/365 = 6 || SBQQ__SubscriptionTerm__c/365= 7 || SBQQ__SubscriptionTerm__c/365 = 8 || SBQQ__SubscriptionTerm__c/365 = 9 || SBQQ__SubscriptionTerm__c/365 = 10 ), TRUE, FALSE)",#N/A,FALSE,#N/A
+143ee708-1888-43f7-83e7-c6630a426d02,USD,99e826e5-882a-4621-a20a-7152b16d2b00,#N/A,#N/A,Value,#N/A,#N/A,Quote,greater than,true,true,#N/A,43efd8da-c774-4720-b098-1d905a6180b3,25,#N/A
+15f66e81-f088-499b-9f7c-2d5fb5e02588,USD,1e0548c0-6830-4423-b27f-45e6ff96fb4b,RunbookAutomationProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+16376d6a-d770-4bbe-89c2-3fd7ba5e2474,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,SpecialCampaign__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,1,#N/A
+167c7f87-1723-437d-8e91-41d074990d9a,USD,1370a088-7cce-47eb-9f43-a9429f14ce21,SBQQ__UpgradedSubscription__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+168d2b51-d7af-4904-8424-65b2b68ad650,USD,e5d2a435-1c35-497b-a937-2624e9c24ff2,RundeckProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+16f90640-cf95-4948-8e9e-b46615a36b49,USD,5b2d2376-5429-44bc-82c4-cd1dcb263e29,SBQQ__ProductFamily__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,Base Product,#N/A
+170961ef-b52f-4aed-babf-32357a69ddef,USD,ea99eabf-4e7b-4339-b58a-2eacd742de36,RunbookAutomationProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+1788d957-459a-490f-9352-19bda7c382d8,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,TotalDiscountCustom__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,100,#N/A
+1913fcfb-31f8-4b9a-b3b8-4b72cea2b010,USD,85789319-e606-4940-ba8b-a9ec21bb6b38,OpportunityType__c,#N/A,Value,#N/A,#N/A,Quote,equals,false,true,#N/A,#N/A,New Business,#N/A
+197f19bb-3319-47d6-8f33-741d774f4ed2,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,SBQQ__Type__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+1b37795c-02ee-40bb-9041-a768ef897cf5,USD,f13b4db9-4a98-4b1a-b272-04428ef61bcc,SBQQ__Quantity__c,#N/A,Value,#N/A,10.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+1bff9f0d-34e0-4d6a-a1ee-b43262ad1c43,USD,5e670777-4737-4962-8241-9423ad257373,EarlyRenewal__c,#N/A,Value,#N/A,200.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+1db46a98-af3d-415d-87c2-ed1998bd324c,USD,f0591ae3-a891-4ec7-8523-bb07add807e9,Override_Multi_Year_Billed_Upfront__c,#N/A,Value,#N/A,2.0,Quote,equals,false,true,#N/A,#N/A,FALSE,#N/A
+1dcad1a3-560c-4e84-8d54-a7af9e6407f2,USD,56e9f553-a512-4813-aaa7-d9c635437718,SBQQ__MasterContract__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,#N/A,#N/A
+1eae2b52-9e74-4960-b796-3bb3c66b3028,USD,881d167a-ddf5-42c4-9d93-4d6190290100,SBQQ__Discount__c,SBQQ__AdditionalDiscountAmount__c,Formula,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,#N/A,#N/A
+2086b999-f05e-4c42-b57f-60c280bb2d03,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,Billing_Frequency2__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,Annual,#N/A
+2102a24b-a88a-44a7-87c1-356b54711783,USD,3a473b4f-a9c4-4379-84f6-b47b3bf789db,IsService__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,False,#N/A
+21e036b9-3dd5-480c-8793-aee8e093ee17,USD,52a94725-f738-4bc3-8cfe-2c43aabd1385,RenewalSubstituteProductId__c,#N/A,Value,#N/A,30.0,Quote Line,equals,true,true,#N/A,#N/A,#N/A,#N/A
+2226044e-39cc-4553-8d4c-38d0cbd3a11e,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,OverrideSubsidiaryAndTaxCompanyCode__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+2235a6b6-455f-42dc-9f00-50d5e6fcc0b0,USD,0911f057-08f5-4f7a-a829-14852c7d9a71,RundeckSupportAndTraining__c,#N/A,Value,#N/A,4.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+22ae0374-b39d-4c55-b5f9-f8088bcfc56f,USD,affe9610-891f-41d9-a488-0ef54d458883,SBQQ__Quantity__c,#N/A,Value,#N/A,10.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+2458ac14-4a77-4ee2-a1ea-fee19e3acb2a,USD,993493d9-3deb-4306-85d2-b709b870f1f6,SBQQ__Type__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,Quote,#N/A
+250d1d99-bcf7-4637-9ee7-18fd993d80aa,USD,8c282707-ca45-41dc-ae21-1ad5440a2064,#N/A,#N/A,Value,#N/A,1.0,Summary Variable,equals,true,true,#N/A,0b5c8cce-52ad-41e1-ba5c-d296010b56b6,0,#N/A
+25dc03d5-d594-4736-a924-dddb3f64b804,USD,bebfe4e2-0990-465e-881a-35e4d2caa714,fml_SubscriptionQuantity__c,#N/A,Value,#N/A,4.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+2658aff5-9a7f-4801-a89a-336f9dc2a502,USD,1547369b-578c-41ba-a0e8-5520c47663ba,SBQQ__Type__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,"Amendment, Renewal",#N/A
+26e35d58-ded1-43db-8066-be293e4c6cea,USD,bebfe4e2-0990-465e-881a-35e4d2caa714,SilverGoldServices__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,True,#N/A
+27f457c7-66e4-4a92-95bf-9989f3659e94,USD,ee0c21f6-b001-4493-9f78-4218bf0f7638,Prev_Discount__c,#N/A,Value,#N/A,5.0,Quote Line,equals,true,true,#N/A,#N/A,100,#N/A
+283221a6-b2b9-41e1-801c-8348416f1e28,USD,8156babd-7724-4fdd-8e0d-fa06b0820fdd,Product Code,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,LCR-AO-SS-CPQ,#N/A
+28543246-f40b-4413-b950-838a90f39582,USD,06ee174d-f13c-4a6f-aaf0-17d613433321,SBQQ__MasterContract__c,#N/A,Value,#N/A,1.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+287180a5-8a05-43c5-ac58-1bf78bcd12a7,USD,5e670777-4737-4962-8241-9423ad257373,Flat_Fee_Support_Pricing__c,#N/A,Value,#N/A,400.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+2934e164-bd7b-48a1-9fd3-ee91df44fe64,USD,0fd3ba6b-c655-47bb-982f-2e9b67f48ae5,ParentOptionProductCode__c,#N/A,Value,#N/A,1.0,Quote Line,contains,true,true,#N/A,#N/A,SLV-SE-SS-CPQ,#N/A
+2ae43535-3b5f-47b2-b591-2b823f584791,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,Product Code,#N/A,Value,#N/A,7.0,Quote Line,not equals,true,true,#N/A,#N/A,LCR-AO-SS-CPQ,#N/A
+2bfe70bb-6917-4af8-b53e-585943fbe9a8,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,SBQQ__MasterContract__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+2c2e3f14-a209-4ba3-bee0-4c41445365c0,USD,75ac0695-8a78-4525-8e74-de0081f6e0a1,Multi_Year_Billed_all_Upfront__c,#N/A,Value,#N/A,10.0,Quote,equals,false,true,#N/A,#N/A,FALSE,#N/A
+2c5c89ca-528f-4026-9123-2c8f4dd438c4,USD,8e567d66-e402-45c2-be76-7c833ce7a4a1,Contract_Type__c,#N/A,Value,#N/A,30.0,Quote,contains,true,true,#N/A,#N/A,MSA,#N/A
+2cee0a8f-c7d8-40c7-add2-11510ee5106e,USD,430d846e-16bd-4a22-b44a-8fea0820bfce,SilverGoldServices__c,#N/A,Value,#N/A,4.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+2d75cda7-c60c-4ab6-9afd-59bace593e49,USD,b048e0f6-436b-43a9-9256-bc009ca805c6,SBQQ__Quantity__c,#N/A,Value,#N/A,2.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+2e6fda3c-e7a0-4634-8a38-1a48ea3746a8,USD,be5f207f-6bae-4b04-b869-27cca384ab16,SBQQ__SubscriptionPercent__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+2f1ed210-3f44-4292-95af-86aca28a8e82,USD,61f8e469-464e-4d1c-8074-262539134123,#N/A,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,4c77f102-6481-4f77-8552-27217f69dea4,#N/A,#N/A
+3131bf4c-117e-4867-aebb-839bcded9110,USD,15a8d209-bdb5-47f8-af2d-862216293139,fml_IsAmendment__c,#N/A,Value,#N/A,5.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+323964a1-b37f-451b-b28a-25a3a016412a,USD,1e0548c0-6830-4423-b27f-45e6ff96fb4b,RundeckProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+326bceae-d003-43bf-9a11-92c1485c7d86,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,#N/A,#N/A,Value,#N/A,8.0,Quote,equals,true,true,"DATEVALUE(CreatedDate) >= DATE(2023,06,21)",#N/A,TRUE,#N/A
+32d77e0d-4691-4804-8272-a7180e18eac9,USD,8cfecd5a-416e-43db-b15c-35e9ba976333,SBQQ__ProductName__c,#N/A,Value,#N/A,20.0,Quote Line,not equals,true,true,#N/A,#N/A,Visibility Site License,#N/A
+33bdbfa1-6f43-47a9-9725-91501b1431f1,USD,426df93b-eca9-440d-82e2-e1d34becbf88,SBQQ__ProductFamily__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,Base Product,#N/A
+34b0c5ac-f477-4ebb-8455-ea87a4de1f97,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,EarlyRenewal__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+35a1d14a-f58d-40ea-9f8b-e185977ad377,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,SBQQ__ProductCode__c,#N/A,Value,#N/A,4.0,Quote Line,equals,true,true,#N/A,#N/A,PBT-BP-XX-CPQ,#N/A
+36683430-711e-41ef-93a1-fbc664497580,USD,14413d53-b46f-43e7-8e37-75e4efa3f86e,ExpirationDateisafterStartDate__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+366aa0e1-2308-412f-acd6-af4f34ee1649,USD,ddf02164-adfd-44f9-baa1-2c9e92abceae,TermPeriod__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,Month,a840t0000003qyPAAQ20191008210841Z20191008210840Z
+372198f1-59d6-4817-8b7c-721aba0f2e9e,USD,2e86fb5c-d140-4176-a344-e0722065e9ae,SBQQ__ShippingStreet__c,BillToContact__r.MailingStreet,Formula,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+3742593b-3407-479a-bd9e-6a057ae84bdb,USD,e8b89118-48ed-434d-9a57-a117bac6a903,#N/A,#N/A,Value,#N/A,10.0,Summary Variable,equals,true,true,#N/A,61d76a3f-6a5e-4be9-a7e8-33a24e8180a0,1,#N/A
+37b14dc9-2212-46ca-9b1b-4126a989ad18,USD,207ed962-ee62-4c76-ac02-27208894081a,MSA_Payment_Terms__c,#N/A,Value,#N/A,10.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+382828ee-fb93-4bed-8404-1a60d365920e,USD,5e670777-4737-4962-8241-9423ad257373,#N/A,#N/A,Value,#N/A,300.0,Quote Line,equals,true,true,"OR(SBQQ__RequiredBy__r.SupportProduct__c = TRUE,SupportProduct__c = TRUE)",#N/A,TRUE,#N/A
+389975b3-9c39-4380-9b79-739947bd909f,USD,fb1a2f45-fef0-4d60-8cce-70064e952723,#N/A,#N/A,Value,#N/A,40.0,Quote Line,not equals,true,true,#N/A,dc1991af-b650-4722-a72a-ed67b2c70062,#N/A,#N/A
+39c10277-beb5-4b4c-b607-62ac691a7ac1,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,SupportProduct__c,#N/A,Value,#N/A,30.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+3aa278e9-cb96-4a12-b32d-bfe6a0a5c3d8,USD,15a8d209-bdb5-47f8-af2d-862216293139,ScopeOfWorkDocNeeded__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+3c9847ef-f6cf-48e9-a78c-12b762db4507,USD,6961c8ca-8923-4c60-8461-b644566ed9c9,ShipToContact__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+3d665c14-ed1c-4575-a35a-79cd1ef94a64,USD,8e567d66-e402-45c2-be76-7c833ce7a4a1,fml_Is_Partner_Opportunity__c,#N/A,Value,#N/A,50.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+3d694824-dac1-4c07-bf3a-fedd2286a67f,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,SBQQ__Quantity__c,#N/A,Value,#N/A,3.0,Quote Line,less than,true,true,#N/A,#N/A,51,#N/A
+3d98d386-6425-4d2c-b542-0326e1be6c2b,USD,f8665231-cc3a-44f5-83d0-66c16c5a657d,evergreent_to_termed__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,True,a840t0000003qzXAAQ20191029195235Z20191029195234Z
+3f1b0093-1716-4678-9822-81b84f23dfa8,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,SBQQ__ProductCode__c,#N/A,Value,#N/A,6.0,Quote Line,equals,true,true,#N/A,#N/A,S2B-BP-XX-CPQ,#N/A
+3f49afae-ec53-480e-8170-c44b37a33fc7,USD,03fd5d88-4b85-4114-97d0-a202ecae4af8,#N/A,#N/A,Value,#N/A,1.0,Summary Variable,equals,true,true,#N/A,3113e2d0-0961-4873-8b70-20a97e0117b6,0,#N/A
+3fdc9e52-2c7d-4980-8c1f-04109cb0da2e,USD,0911f057-08f5-4f7a-a829-14852c7d9a71,RundeckUser__c,#N/A,Value,#N/A,3.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+403986f3-154b-4b51-bf16-c752fea36aeb,USD,c6992b39-23ca-4fd6-8a5d-0e0ad0a82f04,Customer_Contract_Status__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,Active,#N/A
+40f025bf-1017-4ee0-bb78-9ab23eff26bf,USD,bd36be01-51b4-4d65-a1ee-1a070c84f836,RundeckSupportAndTraining__c,#N/A,Value,#N/A,4.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+42f3cafe-886b-4f0f-9d71-956adec4b707,USD,99e826e5-882a-4621-a20a-7152b16d2b00,SBQQ__Type__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,Amendment,#N/A
+4359abe1-ee2c-47d9-a3fd-f5d67c7d2256,USD,56e9f553-a512-4813-aaa7-d9c635437718,ScheduledRenewal__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+43816323-1d0a-43bb-ad6a-38f39d5b5560,USD,caec0148-5a19-4e59-8ac3-27c1a1a0e23b,#N/A,#N/A,Value,#N/A,20.0,Quote Line,greater than,true,true,#N/A,51dea9d6-e293-449f-89c6-e6e799838512,0,#N/A
+4546dac6-e516-46df-a302-3b71622213a6,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,Multi_Year_Billed_all_Upfront__c,#N/A,Value,#N/A,6.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+45616f46-e716-4089-8957-dd0053a95ab2,USD,e8b89118-48ed-434d-9a57-a117bac6a903,#N/A,#N/A,Value,#N/A,20.0,Summary Variable,equals,true,true,#N/A,0b5c8cce-52ad-41e1-ba5c-d296010b56b6,1,#N/A
+4668e0bf-776e-4a10-af86-797c2727191e,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,Multi_Year_Billed_all_Upfront__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+468aa584-3887-42d3-8b78-8cbcbad775fe,USD,3a9120ce-a4e1-4134-879c-3e3d4fa93cbc,SBQQ__ExpirationDate__c,SBQQ__StartDate__c,Formula,#N/A,#N/A,Quote,greater or equals,true,true,#N/A,#N/A,#N/A,#N/A
+48b7ef16-63d2-4514-a368-00edcbca6b66,USD,83ffce22-c398-4a86-b2d4-ac291feb953e,#N/A,#N/A,Value,#N/A,10.0,Quote Line,equals,true,true,"AND(
+         SBQQ__Quote__r.SBQQ__PartnerDiscount__c <> SBQQ__QuoteLine__c.SBQQ__PartnerDiscount__c , 
+         SBQQ__Quote__r.Admin_Override__c = FALSE, 
+         SBQQ__QuoteLine__c.OverridePartnerDiscount__c = FALSE, 
+         SBQQ__QuoteLine__c.SupportProduct__c = FALSE, /* This and next line added for BAED-1932 */
+         SBQQ__QuoteLine__c.ServiceProduct__c = FALSE
+)",#N/A,TRUE,#N/A
+4a396d9f-8084-4336-9591-6f3bc073a385,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,fml_DiscountFromSubscriptionBlank__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+4a4e2f84-a877-4075-8aec-1185a7da8b88,USD,ee0c21f6-b001-4493-9f78-4218bf0f7638,fml_DiscountFromSubscription__c,#N/A,Value,#N/A,3.0,Quote Line,equals,true,true,#N/A,#N/A,100,#N/A
+4ad25316-b262-4ddd-9fb1-2f1f7736c763,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,ServiceProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,False,#N/A
+4c0f08c9-136f-4aac-880c-0497bdcf2a87,USD,a0fbc184-49d8-4360-a21b-8503f82ab8eb,SBQQ__ProductCode__c,#N/A,Value,#N/A,#N/A,Quote Line,contains,true,true,#N/A,#N/A,-LU-,#N/A
+4c3474cf-5c03-4db4-9e19-2445c207e96f,USD,71ba853d-a070-44a3-91ef-52e6581498aa,SubscriptionType__c,#N/A,Value,#N/A,3.0,Quote,equals,false,true,#N/A,#N/A,Termed,#N/A
+4c604e44-c349-4aa0-8e5d-36b5c83fd826,USD,15a8d209-bdb5-47f8-af2d-862216293139,#N/A,#N/A,Value,#N/A,2.0,Quote,greater than,true,true,#N/A,4f68a761-8309-41b4-95a8-327673815a58,1,#N/A
+4ed3ba0e-0820-4afe-a5d8-0bd497e59481,USD,8156babd-7724-4fdd-8e0d-fa06b0820fdd,#N/A,#N/A,Value,#N/A,#N/A,Quote,less or equals,true,true,#N/A,43efd8da-c774-4720-b098-1d905a6180b3,25,#N/A
+4fc0d1e6-5e79-41de-840a-e2fc5f055628,USD,6b108991-1c1e-4a20-994f-0c26ab87b75d,TotalDiscountCustom__c,#N/A,Value,#N/A,2.0,Quote Line,less or equals,true,true,#N/A,#N/A,25,#N/A
+506f8330-11be-41cf-94b2-a522ebee8737,USD,e8b89118-48ed-434d-9a57-a117bac6a903,Is_Rundeck_Only__c,#N/A,Value,#N/A,30.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+520239cd-f33c-462f-89f8-cacbc98097b2,USD,0911f057-08f5-4f7a-a829-14852c7d9a71,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+5279be10-dda7-46f0-8f3b-8cce7df07887,USD,96c9cc2a-4325-47ad-a311-d6522672f5a8,Product Code,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,PSS-SE-SS-CPQ,#N/A
+52a13663-706c-4e4b-bd8b-8c001af66956,USD,76c94117-15f6-4a58-90bd-220db4f12465,EarlyRenewal__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+52c36625-ce60-4c4b-814c-5358cbfdc1c8,USD,78f78776-9d5b-43c8-9009-dcc27619c126,#N/A,#N/A,Value,#N/A,20.0,Quote Line,equals,true,true,SBQQ__RenewedSubscription__r.fml_Uplift_InApplicable__c,#N/A,FALSE,#N/A
+53164456-5785-4097-b76e-7b88733a8084,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,Is_Rundeck_Only__c,#N/A,Value,#N/A,5.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+5371b239-6a77-49ed-bc92-2e8405a91463,USD,a4c27ec8-6b76-46f6-a953-d9623e5ba845,SBQQ__PartnerDiscount__c,#N/A,Value,#N/A,#N/A,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+5431beb6-ad20-42b4-97af-e969cce7377f,USD,6c0cfbbe-93de-4644-83c2-271ba81f85f6,EarlyRenewal__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+54736989-cfa4-41f5-9bb6-73be5cbe6d12,USD,caec0148-5a19-4e59-8ac3-27c1a1a0e23b,LastDiscountTierUpperBoundPopulated__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+5485a309-5203-434b-b1a0-628171a5101e,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,evergreent_to_termed__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+552d1442-956f-4854-960b-a738ee43b7f5,USD,2e5d15fb-8f40-4b50-aba7-0571d8701e1d,ExistingBusinessNoApproval__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+55622232-bf73-4921-ae41-4e0798986da5,USD,b048e0f6-436b-43a9-9256-bc009ca805c6,RundeckProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+5581cdd9-96f4-4436-8286-38a3e1a368b1,USD,430d846e-16bd-4a22-b44a-8fea0820bfce,Tiered_Product__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+55c4d884-9eb6-4ace-8ea2-872451abbabc,USD,acb5f686-6ab3-4ecc-9d5e-f3f9c4b38b51,SBQQ__Partner__c,#N/A,Value,#N/A,10.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+56c5a383-a328-4921-a079-2afffaa5b4e5,USD,71ba853d-a070-44a3-91ef-52e6581498aa,Tiered_Product__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+5a5a254a-13df-43d0-a446-ade21832df63,USD,4c3f2166-2e00-498a-bea3-d647988fcdf8,ApprovalProductCategory__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,Base Product,#N/A
+5aa48e58-a969-434f-96a2-87a4af95faa5,USD,33a81dc3-5e53-4df1-9174-9177a20609d8,#N/A,#N/A,Value,#N/A,1.0,Quote,greater than,true,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,0,a840t0000003qvWAAQ20190911222425Z20190911222423Z
+5ae17aad-0302-4feb-a7d7-83d97ba0f0d3,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,TrainingProduct__c,#N/A,Value,#N/A,3.0,Quote Line,equals,true,true,#N/A,#N/A,false,#N/A
+5c6d67e5-a356-4f61-90a1-64ecc0f81c04,USD,f7ff5eed-825c-4270-ba70-917f0bc65155,SBQQ__Quantity__c,#N/A,Value,#N/A,2.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+5c7df466-d8f3-4988-845b-46cbf8c375ec,USD,8c282707-ca45-41dc-ae21-1ad5440a2064,#N/A,#N/A,Value,#N/A,2.0,Summary Variable,equals,true,true,#N/A,a07f368b-92b7-401c-9a25-373c94824f8b,1,#N/A
+5d80e5f6-c240-42e9-b8c6-bd4bea4a1127,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,ScheduledRenewal__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+5e5d60c3-444b-4873-8555-0b13a6cfd6bf,USD,56e9f553-a512-4813-aaa7-d9c635437718,OverrideSubsidiaryAndTaxCompanyCode__c,#N/A,Value,#N/A,30.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+5fedabfb-9d42-4cf9-84ba-c2b63e818ab7,USD,207ed962-ee62-4c76-ac02-27208894081a,Customer_Contract_Status__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,Active,#N/A
+6125a7b3-c86c-4c47-a86a-e860835980ca,USD,52a94725-f738-4bc3-8cfe-2c43aabd1385,#N/A,#N/A,Value,#N/A,20.0,Quote Line,not equals,true,true,SBQQ__RenewedSubscription__r.SBQQ__RenewalProductId__c,#N/A,#N/A,#N/A
+61a51af4-c281-46c9-addd-530b01995b33,USD,85b34c96-e511-40ca-a69f-212fbdf24d81,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+63bdbf82-0725-4159-b6e5-e740a6995fe0,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,evergreent_to_termed__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+64b3126d-0aa5-4f10-8b62-1a2d85c56bfc,USD,5a486541-605e-4233-877a-f6289009d781,SBQQ__ProductCode__c,#N/A,Value,#N/A,6.0,Quote Line,equals,true,true,#N/A,#N/A,STTC-BP-XX-CPQ,#N/A
+657f2402-0d1f-4c83-abc4-41007850a9c2,USD,e5d2a435-1c35-497b-a937-2624e9c24ff2,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+66078fa7-2e26-4266-a63c-796d4db76cfe,USD,ea99eabf-4e7b-4339-b58a-2eacd742de36,RundeckProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+660ef72d-6657-4976-8e24-9ee2ad784094,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,EarlyRenewal__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+667cb3ab-cd63-48f8-a8de-eafdfd7a4363,USD,c6992b39-23ca-4fd6-8a5d-0e0ad0a82f04,Contract_Type__c,#N/A,Value,#N/A,40.0,Quote,contains,true,true,#N/A,#N/A,TOS,#N/A
+676ba25c-3e1f-41bc-9e60-808b66627023,USD,999b8e7c-26c1-4968-ba93-ed7ef3a6130c,Billing_Frequency2__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,Semiannual,a840t0000003qs4AAA20190804034851Z20190804034849Z
+67bd322b-1ff1-4a27-883d-6798bec248f5,USD,76c94117-15f6-4a58-90bd-220db4f12465,SBQQ__Type__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+67cc0a76-7b23-49f8-99ae-5a622546046f,USD,2d9b0eb2-85ad-4eba-b84e-10601946f4e9,IsCreatedToday__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+6871eee5-1e05-419c-928b-f062985990e8,USD,66273d6a-8f84-4910-9edb-a41c6e8ee18d,One_Time_Credit__c,#N/A,Value,#N/A,1.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+69adf88d-cd91-4e86-a253-e34b5992a053,USD,bad4e919-fb24-4072-9d04-685f1a10843d,ZSubscriptionId__c,#N/A,Value,#N/A,20.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+69fb1a61-1935-4874-9995-327df5f3cf63,USD,9a75457f-a6fe-4036-8bdc-06c1cffd3507,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+6ab1a176-bcf6-4cb0-855d-98b2dbb87953,USD,6b108991-1c1e-4a20-994f-0c26ab87b75d,CompetitiveDiscountAuthorized__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+6b2b3aab-380e-4af7-8546-3439762419d1,USD,2a96b1d4-721d-47d8-9546-a8c99661ed0f,Billing_Frequency2__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,Annual,a840t0000003qrLAAQ20190730022423Z20190730022421Z
+6b3a80a1-6f63-47df-b6ef-383fb6259631,USD,1547369b-578c-41ba-a0e8-5520c47663ba,PD_Data__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,#N/A,#N/A
+6b60628d-bd96-4446-beaf-25f3ecf11950,USD,c6992b39-23ca-4fd6-8a5d-0e0ad0a82f04,Contract_Type__c,#N/A,Value,#N/A,30.0,Quote,contains,true,true,#N/A,#N/A,MSA,#N/A
+6bbc5ee6-a652-4716-b490-51407f7f031f,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,Override_Non_Annual_Checkbox__c,#N/A,Value,#N/A,7.0,Quote,not equals,true,true,#N/A,#N/A,YES,#N/A
+6bc6f811-968e-4c1a-bd77-c0fb33265d01,USD,76c94117-15f6-4a58-90bd-220db4f12465,Override_Non_Annual_Checkbox__c,#N/A,Value,#N/A,1.0,Quote,not equals,true,true,#N/A,#N/A,YES,#N/A
+6c000f79-da46-4875-bf61-aac066982bee,USD,ff0870fd-eb6e-44fb-be9f-a8b7b53a9f4f,SBQQ__ProductCode__c,#N/A,Value,#N/A,2.0,Quote Line,starts with,false,true,#N/A,#N/A,AIO,#N/A
+6c08becd-bcb1-42f1-863c-b24c380f9c81,USD,430d846e-16bd-4a22-b44a-8fea0820bfce,SubscriptionType__c,#N/A,Value,#N/A,3.0,Quote,equals,false,true,#N/A,#N/A,Termed,#N/A
+6c18b0da-9a40-4fa0-ae55-bae8b6b99cf4,USD,0f772193-b1ad-499b-9a75-52653cba05cb,SBQQ__ExpirationDate__c,SBQQ__Opportunity2__r.CloseDate,Formula,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+6d1a4edd-fc7e-4431-97f4-50533b3a4074,USD,03fd5d88-4b85-4114-97d0-a202ecae4af8,Product Code,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,PSS-SE-SS-CPQ,#N/A
+6d774c37-a367-4792-95de-3325b380d732,USD,415561af-5e0a-4428-abf8-0f229998649f,#N/A,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,LEN(TEXT(SBQQ__Discount__c)) > 18,#N/A,TRUE,#N/A
+6eede6f9-464b-476f-b84a-a82d826855ba,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,fml_DiscountFromSubscription__c,#N/A,Value,#N/A,3.0,Quote Line,less than,true,true,#N/A,#N/A,100,#N/A
+70d07651-e636-4623-975c-aff0d80f467f,USD,f13b4db9-4a98-4b1a-b272-04428ef61bcc,Catalytic_Product__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+7479ba9e-8468-440e-b227-c45eedc4708e,USD,75ac0695-8a78-4525-8e74-de0081f6e0a1,SBQQ__Type__c,#N/A,Value,#N/A,20.0,Quote,equals,false,true,#N/A,#N/A,Quote,#N/A
+751698c0-97f9-4e25-8402-a90b89ce9bd3,USD,f8665231-cc3a-44f5-83d0-66c16c5a657d,#N/A,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,9affef56-740c-47c5-aa8b-b84f9487c8c4,1,a840t0000003qzcAAA20191029195305Z20191029195303Z
+7567407b-3cda-46f3-904b-b599ef7c9872,USD,7c36bc6b-5900-4ac4-9572-6c30dec5c898,#N/A,#N/A,Value,#N/A,10.0,Summary Variable,equals,true,true,#N/A,61d76a3f-6a5e-4be9-a7e8-33a24e8180a0,1,#N/A
+759a1b9b-0373-4aa2-ae2f-be71c3d3e02f,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,ScheduledRenewal__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+761d67e1-0316-4cf7-a93c-9b2bd48f8e04,USD,76c94117-15f6-4a58-90bd-220db4f12465,Multi_Year_Billed_all_Upfront__c,#N/A,Value,#N/A,7.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+768150fe-187a-4c20-b3f9-a43320cf4d0a,USD,6a38d05f-e9a0-4a0b-96ff-ab07ac958463,#N/A,#N/A,Value,#N/A,#N/A,Summary Variable,greater than,true,true,#N/A,31a211ec-98bf-444c-8d43-524e63b2a256,0,#N/A
+76c260dc-bd55-4524-98d1-3708228657d5,USD,71ba853d-a070-44a3-91ef-52e6581498aa,SBQQ__ProductSubscriptionType__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,false,true,#N/A,#N/A,One-time,#N/A
+7794714f-5351-442d-a29d-14ad4c1b4833,USD,6961c8ca-8923-4c60-8461-b644566ed9c9,SBQQ__ShippingCountry__c,BillToContact__r.MailingCountry,Formula,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+7809abff-37c2-4c2a-b7d1-bed86faa8f6c,USD,71ba853d-a070-44a3-91ef-52e6581498aa,fml_is_Rundeck_Quote_Line__c,#N/A,Value,#N/A,5.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+78f9bb17-0fc1-4e2f-9444-5e2606379157,USD,a4c27ec8-6b76-46f6-a953-d9623e5ba845,Partner_Discount_Removed__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+792bd4ce-6748-44b4-b928-e3119238a6d2,USD,15a8d209-bdb5-47f8-af2d-862216293139,NumberOfAdditionalDocuments__c,#N/A,Value,#N/A,1.0,Quote,not equals,true,true,#N/A,#N/A,1,#N/A
+795c6dd9-7962-4605-82e1-715e33e80ad6,USD,165ed002-328e-47fb-85ac-67dfe99fad3e,#N/A,#N/A,Value,#N/A,20.0,Quote Line,not equals,true,true,#N/A,4df709c6-ff07-4c36-9e74-88d2f36ae04d,#N/A,#N/A
+7979970f-fe1d-458b-b644-9adbd81f1230,USD,8cfecd5a-416e-43db-b15c-35e9ba976333,SBQQ__SubscriptionPercent__c,#N/A,Value,#N/A,10.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+7a455e47-73ed-46eb-9180-0b863beac583,USD,85789319-e606-4940-ba8b-a9ec21bb6b38,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+7a835801-06f9-49a9-9699-d80102f81131,USD,8e567d66-e402-45c2-be76-7c833ce7a4a1,Subscription_Auto_Renew__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+7b302aa9-cd39-4029-80c2-63d7ab6e1bae,USD,85c6acb0-04af-4342-a162-c9232025aa44,LastDiscountTierUpperBoundPopulated__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+7b74267f-5104-4b25-b352-79886f84859b,USD,8e567d66-e402-45c2-be76-7c833ce7a4a1,Customer_Contract_Status__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,Active,#N/A
+7c215bac-a833-4243-aea7-829f3f777b59,USD,207ed962-ee62-4c76-ac02-27208894081a,Payment_Term_Matched__c,#N/A,Value,#N/A,50.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+7c7d349b-57ec-4978-a97c-d4cffeb747f8,USD,71ba853d-a070-44a3-91ef-52e6581498aa,SilverGoldServices__c,#N/A,Value,#N/A,4.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+7d37e90a-2362-4499-98f0-3605607270e4,USD,85b34c96-e511-40ca-a69f-212fbdf24d81,#N/A,#N/A,Value,#N/A,1.0,Quote,greater or equals,true,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,1,#N/A
+7f13a38d-99ec-402a-a554-954dfcd970c8,USD,5a486541-605e-4233-877a-f6289009d781,SBQQ__ProductCode__c,#N/A,Value,#N/A,4.0,Quote Line,equals,true,true,#N/A,#N/A,LCR-AO-SS-CPQ,#N/A
+7f21c9f0-2ab4-4364-bae6-22bc1e08409d,USD,bd36be01-51b4-4d65-a1ee-1a070c84f836,RundeckProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+806c928a-bdb0-488c-9419-0b942b002685,USD,9c6d36f2-cd80-4a6b-82ce-af8c6ab3b646,Product Code,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,LCML-AO-SS-CPQ,#N/A
+808fd3d1-4230-498b-a6dc-ed463f299220,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,Billing_Frequency2__c,#N/A,Value,#N/A,6.0,Quote,equals,true,true,#N/A,#N/A,Annual,#N/A
+80c5def4-8d4b-4658-b6d9-bb7e39f6c8dd,USD,25315d68-a669-4834-96c9-4f25a9a42b58,SBQQ__ProductName__c,#N/A,Value,#N/A,#N/A,Quote Line,contains,true,true,#N/A,#N/A,M2M,#N/A
+81de3262-5e6d-4299-ac4c-37a3bc0c451f,USD,165ed002-328e-47fb-85ac-67dfe99fad3e,#N/A,#N/A,Value,#N/A,10.0,Quote Line,greater than,true,true,#N/A,4df709c6-ff07-4c36-9e74-88d2f36ae04d,0,#N/A
+84f28ca4-5065-46ca-9f46-8e8bbc3735df,USD,bebfe4e2-0990-465e-881a-35e4d2caa714,SBQQ__Type__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+85fbd210-c5cf-4909-9c45-ab637035ad8d,USD,140d6059-30de-4e1a-91be-499dc1a28298,MaxQuantityOfCustomerServiceProduct__c,#N/A,Variable,9167077a-5cc1-4b69-a07a-4a2f39c8454a,10.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+880e7ed2-5a88-4094-b519-ef54ddb6f02f,USD,1168e43a-a6b7-484f-8f90-44bba76ae339,OpportunityType__c,#N/A,Value,#N/A,#N/A,Quote,equals,false,true,#N/A,#N/A,New Business,#N/A
+888ddfdd-76d7-45e5-8630-e6383157e919,USD,03fd5d88-4b85-4114-97d0-a202ecae4af8,SBQQ__Type__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,New Quote,#N/A
+88ffdf4e-3401-48c0-889f-96ba65f42ae6,USD,8e567d66-e402-45c2-be76-7c833ce7a4a1,Contract_Type__c,#N/A,Value,#N/A,40.0,Quote,contains,true,true,#N/A,#N/A,TOS,#N/A
+8944a43b-15de-4033-8329-c6fb564b44c1,USD,1142d3eb-3a4c-46b3-a781-c5d9ea9e7201,One_Time_Credit__c,#N/A,Value,#N/A,#N/A,Quote,greater than,true,true,#N/A,#N/A,0,#N/A
+89974c3d-23e8-4c57-80dc-720ae79cc699,USD,a69f62dc-a548-42ae-a1c0-60c433b81c3c,evergreent_to_termed__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,False,#N/A
+8c29c550-cbc0-421a-90cf-f6ad2fe60bb6,USD,85c6acb0-04af-4342-a162-c9232025aa44,#N/A,#N/A,Value,#N/A,20.0,Quote Line,equals,true,true,#N/A,51dea9d6-e293-449f-89c6-e6e799838512,0,#N/A
+8c9bda50-dead-4816-b6e0-f7fa4c2db9f4,USD,207ed962-ee62-4c76-ac02-27208894081a,Contract_Type__c,#N/A,Value,#N/A,40.0,Quote,contains,true,true,#N/A,#N/A,TOS,#N/A
+8dd569a9-2ed4-4249-8977-3b66e5747ff4,USD,355266b0-d544-48e7-b08f-77a1fd8d859d,SBQQ__ProductSubscriptionType__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,false,true,#N/A,#N/A,One-time,#N/A
+8defe0ae-79b3-4979-9796-15a382906a95,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,Tiered_Product__c,#N/A,Value,#N/A,4.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+8f52d9c1-3f6b-4ab2-8ab6-79816c8974ab,USD,a1c83103-8bda-464f-a3ed-973ec3c04203,NumberOfAdditionalDocuments__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,1,#N/A
+905882ca-44c3-4c29-9ff3-6300a3f5b5ff,USD,4c3f2166-2e00-498a-bea3-d647988fcdf8,OpportunityType__c,#N/A,Value,#N/A,#N/A,Quote,not equals,false,true,#N/A,#N/A,New Business,#N/A
+926a7131-e650-43f9-b420-07b8a7d78461,USD,feb03d8f-6ce6-4b4f-a092-3bb91bd687bc,Billing_Frequency2__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,Quarterly,a840t0000003qruAAA20190804031548Z20190804031546Z
+92877d6a-8ae9-4800-b0f6-9e7bbb89d125,USD,fb1a2f45-fef0-4d60-8cce-70064e952723,Quantity_Net_New_Tier1_Product__c,#N/A,Variable,dc1991af-b650-4722-a72a-ed67b2c70062,30.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+930a1c9c-8eca-4e86-adf5-20f07b8f074f,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,SBQQ__UpgradedSubscription__c,#N/A,Value,#N/A,4.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+931707ca-d0cf-41d1-b909-4b4ac190c3a5,USD,fb1a2f45-fef0-4d60-8cce-70064e952723,SBQQ__MasterContract__c,#N/A,Value,#N/A,10.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+93432e65-0691-47cb-aa77-bd10b7d3c579,USD,355266b0-d544-48e7-b08f-77a1fd8d859d,SubscriptionType__c,#N/A,Value,#N/A,#N/A,Quote,equals,false,true,#N/A,#N/A,Evergreen,#N/A
+935e07ca-988c-4848-ade9-71c29e6b621f,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,fml_is_PD_Org_Eligible__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+93f4053d-5679-4648-917e-1a296d161c85,USD,9a75457f-a6fe-4036-8bdc-06c1cffd3507,OpportunityType__c,#N/A,Value,#N/A,#N/A,Quote,not equals,false,true,#N/A,#N/A,New Business,#N/A
+95565ffb-574e-4843-b223-654e49bcf88f,USD,895c2753-47af-4917-9124-4bc3c9ea087a,SBQQ__ProductSubscriptionType__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,false,true,#N/A,#N/A,One-time,#N/A
+96e04208-427e-4ac7-830a-06f7b34fc5c7,USD,431e7ef9-0199-4261-ad6e-e35ee4a317f0,SBQQ__ProductCode__c,#N/A,Value,#N/A,20.0,Quote Line,equals,true,true,#N/A,#N/A,AUTP-BP-XX-CPQ,#N/A
+972e96af-ef31-44f2-97e3-474c8c148bf5,USD,c6992b39-23ca-4fd6-8a5d-0e0ad0a82f04,Remove_Publicity__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+97bb8744-7fd9-40be-aedc-98f42dd90f66,USD,5a486541-605e-4233-877a-f6289009d781,SBQQ__Quantity__c,#N/A,Value,#N/A,3.0,Quote Line,less than,true,true,#N/A,#N/A,51,#N/A
+996662f4-f85b-4e81-9294-8634716464e1,USD,78f78776-9d5b-43c8-9009-dcc27619c126,#N/A,#N/A,Value,#N/A,10.0,Quote,equals,true,true,"AND(
+ScheduledRenewal__c = TRUE,
+OR(
+SBQQ__SubscriptionTerm__c = 30,
+SBQQ__SubscriptionTerm__c = 29,
+SBQQ__SubscriptionTerm__c = 31,
+SBQQ__SubscriptionTerm__c = 28)
+)",#N/A,TRUE,#N/A
+99f60b51-57e7-48ba-8829-9ad58fdd497a,USD,ae793344-9c77-4bfc-a510-ea69234d1af2,SilverGoldServices__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+9bcc502c-7ec5-43d2-8788-dd6cabdc66b6,USD,188aee21-5a89-4bae-88f2-7c38cafa7bc3,#N/A,#N/A,Value,#N/A,#N/A,Quote Line,less than,true,true,#N/A,ac423b24-284f-4757-9901-c196e026e7db,1,#N/A
+9c932d10-fe2a-4a80-a08c-eca76d168847,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,SBQQ__ProductSubscriptionType__c,#N/A,Value,#N/A,5.0,Quote Line,not equals,true,true,#N/A,#N/A,One-time,#N/A
+9cec8a07-ca31-445f-85f4-187aba807da5,USD,52a94725-f738-4bc3-8cfe-2c43aabd1385,#N/A,#N/A,Value,#N/A,40.0,Quote Line,equals,true,true,"AND(
+!ISBLANK(SBQQ__RenewedSubscription__c),
+SBQQ__RenewedSubscription__r.SBQQ__RenewalProductOptionProductId__c <> ''
+)",#N/A,TRUE,#N/A
+9cee6bb7-b16e-4c40-8fd8-cddd75634ead,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,Tiered_Product__c,#N/A,Value,#N/A,6.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+9d310c42-904d-4736-94a0-2e424e79da63,USD,2e5d15fb-8f40-4b50-aba7-0571d8701e1d,SBQQ__MasterContract__c,#N/A,Value,#N/A,2.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+9d456996-6f91-4650-8168-a0decff92112,USD,7c36bc6b-5900-4ac4-9572-6c30dec5c898,#N/A,#N/A,Value,#N/A,20.0,Summary Variable,equals,true,true,#N/A,0b5c8cce-52ad-41e1-ba5c-d296010b56b6,0,#N/A
+9d8caa00-28ce-4c91-9f78-37adb5629998,USD,85b34c96-e511-40ca-a69f-212fbdf24d81,#N/A,#N/A,Value,#N/A,3.0,Quote,greater or equals,true,true,#N/A,a2ad6085-38bc-44c5-a7d6-f1ec65fa9ebd,1,#N/A
+9e9a37a8-c4ba-42f1-ad56-388e0c611216,USD,f94cc1f6-738f-4b5f-b085-03219e3c7cef,EarlyRenewal__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,True,a840t0000003qyoAAA20191010171953Z20191010171950Z
+9f2a24c8-eaf1-4ea5-8743-dcbb4328cfac,USD,99e826e5-882a-4621-a20a-7152b16d2b00,Product Code,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,LCR-AO-SS-CPQ,#N/A
+9ff94112-a5ea-4c79-91ef-947d913168ad,USD,ef34467c-8a70-45e3-b49d-35b5f434c05f,SBQQ__ProductName__c,#N/A,Value,#N/A,2.0,Quote Line,not equals,true,true,#N/A,#N/A,Visibility Site License,#N/A
+9ffea326-7138-4358-8e90-9e5d199c257a,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,Prev_Discount__c,#N/A,Value,#N/A,5.0,Quote Line,less than,true,true,#N/A,#N/A,100,#N/A
+a1245726-d3f6-415f-86b5-598684faa509,USD,db2626be-0fa4-4e34-9364-b5e9b5c35210,SBQQ__Quantity__c,#N/A,Value,#N/A,2.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+a17374df-d42d-4744-836d-2e35e8e7c73d,USD,6b430437-f9f9-428c-abb7-9c839bd6dfc7,#N/A,#N/A,Value,#N/A,#N/A,Quote Line,greater than,false,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,0,#N/A
+a182a129-2067-4158-8e3d-2de98e628f84,USD,ae793344-9c77-4bfc-a510-ea69234d1af2,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+a1dd4298-d071-4616-bf29-44c2af367557,USD,ff0870fd-eb6e-44fb-be9f-a8b7b53a9f4f,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+a20661ab-4f45-47de-a83b-d7fae0afb977,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,EarlyRenewal__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+a27c72bd-38b5-4d0c-8e26-9c8500802b50,USD,fb1a2f45-fef0-4d60-8cce-70064e952723,fml_SubscriptionQuantity__c,#N/A,Value,#N/A,50.0,Quote Line,equals,true,true,#N/A,#N/A,#N/A,#N/A
+a2ee3df3-1d92-4e54-a66b-d5382969547d,USD,482170df-20a9-4796-894b-adcfa0143fb2,SBQQ__ProductCode__c,#N/A,Value,#N/A,3.0,Quote Line,equals,true,true,#N/A,#N/A,PTT-BP-XX-CPQ,#N/A
+a3b5576a-6374-4daf-b892-c8e5d0dcb3e0,USD,482170df-20a9-4796-894b-adcfa0143fb2,SpecialCampaign__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,3,#N/A
+a5407832-3058-41b6-915f-19b572f14480,USD,0911f057-08f5-4f7a-a829-14852c7d9a71,RundeckProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+a6e456fa-d5ca-4454-9324-2d1742eab9de,USD,f0591ae3-a891-4ec7-8523-bb07add807e9,Is_Rundeck_Only__c,#N/A,Value,#N/A,5.0,Quote,equals,false,true,#N/A,#N/A,TRUE,#N/A
+a7ae45fb-899d-43f3-81a1-0c37ff9535f4,USD,4c3f2166-2e00-498a-bea3-d647988fcdf8,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+a90e5193-a43d-4bfd-9334-d6d1b7a65afa,USD,bad4e919-fb24-4072-9d04-685f1a10843d,SBQQ__MasterContract__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,#N/A,#N/A
+a9d7e434-c164-47dc-9d29-70e245fa9540,USD,8156babd-7724-4fdd-8e0d-fa06b0820fdd,SBQQ__Existing__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,False,#N/A
+ab210fef-bc27-4404-ae12-f3a6c5a3f3b6,USD,d0127b1b-66a1-4376-8725-e3d1d7f0a57b,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,10.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+aba8ebc2-b138-4ea9-9fc8-8a20030b76b7,USD,85789319-e606-4940-ba8b-a9ec21bb6b38,ApprovalProductCategory__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,Add-On,#N/A
+aba9cfbe-860e-4492-97b4-740a1ace0977,USD,ea5ace91-34c3-41f9-a1fc-40adf322df50,#N/A,#N/A,Value,#N/A,#N/A,Quote Line,greater than,true,true,#N/A,62a6d8d1-bf25-4ea8-9548-c40d6aa743b2,0,#N/A
+ad8ab3c5-a8cc-4e7d-8269-82b9217321ac,USD,6fcc06a4-fb8d-4669-84f9-b6cefeab24a5,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,10.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+afdef23e-75a6-40d2-b426-4b431cfe1b28,USD,431e7ef9-0199-4261-ad6e-e35ee4a317f0,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,10.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+b0595f9d-3283-42eb-bdb3-296210c3f991,USD,96c9cc2a-4325-47ad-a311-d6522672f5a8,#N/A,#N/A,Value,#N/A,1.0,Summary Variable,not equals,true,true,#N/A,3113e2d0-0961-4873-8b70-20a97e0117b6,0,#N/A
+b463ddb6-ce16-42c8-81b7-23c1a3d97f49,USD,61f8e469-464e-4d1c-8074-262539134123,#N/A,#N/A,Value,#N/A,30.0,Quote,equals,true,true,#N/A,4c77f102-6481-4f77-8552-27217f69dea4,0,#N/A
+b4740bc0-6bc4-4804-b5e4-628893bffe41,USD,a1c83103-8bda-464f-a3ed-973ec3c04203,#N/A,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,4f68a761-8309-41b4-95a8-327673815a58,#N/A,#N/A
+b492ed08-5121-4c8b-9f03-17a8addbf1df,USD,be5f207f-6bae-4b04-b869-27cca384ab16,SBQQ__UpgradedSubscription__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,#N/A,#N/A
+b4f8d54f-508a-4c20-8108-8e26743c7674,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,OverrideSubsidiaryAndTaxCompanyCode__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+b580006a-f295-4abf-a9f3-fec629b4157e,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,SBQQ__PartnerDiscount__c,#N/A,Value,#N/A,10.0,Quote Line,not equals,true,true,#N/A,#N/A,0,#N/A
+b5938f85-12cf-4613-ba41-9a176dc1d17b,USD,3b2c92da-8fdb-4361-b637-410babdc6a8c,SBQQ__ShippingPostalCode__c,BillToContact__r.MailingPostalCode,Formula,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+b64b8436-92aa-4422-8e37-6ce6932acac2,USD,44b38296-d2ca-4a31-a92f-41250e28b1b7,InvoiceToContact__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,#N/A,#N/A
+b6aebcc7-1c55-44dc-b7c5-b0381fe899bb,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,SBQQ__ProductCode__c,#N/A,Value,#N/A,5.0,Quote Line,equals,true,true,#N/A,#N/A,PDV-AO-LU-CPQ,#N/A
+b703c8f6-adfc-4036-9f84-24536fafe6b5,USD,a1c83103-8bda-464f-a3ed-973ec3c04203,#N/A,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,4f68a761-8309-41b4-95a8-327673815a58,0,#N/A
+b72eb758-8e65-4e48-9cf2-0a4ff20a028a,USD,ee0c21f6-b001-4493-9f78-4218bf0f7638,TotalDiscountCustom__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,100,#N/A
+b7d6164f-8495-4324-8030-79d6f73c0e1d,USD,d0cd8a98-315a-4c07-a47d-8df041fe24ba,SBQQ__Type__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+b9ceb94b-b836-45f9-9a66-9922ebace4c7,USD,5a486541-605e-4233-877a-f6289009d781,SBQQ__ProductCode__c,#N/A,Value,#N/A,7.0,Quote Line,equals,true,true,#N/A,#N/A,PTTC-BP-XX-CPQ,#N/A
+b9ec7dc3-d568-43d9-9057-8208378ea150,USD,430d846e-16bd-4a22-b44a-8fea0820bfce,fml_is_Rundeck_Quote_Line__c,#N/A,Value,#N/A,5.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+ba532eb2-4625-4e8a-9989-102f3a746248,USD,8e662f10-f417-48ba-a698-d5ef03e99662,SBQQ__ShippingState__c,BillToContact__r.MailingState,Formula,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+baacf4bf-3281-42c0-a2d0-4d594e4f08df,USD,8e662f10-f417-48ba-a698-d5ef03e99662,ShipToContact__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+bc532c4e-ef53-42dc-94da-e8d65a7f2a39,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,Admin_Override__c,#N/A,Value,#N/A,50.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+bc580096-1042-4f5e-83c0-f39cd699a39e,USD,0a6d512d-5d4b-4d29-9a3f-24241c3ad65f,#N/A,#N/A,Variable,4c77f102-6481-4f77-8552-27217f69dea4,20.0,Quote,not equals,true,true,QtyIncreaseLineCount__c,#N/A,#N/A,#N/A
+bc8edd9c-3d58-48d6-b953-cfb5a8736a40,USD,4be9a98a-591d-4dbc-8fc7-2ed011339614,IsCreatedToday__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+be2ded40-1f33-49bb-b5f8-b8cc5fe3d93b,USD,5e670777-4737-4962-8241-9423ad257373,SBQQ__Existing__c,#N/A,Value,#N/A,500.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+bee58541-7689-44c0-8254-415728b19c08,USD,6c0cfbbe-93de-4644-83c2-271ba81f85f6,Date_Prepopulated__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+beef2fd7-d115-4dc5-a218-56ff5eeb5b4e,USD,5a486541-605e-4233-877a-f6289009d781,SpecialCampaign__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,2,#N/A
+bf604986-db36-42f9-98f4-f1cbc5489fe5,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,TotalDiscountCustom__c,#N/A,Value,#N/A,1.0,Quote Line,less or equals,true,true,#N/A,#N/A,50,#N/A
+bfb2e273-decf-4d0e-a0a6-48c6de3ca49a,USD,9f46e99a-8a54-4985-9593-3d132c5900c8,SBQQ__ProductName__c,#N/A,Value,#N/A,2.0,Quote Line,not equals,true,true,#N/A,#N/A,Visibility Site License,#N/A
+c0058265-9167-46fa-8606-b85b5d12440c,USD,047410ca-4ab8-4d55-9d25-348e2d71b48b,ServicesDiscountApprovalLevelRollup__c,#N/A,Value,#N/A,2.0,Quote,greater than,true,true,#N/A,#N/A,0,#N/A
+c0144903-fada-4ef5-8e05-f5470d421a1f,USD,bc5ed2f0-102a-40f9-b9a3-1f7e9fc1cc39,#N/A,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,0,#N/A
+c03854d1-ef62-4b0f-ad86-bd5b3745e16f,USD,df6b17d8-f4c9-4c31-88cb-3cafe159a092,One_Time_Credit__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,#N/A,#N/A
+c113a8ff-ab1b-47a8-9458-601c7233ce80,USD,3774da80-839f-430f-89be-421966527f46,ParentOptionProductCode__c,#N/A,Value,#N/A,1.0,Quote Line,contains,true,true,#N/A,#N/A,GLD-SE-SS-CPQ,#N/A
+c1b45cab-9b36-42c7-b8ee-b6172b247dc9,USD,d0127b1b-66a1-4376-8725-e3d1d7f0a57b,SBQQ__ProductCode__c,#N/A,Value,#N/A,30.0,Quote Line,starts with,true,true,#N/A,#N/A,PDWA,#N/A
+c3095ae4-9b2b-4425-9337-10d0565a7d06,USD,4be9a98a-591d-4dbc-8fc7-2ed011339614,MaxQuantityOfPrimaryBaseProducts__c,#N/A,Variable,830c5943-b702-4376-94ab-808e487a6f8b,10.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+c3265aa1-32d0-47a8-956c-f01784cd6bd8,USD,9a75457f-a6fe-4036-8bdc-06c1cffd3507,ApprovalProductCategory__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,Add-On,#N/A
+c32f094d-ba56-4f86-8fce-5d31b19bf9cf,USD,a0fbc184-49d8-4360-a21b-8503f82ab8eb,OverrideAddOnLevelUp__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+c4136473-4952-42c2-887f-dac45a961347,USD,affe9610-891f-41d9-a488-0ef54d458883,#N/A,#N/A,Value,#N/A,30.0,Quote,not equals,true,true,NumberOfJeliProducts__c,#N/A,1,#N/A
+c4156ee2-98c6-43a8-9362-2099423e5a17,USD,1168e43a-a6b7-484f-8f90-44bba76ae339,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+c4914b4f-dbf8-4f59-bd43-3cfee0a2c0ef,USD,ea5ace91-34c3-41f9-a1fc-40adf322df50,PDAnalyticsSold__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+c4c94adb-1132-482e-b0e6-8f5103df0f9d,USD,fb1a2f45-fef0-4d60-8cce-70064e952723,#N/A,#N/A,Value,#N/A,20.0,Quote Line,greater than,true,true,#N/A,dc1991af-b650-4722-a72a-ed67b2c70062,0,#N/A
+c4ee2eee-4fd3-4295-af4f-7b31544df355,USD,2e86fb5c-d140-4176-a344-e0722065e9ae,ShipToContact__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+c5ce1a14-7d3f-4b39-aa42-81d314be8e53,USD,3a473b4f-a9c4-4379-84f6-b47b3bf789db,IsTraining__c,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,#N/A,False,#N/A
+c782f72f-53ca-40cd-b75b-d1d84cba620d,USD,1168e43a-a6b7-484f-8f90-44bba76ae339,ApprovalProductCategory__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,Base Product,#N/A
+c7a50f36-ac34-47b7-a4ae-6d5d787c42f1,USD,f7ff5eed-825c-4270-ba70-917f0bc65155,RunbookAutomationProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+c7ba82ec-9791-4843-a6c5-f6450601e7de,USD,bebfe4e2-0990-465e-881a-35e4d2caa714,EarlyRenewal__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+c9d8a7b4-9629-42cc-943a-53ea3c3affdc,USD,06ee174d-f13c-4a6f-aaf0-17d613433321,ExistingBusinessApprovalWaiver__c,#N/A,Value,#N/A,2.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+ca966752-67dc-40be-af19-b9cfdf53b41b,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,SBQQ__Type__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+caee6f2c-7cc3-4349-a5dd-74d9fa9fe6c7,USD,ae793344-9c77-4bfc-a510-ea69234d1af2,Product_Category__c,#N/A,Value,#N/A,3.0,Quote Line,equals,true,true,#N/A,#N/A,Premium Support,#N/A
+cbb70107-28fe-4fff-a9eb-8777b22c7415,USD,acb5f686-6ab3-4ecc-9d5e-f3f9c4b38b51,IsPartnerQuote__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+cbe33607-a0a7-4caa-aba2-a228b498aae8,USD,140d6059-30de-4e1a-91be-499dc1a28298,IsCreatedToday__c,#N/A,Value,#N/A,20.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+cc4a9af4-7de8-4d5a-be45-2755780b37ac,USD,4badb129-d881-4f61-80f4-0e4afc6ff249,DiscountingMatrixExemptProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,false,true,#N/A,#N/A,FALSE,#N/A
+cc6d7a7d-8c47-4dec-80f2-9e04d6a11e3a,USD,a4c27ec8-6b76-46f6-a953-d9623e5ba845,ScheduledRenewal__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+cd63499d-1a7c-49f9-bf97-80f070b8541c,USD,03fd5d88-4b85-4114-97d0-a202ecae4af8,EarlyRenewal__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+ce11826b-9a98-4146-848d-391f4eb58616,USD,2877cc60-9690-4300-a494-cc80272008d6,Product Code,#N/A,Value,#N/A,#N/A,Quote Line,equals,true,true,#N/A,#N/A,LCML-AO-SS-CPQ,#N/A
+d0a0f44f-12ce-4a36-85e2-4e016cd4dc49,USD,a69f62dc-a548-42ae-a1c0-60c433b81c3c,#N/A,#N/A,Value,#N/A,2.0,Quote Line,equals,true,true,#N/A,9affef56-740c-47c5-aa8b-b84f9487c8c4,1,#N/A
+d26eda85-84ad-4987-a084-5a817d45fb08,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,Override_PD_Org_Discount__c,#N/A,Value,#N/A,10.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+d2dd5eb2-660b-4da2-a9d4-28f4cb37295c,USD,3e32d836-9987-42d4-bfe6-0b8810236a32,ShipToContact__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+d315f3ba-ac20-4853-99dd-fd37801f4e4c,USD,482170df-20a9-4796-894b-adcfa0143fb2,SBQQ__Quantity__c,#N/A,Value,#N/A,2.0,Quote Line,less than,true,true,#N/A,#N/A,21,#N/A
+d459fd94-b846-473f-b0ad-d54460a1a947,USD,9f46e99a-8a54-4985-9593-3d132c5900c8,SBQQ__SubscriptionPercent__c,#N/A,Value,#N/A,1.0,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+d4e03d09-26a0-43ef-82dc-9bdf4e122660,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,#N/A,#N/A,Value,#N/A,5.0,Summary Variable,greater than,true,true,#N/A,d423fb16-03e3-4834-bb5e-65f13975c0e5,0,#N/A
+d544f472-26be-4dfb-8b3b-0ed14881cebb,USD,e8b89118-48ed-434d-9a57-a117bac6a903,#N/A,#N/A,Value,#N/A,40.0,Summary Variable,equals,true,true,#N/A,61d76a3f-6a5e-4be9-a7e8-33a24e8180a0,0,#N/A
+d833d485-d59b-48f9-8de4-268bf680e1b5,USD,be5f207f-6bae-4b04-b869-27cca384ab16,SBQQ__ProductName__c,#N/A,Value,#N/A,4.0,Quote Line,not equals,true,true,#N/A,#N/A,Visibility Site License,#N/A
+d94ca6ef-58a2-4339-a588-805e8f005b1d,USD,f8665231-cc3a-44f5-83d0-66c16c5a657d,#N/A,#N/A,Value,#N/A,3.0,Quote Line,equals,true,true,#N/A,9affef56-740c-47c5-aa8b-b84f9487c8c4,0,a840t0000003qzhAAA20191029195339Z20191029195338Z
+db5435a7-0949-4bbc-a509-caa8836a3569,USD,047410ca-4ab8-4d55-9d25-348e2d71b48b,#N/A,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,0,#N/A
+db71808e-ebbe-4919-9b5d-51168449c8a2,USD,f0591ae3-a891-4ec7-8523-bb07add807e9,#N/A,#N/A,Value,#N/A,1.0,Quote,equals,false,true,"IF(
+AND(AND(Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 24) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 36) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 48) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 60) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 72) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 84) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 96) ||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 108)||
+AND( Master_Prorate_Multiplier__c = 0, SBQQ__MasterContract__r.ContractTerm = 120) ||
+Master_Prorate_Multiplier__c = 2 || Master_Prorate_Multiplier__c = 3 || Master_Prorate_Multiplier__c = 4 || Master_Prorate_Multiplier__c = 5 || Master_Prorate_Multiplier__c = 6 || Master_Prorate_Multiplier__c = 7 || Master_Prorate_Multiplier__c = 8 || Master_Prorate_Multiplier__c = 9 || Master_Prorate_Multiplier__c = 10 || SBQQ__SubscriptionTerm__c/365 = 2 || SBQQ__SubscriptionTerm__c/365 = 3 || SBQQ__SubscriptionTerm__c/365 = 4 || SBQQ__SubscriptionTerm__c/365 = 5 || SBQQ__SubscriptionTerm__c/365 = 6 || SBQQ__SubscriptionTerm__c/365= 7 || SBQQ__SubscriptionTerm__c/365 = 8 || SBQQ__SubscriptionTerm__c/365 = 9 || SBQQ__SubscriptionTerm__c/365 = 10 ), TRUE, FALSE)",#N/A,TRUE,#N/A
+dbc2e3c6-8c8b-4a8f-95a7-19810aa3bcb6,USD,8c1678b8-7894-4073-8e88-47ac33f11506,#N/A,#N/A,Value,#N/A,#N/A,Quote Line,greater or equals,true,true,#N/A,ac423b24-284f-4757-9901-c196e026e7db,1,#N/A
+dcbae4f8-20f6-4723-930e-f6689315f7e9,USD,3b2c92da-8fdb-4361-b637-410babdc6a8c,ShipToContact__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+dcc80a17-7793-471e-91c9-4c09266065e9,USD,14413d53-b46f-43e7-8e37-75e4efa3f86e,SBQQ__ExpirationDate__c,SBQQ__StartDate__c,Formula,#N/A,#N/A,Quote,less than,true,true,#N/A,#N/A,#N/A,#N/A
+e13dc1b9-afa7-4e6f-bcda-8c056896b837,USD,047410ca-4ab8-4d55-9d25-348e2d71b48b,#N/A,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,a2ad6085-38bc-44c5-a7d6-f1ec65fa9ebd,0,#N/A
+e1771678-a46a-4570-b747-f8fc948a5aa1,USD,5d9a94fe-edcc-457a-8af9-2bdbc027f1f8,EarlyRenewal__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,FALSE,#N/A
+e2c082ab-1a42-4f9d-b4a7-3b23e2c5ea06,USD,f94cc1f6-738f-4b5f-b085-03219e3c7cef,SBQQ__Type__c,#N/A,Value,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,Amendment,a840t0000003qyoAAA20191010171953Z20191010171950Z
+e3662e80-a62f-4765-a312-3804013e2dbc,USD,affe9610-891f-41d9-a488-0ef54d458883,SBQQ__ProductCode__c,#N/A,Value,#N/A,20.0,Quote Line,equals,true,true,#N/A,#N/A,JLSUB-XX-XX-CPQ,#N/A
+e4a9edb1-e108-4ad1-8fb8-1957d76de067,USD,a0fbc184-49d8-4360-a21b-8503f82ab8eb,SBQQ__Quantity__c,#N/A,Value,#N/A,#N/A,Quote Line,not equals,true,true,#N/A,#N/A,0,#N/A
+e70f3173-89cc-446b-9a9e-23b0131c437c,USD,5d9a94fe-edcc-457a-8af9-2bdbc027f1f8,TermPeriod__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,Day,#N/A
+e906c313-e65a-44a1-865a-109b6e34698c,USD,ef3a0009-e6a6-4793-b904-22b1ca2dc62b,SBQQ__ProductSubscriptionType__c,#N/A,Value,#N/A,#N/A,Quote Line,equals,false,true,#N/A,#N/A,One-time,#N/A
+e917526f-66f1-4929-84f8-df5512ff5740,USD,0a6d512d-5d4b-4d29-9a3f-24241c3ad65f,#N/A,#N/A,Value,#N/A,10.0,Quote,greater than,true,true,#N/A,4c77f102-6481-4f77-8552-27217f69dea4,0,#N/A
+eb0078e4-9599-4cdf-a20f-a92bf8d4fa68,USD,be5f207f-6bae-4b04-b869-27cca384ab16,SBQQ__Type__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+eb3179d3-e358-4596-8c30-b522bf9777a6,USD,76c94117-15f6-4a58-90bd-220db4f12465,SBQQ__Type__c,#N/A,Value,#N/A,4.0,Quote,equals,true,true,#N/A,#N/A,Quote,#N/A
+eea9a3c8-30a5-46c4-9a7f-bb88afbc75a1,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,SBQQ__PartnerDiscount__c,#N/A,Value,#N/A,20.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+f05d45b4-739f-4340-80df-ee77aa2477e8,USD,ee0c21f6-b001-4493-9f78-4218bf0f7638,Tiered_Product__c,#N/A,Value,#N/A,4.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+f08d1fdb-1b6b-4312-b777-d7080afa75d9,USD,5d9a94fe-edcc-457a-8af9-2bdbc027f1f8,Master_Term_Period__c,#N/A,Value,#N/A,2.0,Quote,equals,true,true,#N/A,#N/A,Day,#N/A
+f097f01b-476b-484b-ad98-488627a9d90b,USD,61f8e469-464e-4d1c-8074-262539134123,#N/A,#N/A,Variable,4c77f102-6481-4f77-8552-27217f69dea4,10.0,Quote,not equals,true,true,QtyIncreaseLineCount__c,#N/A,#N/A,#N/A
+f1e9e38e-02e4-4666-b88f-f8e018e71b1d,USD,15a8d209-bdb5-47f8-af2d-862216293139,#N/A,#N/A,Variable,bb220639-d700-4495-9a13-73604ae24d4d,4.0,Quote Line,not equals,true,true,#N/A,4f68a761-8309-41b4-95a8-327673815a58,#N/A,#N/A
+f32b1cc8-a412-4f4b-919c-c4090f166e8e,USD,4badb129-d881-4f61-80f4-0e4afc6ff249,RundeckUser__c,#N/A,Value,#N/A,3.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+f332a352-3aaa-4e1a-96b4-016c1fe1b7bb,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,ServiceProduct__c,#N/A,Value,#N/A,40.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+f355e734-200c-49b2-93dd-03b3b7887eef,USD,431e7ef9-0199-4261-ad6e-e35ee4a317f0,SBQQ__ProductCode__c,#N/A,Value,#N/A,40.0,Quote Line,equals,true,true,#N/A,#N/A,RE1C-BP-XX-CPQ,#N/A
+f3616005-67d6-47ac-966f-910f40a72f1d,USD,bc5ed2f0-102a-40f9-b9a3-1f7e9fc1cc39,NumberOfExpertServicesProducts__c,#N/A,Value,#N/A,1.0,Quote,greater than,true,true,#N/A,#N/A,0,#N/A
+f39ac6e6-92ad-4423-a48b-9d6c305e6bf5,USD,c0bb0c4b-026d-4115-8bd0-8957b6269fc7,Is_Rundeck_Only__c,#N/A,Value,#N/A,5.0,Quote,equals,false,true,#N/A,#N/A,TRUE,#N/A
+f3fe3d65-9b26-4309-a865-cd16e6b1ce73,USD,e3c177ba-b243-4d61-bc95-0f7c0545802a,ScheduledRenewal__c,#N/A,Value,#N/A,#N/A,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+f4fb2a65-7488-4dcd-b772-ca3ecd3b6f9e,USD,3e32d836-9987-42d4-bfe6-0b8810236a32,SBQQ__ShippingCity__c,BillToContact__r.MailingCity,Formula,#N/A,#N/A,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+f76bf42a-e0ce-460c-aced-3246ef970fa2,USD,ef34467c-8a70-45e3-b49d-35b5f434c05f,SBQQ__SubscriptionPercent__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+f773c242-3273-485a-9483-44de3dbac1ba,USD,5a486541-605e-4233-877a-f6289009d781,SBQQ__ProductCode__c,#N/A,Value,#N/A,5.0,Quote Line,equals,true,true,#N/A,#N/A,PBTC-BP-XX-CPQ,#N/A
+f7a7d792-2b13-4f38-b17c-37c2cffbb75c,USD,895c2753-47af-4917-9124-4bc3c9ea087a,Tiered_Product__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+f8210ea7-81c1-417d-8f5e-a8eb219bae19,USD,2877cc60-9690-4300-a494-cc80272008d6,#N/A,#N/A,Value,#N/A,#N/A,Summary Variable,less or equals,true,true,#N/A,61808135-f700-4fa7-a1f0-f042a4d5b066,25,#N/A
+f8b9d88c-c2e0-45c4-ae41-4f71c6b835b8,USD,4badb129-d881-4f61-80f4-0e4afc6ff249,RundeckProduct__c,#N/A,Value,#N/A,2.0,Quote Line,equals,false,true,#N/A,#N/A,TRUE,#N/A
+f8d98470-19e0-48d8-a2a7-505502c00ba2,USD,52a94725-f738-4bc3-8cfe-2c43aabd1385,SBQQ__RenewedSubscription__c,#N/A,Value,#N/A,10.0,Quote Line,not equals,true,true,#N/A,#N/A,#N/A,#N/A
+f99e6d3a-356a-4d3e-9d68-97cb8fa705ce,USD,430d846e-16bd-4a22-b44a-8fea0820bfce,SBQQ__ProductSubscriptionType__c,#N/A,Value,#N/A,1.0,Quote Line,not equals,false,true,#N/A,#N/A,One-time,#N/A
+f9c2684d-c763-4b33-b24a-151e49fe5141,USD,5d9a94fe-edcc-457a-8af9-2bdbc027f1f8,SBQQ__Type__c,#N/A,Value,#N/A,3.0,Quote,equals,true,true,#N/A,#N/A,Amendment,#N/A
+fce34d4f-9ceb-4d16-bc84-05261460f078,USD,db2626be-0fa4-4e34-9364-b5e9b5c35210,RundeckProduct__c,#N/A,Value,#N/A,1.0,Quote Line,equals,true,true,#N/A,#N/A,TRUE,#N/A
+fd36053d-6ed4-420f-9a09-599a3affb8ea,USD,5ea0e184-f6ed-417a-a68e-b55599b3fc40,SBQQ__Quantity__c,#N/A,Value,#N/A,#N/A,Quote Line,greater than,true,true,#N/A,#N/A,0,#N/A
+fdef7d61-0b89-41af-a9f9-dc86be37d90e,USD,a1c83103-8bda-464f-a3ed-973ec3c04203,ScopeOfWorkDocNeeded__c,#N/A,Value,#N/A,1.0,Quote,equals,true,true,#N/A,#N/A,TRUE,#N/A
+fe9882b4-a55a-4bd1-bb36-b48beb0c0092,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,SBQQ__Existing__c,#N/A,Value,#N/A,9.0,Quote Line,equals,true,true,#N/A,#N/A,FALSE,#N/A
+ffad7823-b310-4c65-93da-23097765a4f1,USD,e95954e6-a1eb-4f0c-8ff1-66567dfe811c,SBQQ__MasterContract__c,#N/A,Value,#N/A,1.0,Quote,not equals,true,true,#N/A,#N/A,#N/A,#N/A
