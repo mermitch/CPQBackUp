@@ -1,0 +1,2 @@
+Guid,Name,CurrencyIsoCode,sbaa__AggregateField__c,sbaa__AggregateFunction__c,sbaa__FilterField__c,sbaa__FilterValue__c,sbaa__Operator__c,sbaa__TargetObject__c,sbaa__Type__c,ApprovalVariableExternalID__c
+19c4df1c-3bd6-43bf-af6f-390af9abd6bb,Sum of AIops (Custom),USD,SBQQ__EffectiveQuantity__c,Sum,SBQQ__ProductCode__c,AIO11-AO-SS-CPQ-FY25,equals,SBQQ__QuoteLine__c,Summary,#N/A
