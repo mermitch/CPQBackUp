@@ -1,0 +1,44 @@
+Guid,Name,CurrencyIsoCode,SBQQ__Category__c,SBQQ__ConfigurationFieldSet__c,SBQQ__ConfiguredSKU__c,SBQQ__DiscountSchedule__c,SBQQ__DynamicProductFilterFieldSet__c,SBQQ__DynamicProductLookupFieldSet__c,SBQQ__MaxOptionCount__c,SBQQ__MinOptionCount__c,SBQQ__Number__c,SBQQ__OptionSelectionMethod__c,FeatureExternalID__c
+01dfe2db-abd4-4755-9ced-47c2d4840120,Add-on Products,USD,#N/A,#N/A,4b47df68-cad5-490c-a515-d65b4593c151,#N/A,#N/A,#N/A,#N/A,0.0,20.0,#N/A,a8E0t0000001eiLEAQ20191010164802Z20191010164802Z
+070522cb-a646-4c61-97f0-02dd4e70e591,Users,USD,#N/A,#N/A,9156e32a-c0fe-4a9a-93e0-7a45d3beda8c,#N/A,#N/A,#N/A,#N/A,0.0,30.0,#N/A,#N/A
+0d5f7c02-325a-4e37-99c8-8117a480931e,AIOPs,USD,#N/A,#N/A,4b47df68-cad5-490c-a515-d65b4593c151,#N/A,#N/A,#N/A,1.0,0.0,30.0,#N/A,#N/A
+1410a49d-1deb-41f6-955a-3801602108ec,PD Runbook Automation Self Hosted Support,USD,Runbook Self Hosted,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,68.0,#N/A,#N/A
+1c52ff6b-612a-480c-adad-0a7fb55ef056,PD Runbook Automation Self Hosted Users,USD,Runbook Self Hosted,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,2.0,0.0,66.0,#N/A,#N/A
+1ff955c4-bc4c-4aea-bc9c-d358a2c93440,Instances and Clusters,USD,#N/A,#N/A,9156e32a-c0fe-4a9a-93e0-7a45d3beda8c,#N/A,#N/A,#N/A,#N/A,1.0,10.0,#N/A,#N/A
+22108434-2c04-4608-879a-6ff2030887f6,AI Ops,USD,Add Ons,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,1.0,0.0,90.0,#N/A,#N/A
+24df1d9e-ebf1-48f1-8894-caa6640b315f,PagerDuty Advance,USD,Add Ons,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,1.0,0.0,80.0,#N/A,#N/A
+2536948c-d265-4457-8227-591e289abafe,Add-on Products,USD,#N/A,#N/A,9156e32a-c0fe-4a9a-93e0-7a45d3beda8c,#N/A,#N/A,#N/A,#N/A,0.0,20.0,#N/A,#N/A
+2747a063-674b-40f1-bf2f-3631deae527c,Base Products,USD,#N/A,#N/A,49e50fb9-ee3b-4e7b-9adf-61ebab155598,#N/A,#N/A,#N/A,1.0,1.0,10.0,#N/A,#N/A
+2bdfb80c-7814-481b-a0a0-33008dab1081,Jeli,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,1.0,0.0,70.0,#N/A,#N/A
+2d2aa36a-8545-49f4-8f26-06e442de4ef4,Premium Services,USD,#N/A,#N/A,530b4efe-bd56-4236-b400-8548cd3f5bc0,#N/A,#N/A,#N/A,#N/A,0.0,30.0,#N/A,#N/A
+2e6cef15-b8fd-43c4-8d17-f7e4a266dd2a,Services,USD,#N/A,#N/A,2929ce85-d29e-4266-9d78-3d3541d4a56c,#N/A,#N/A,#N/A,#N/A,0.0,20.0,#N/A,#N/A
+2fa04009-4ab6-41a5-a178-906dc99e4d96,Training Products,USD,#N/A,#N/A,9156e32a-c0fe-4a9a-93e0-7a45d3beda8c,#N/A,#N/A,#N/A,#N/A,0.0,50.0,#N/A,#N/A
+31074d66-6478-4f6f-ba0a-c911ee7c3d2c,Incident Management / Customer Service - Legacy,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,2.0,0.0,10.0,#N/A,#N/A
+3ad467a5-ae6d-4076-a1ab-4bab785347eb,Services - Legacy,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,40.0,#N/A,#N/A
+3e960b3e-e168-464d-8ffa-d501f5cc5ee7,PagerDuty Cloud Automation Platform Fee,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,1.0,0.0,75.0,#N/A,#N/A
+4a0e11d4-a030-4311-8855-f207d7f649ed,Premium Services,USD,#N/A,#N/A,49e50fb9-ee3b-4e7b-9adf-61ebab155598,#N/A,#N/A,#N/A,#N/A,0.0,30.0,#N/A,#N/A
+52f819e5-77e7-4573-9ed2-8d3a541abf90,Training Products,USD,#N/A,#N/A,530b4efe-bd56-4236-b400-8548cd3f5bc0,#N/A,#N/A,#N/A,#N/A,0.0,40.0,#N/A,#N/A
+606409f3-b302-44bf-a3fa-13fdb5e1f4a5,IM / CS Add-on Products,USD,Add Ons,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,20.0,#N/A,a8E0t00000003C6EAI20190405195124Z20190312231741Z
+6579c3fd-b91d-41e4-9e23-fb9ada200494,Status Page,USD,#N/A,#N/A,4b47df68-cad5-490c-a515-d65b4593c151,#N/A,#N/A,#N/A,2.0,0.0,40.0,#N/A,#N/A
+710dae46-d934-4653-a2f4-b1d3a1ea9bf1,Base Products,USD,#N/A,#N/A,4b47df68-cad5-490c-a515-d65b4593c151,#N/A,#N/A,#N/A,1.0,0.0,10.0,#N/A,a8E0t0000001eiGEAQ20191010164346Z20191010164345Z
+85629a0d-5446-4530-8dc7-9dd962d194f7,IM / CS Add-on Products - Legacy,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,20.0,#N/A,#N/A
+878ab74d-31d2-4d10-bdd8-d3e66188cc40,Stakeholder Users,USD,#N/A,#N/A,d09bba94-30ad-408a-95ad-30ab43cd16e6,#N/A,#N/A,#N/A,1.0,1.0,1.0,Click,#N/A
+903c3728-9028-4e64-b017-3e6cbbf7ffab,Support,USD,#N/A,#N/A,9156e32a-c0fe-4a9a-93e0-7a45d3beda8c,#N/A,#N/A,#N/A,#N/A,0.0,40.0,#N/A,#N/A
+9068540b-04dd-4878-b1e3-7a2f7b4c8ddd,Workflow Automation (Automation Platform Fee Req'd),USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,1.0,0.0,85.0,#N/A,#N/A
+9ecf293f-a4df-415d-832c-dd87ac926c38,PD Runbook Automation Self Hosted Instances And Clusters,USD,Runbook Self Hosted,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,2.0,0.0,65.0,#N/A,#N/A
+a9726860-f21b-474a-9416-8c59f335b837,Automation Legacy,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,90.0,#N/A,#N/A
+ad252618-3b0f-4d09-8389-2b5b313873b1,Services,USD,#N/A,#N/A,535e5662-2ff3-4ad2-b1ed-75341d9bb251,#N/A,#N/A,#N/A,#N/A,0.0,20.0,Click,#N/A
+ad796bf8-1704-419e-8971-1e08cfbfd6ba,Base Products,USD,#N/A,#N/A,530b4efe-bd56-4236-b400-8548cd3f5bc0,#N/A,#N/A,#N/A,1.0,0.0,10.0,#N/A,#N/A
+ad839f24-c7db-4540-9f11-4ce00e53fa40,PD Runbook Automation Self Hosted Add On,USD,Runbook Self Hosted,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,67.0,#N/A,#N/A
+b2e460dd-8594-4fa4-ae54-5d8e2438af8b,Incident Management / Customer Service,USD,IM/CS,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,2.0,0.0,10.0,#N/A,a8E0t00000003C5EAI20190405195057Z20190312231722Z
+b3a614aa-5ec0-417c-b516-02876e64841a,PD Runbook Automation (SaaS),USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,90.0,#N/A,#N/A
+b3aaf744-e9f1-4b4f-be37-7f424a956b03,Training Products,USD,#N/A,#N/A,49e50fb9-ee3b-4e7b-9adf-61ebab155598,#N/A,#N/A,#N/A,#N/A,0.0,40.0,#N/A,#N/A
+b965d5e1-2ee2-46c5-a170-51fa66f2c188,Cloud Automation Fee (Req'd),USD,#N/A,#N/A,535e5662-2ff3-4ad2-b1ed-75341d9bb251,#N/A,#N/A,#N/A,1.0,0.0,5.0,#N/A,#N/A
+bfeb7a15-56e3-4661-8928-2fdc83f2ad25,Users,USD,#N/A,#N/A,535e5662-2ff3-4ad2-b1ed-75341d9bb251,#N/A,#N/A,#N/A,#N/A,1.0,10.0,#N/A,#N/A
+c3409cf2-ef9e-4936-ab55-aa5ac67e1588,Premium Services,USD,Services,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,40.0,#N/A,a8E0t00000003D3EAI20190405195927Z20190403214758Z
+c8249f8c-d51d-4e5a-8793-be0c5e965428,Training Products,USD,Services,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,#N/A,0.0,30.0,#N/A,a8E0t00000003CyEAI20190405195908Z20190403214716Z
+c88f7f9a-28df-49ed-8a81-294e508dd658,Support,USD,#N/A,#N/A,535e5662-2ff3-4ad2-b1ed-75341d9bb251,#N/A,#N/A,#N/A,#N/A,0.0,30.0,Click,#N/A
+ca984c90-46ec-403e-879a-92eb5e66736d,Status Page,USD,Add Ons,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,2.0,0.0,100.0,Click,#N/A
+cd03cd2b-9f0d-4ae6-9c32-4728eaf97eb1,AI Ops - Legacy,USD,Legacy,#N/A,c43722d8-46f7-4a53-95b0-500b513e0b0d,#N/A,#N/A,#N/A,1.0,0.0,90.0,#N/A,#N/A
+da35f20f-6f1b-41ea-8891-eff0b83fd4e7,Base Products,USD,#N/A,#N/A,2929ce85-d29e-4266-9d78-3d3541d4a56c,#N/A,#N/A,#N/A,#N/A,0.0,10.0,#N/A,#N/A
+fe2c73e4-cf07-4eed-8570-de0963d51d17,Jeli For PD,USD,#N/A,#N/A,4b47df68-cad5-490c-a515-d65b4593c151,#N/A,#N/A,#N/A,1.0,0.0,50.0,#N/A,#N/A
