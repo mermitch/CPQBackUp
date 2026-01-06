@@ -1,0 +1,890 @@
+Guid,CurrencyIsoCode,SBQQ__Rule__c,SBQQ__Field__c,SBQQ__Formula__c,SBQQ__Order__c,SBQQ__ParentRuleIsActive__c,SBQQ__RuleLookupObject__c,SBQQ__RuleTargetsCalculator__c,SBQQ__SourceLookupField__c,SBQQ__SourceVariable__c,SBQQ__TargetObject__c,SBQQ__ValueField__c,SBQQ__Value__c,PriceActionExternalID__c
+011cd9ca-c67e-43b3-946b-8c97c15c8e84,USD,a69f62dc-a548-42ae-a1c0-60c433b81c3c,SubscriptionType__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,Evergreen,#N/A
+0121283b-d48b-482e-8247-85b357fa673e,USD,96c9cc2a-4325-47ad-a311-d6522672f5a8,SubscriptionUpdateTypeOverride__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004pA3AAI20210325230305Z20210325230301Z
+033820d3-f4be-40c7-aaeb-855dd7430a93,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Tax_Exempt_ID__c,"IF(
+  OR(
+      AND(
+              NOT(ISBLANK(SBQQ__Opportunity2__r.Partner__c)),
+              SBQQ__MasterContract__r.Communication_Profile__c != 
+              'Reseller Communication Profile'
+              ),
+      AND(
+              ISBLANK(SBQQ__Partner__c),
+              SBQQ__MasterContract__r.Communication_Profile__c = 
+              'Reseller Communication Profile'
+              )
+         ),
+    Tax_Exempt_ID__c,
+    SBQQ__MasterContract__r.Zuora_TaxExemptCertificateID__c
+  )",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+0524ebb7-9348-4acc-a6e9-821998e8d7b2,USD,8cfecd5a-416e-43db-b15c-35e9ba976333,SBQQ__SpecialPriceType__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,Custom,#N/A
+0711a883-7a8a-4df0-acb0-7186a4744bb7,USD,acb5f686-6ab3-4ecc-9d5e-f3f9c4b38b51,IsPartnerQuote__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+07704b87-af83-4630-befc-698a007d1801,USD,2a96b1d4-721d-47d8-9546-a8c99661ed0f,ProductRatePlanId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Annual__c,true,ProductRatePlanId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B24AAE20190730130627Z20190730130626Z
+086b1ce0-75c8-44e7-b910-c44c3fb09449,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,NonAnnual__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,a830t0000000BCUAA220191009182234Z20191009182232Z
+09f12b04-8c6a-43ed-a5e5-faaeb2aed074,USD,75ac0695-8a78-4525-8e74-de0081f6e0a1,Multi_Year_Billed_all_Upfront__c,FALSE,#N/A,false,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004qzZAAQ20210622214819Z20210622214815Z
+0a27bd25-2197-408b-9177-73264c7f0d55,USD,61f8e469-464e-4d1c-8074-262539134123,QtyIncreaseLineCount__c,#N/A,#N/A,true,#N/A,true,#N/A,4c77f102-6481-4f77-8552-27217f69dea4,Quote,#N/A,#N/A,#N/A
+0de331fe-7793-42a9-a584-393c7e7472b9,USD,feb03d8f-6ce6-4b4f-a092-3bb91bd687bc,ProductRatePlanId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Quarterly__c,true,ProductRatePlanId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B6WAAU20190804034206Z20190804034204Z
+0f209537-cc64-4070-b39a-7ae096ab3713,USD,ae793344-9c77-4bfc-a510-ea69234d1af2,PremiumSuccessBundleApprovalLevel__c,"IF( 
+    AND(
+        TotalDiscountCustom__c > 0.0001 , /* 0.001 to account for any discount due to rounding */          
+        BLANKVALUE( TotalDiscountCustom__c, 0 ) > BLANKVALUE( ApprovedDiscount__c , 0 )
+    ),
+    20 , /* Goes to VP and Director/VP of Pro Services ( An approval Group ) */
+    0    /* Else Auto Approve */
+)
+
+/*    BAESIC-416 deprecates logic below and replaces with IF function above 
+
+IF(
+     AND( TotalDiscountCustom__c > 0.20 , 
+               BLANKVALUE( TotalDiscountCustom__c, 0 ) > BLANKVALUE( ApprovedDiscount__c , 0 )
+       ) ,  20 ,
+IF(
+     AND(
+              TotalDiscountCustom__c > 0.10 ,
+              OR( 
+                     TotalDiscountCustom__c < 0.20 , 
+                     TotalDiscountCustom__c = 0.20
+                 ) ,
+               BLANKVALUE( TotalDiscountCustom__c, 0 ) > BLANKVALUE( ApprovedDiscount__c , 0 )
+       )  , 
+           10, 
+           0 
+       )
+)
+*/",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004mSoAAI20201118012831Z20201118012826Z
+0fe44212-4775-438e-9b70-1a3812c91740,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,Credit_Memo_Template__c,"IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'PagerDuty Credit Memo',
+'Japan CM Template - JPY Tax'
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+1093e7a6-2320-4292-b3b5-9ea9e52312d5,USD,be7959af-e600-4b0a-a563-85c6498a1a3a,TotalDiscountCustom__c,"IF(SBQQ__ProratedListPrice__c == 0 && !SilverGoldServices__c , 0,
+IF(ISPICKVAL(SBQQ__DiscountScheduleType__c, 'Slab') && NOT(SBQQ__Existing__c),
+IF(SBQQ__Quantity__c == 0, 0, (SBQQ__ProratedListPrice__c * SBQQ__Quantity__c - SBQQ__CustomerPrice__c) / (SBQQ__Quantity__c * SBQQ__ProratedListPrice__c)),
+IF(ISPICKVAL(SBQQ__DiscountScheduleType__c, 'Slab') && SBQQ__Existing__c,
+IF(SBQQ__Quantity__c == SBQQ__PriorQuantity__c, 0, (SBQQ__ProratedListPrice__c * (SBQQ__Quantity__c-SBQQ__PriorQuantity__c) - SBQQ__CustomerPrice__c) / ((SBQQ__Quantity__c-SBQQ__PriorQuantity__c) * SBQQ__ProratedListPrice__c)),
+SBQQ__Discount__c)))",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a830t0000000B7FAAU20190813174906Z20190813174904Z
+10bfee7d-87b2-42c1-8c63-15ef6a5fae12,USD,ddf02164-adfd-44f9-baa1-2c9e92abceae,InitialTerm__c,"IF(
+ISPICKVAL(SBQQ__Type__c, 'Quote') || ISPICKVAL(SBQQ__Type__c, 'Renewal') ||  EarlyRenewal__c,
+(SBQQ__SubscriptionTerm__c/365)*12,
+
+IF(ISPICKVAL(SBQQ__Type__c, 'Amendment') && EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.ContractTerm,0))",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a830t0000000B8NAAU20190823212708Z20190823212704Z
+122b60cc-ffef-49bf-8827-cbfa1b26a4e9,USD,207ed962-ee62-4c76-ac02-27208894081a,SBQQ__PaymentTerms__c,"IF(
+AND(Is_Rundeck_Only__c = FALSE,
+ISPICKVAL(Paper_Type__c, 'Rundeck')),
+SBQQ__PaymentTerms__c,
+MSA_Payment_Terms__c
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004lXFAAY20201006221101Z20201006221058Z
+12825ba8-3487-46f7-b63d-1f05d3c4eace,USD,4c3f2166-2e00-498a-bea3-d647988fcdf8,DiscountApprovalLevel__c,#N/A,#N/A,false,ExistingBusinessBase__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+12a81605-efa9-4084-b55a-b34fce2fe676,USD,37e734ba-8183-44c7-a9ad-40d99e95103b,BaseProductCount__c,#N/A,10.0,true,#N/A,true,#N/A,43efd8da-c774-4720-b098-1d905a6180b3,Quote,#N/A,#N/A,#N/A
+12e03309-8cb2-4537-a97e-0bc6e701c17c,USD,999b8e7c-26c1-4968-ba93-ed7ef3a6130c,Charge_Name__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Semi_Annual__c,true,RatePlanChargeName__c,#N/A,Quote Line,#N/A,#N/A,a83110000004lMxAAI20200825215707Z20200825215704Z
+13e29ee7-4828-427f-8f7e-5f7bc965397d,USD,5b2d2376-5429-44bc-82c4-cd1dcb263e29,BaseProductDiscount__c,#N/A,#N/A,true,#N/A,true,#N/A,e4f51266-172a-432f-bd54-0a546bae285c,Quote,#N/A,#N/A,a83110000004j7DAAQ20200123212841Z20200123212838Z
+157254b9-b029-4c87-bc4e-beb5f3e391f8,USD,3b2c92da-8fdb-4361-b637-410babdc6a8c,SBQQ__ShippingPostalCode__c,ShipToContact__r.MailingPostalCode,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+189d4d78-4a8d-41d8-a7d3-288667c046fc,USD,df6b17d8-f4c9-4c31-88cb-3cafe159a092,One_Time_Credit__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,0,#N/A
+18ef2f7f-204b-40e6-b980-bef48703f6fd,USD,75ac0695-8a78-4525-8e74-de0081f6e0a1,NonAnnual__c,FALSE,#N/A,false,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004qzUAAQ20210622214800Z20210622214757Z
+1916fc2f-d9a2-402d-9b73-cf22ff939873,USD,e3c177ba-b243-4d61-bc95-0f7c0545802a,SBQQ__RenewalTerm__c,Quoted_Term__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004kdmAAA20200707194808Z20200707194806Z
+19b39c9e-4a6f-46f6-a94e-c0591d37feeb,USD,56d3afdf-ed4f-4859-b8ff-e876d2ae745b,MaximumDiscountApprovalLevel__c,#N/A,#N/A,true,#N/A,true,#N/A,1f11cf10-3045-4495-9560-b0d0d73380bb,Quote,#N/A,#N/A,a830t0000000AyQAAU20190703180148Z20190703180147Z
+19f31b5c-07d6-4427-a60c-f8baf3e78d15,USD,6961c8ca-8923-4c60-8461-b644566ed9c9,SBQQ__ShippingCountry__c,ShipToContact__r.MailingCountry,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+1a71fed8-af4a-4ac0-b88e-d4fa4ae916ae,USD,71ba853d-a070-44a3-91ef-52e6581498aa,EffectiveNetPrice__c,"IF( SBQQ__Quote__r.NonAnnual__c, fml_NetPriceNonAnnual__c, IF(
+OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Quote') ||
+(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') &&  SBQQ__Quote__r.EarlyRenewal__c &&  SBQQ__Quote__r.NonAnnual__c  = FALSE)),
+(SBQQ__ListPrice__c *  SBQQ__ProrateMultiplier__c * (1- BLANKVALUE(TotalDiscountCustom__c,0)) * (1- BLANKVALUE(SBQQ__Quote__r.SBQQ__PartnerDiscount__c,0))) / CASE( SBQQ__Quote__r.Billing_Frequency2__c, 
+ 'Semiannual', 2*SBQQ__ProrateMultiplier__c,                                                                                  'Quarterly',4*SBQQ__ProrateMultiplier__c,1*SBQQ__ProrateMultiplier__c) ,
+
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE &&  ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Month') && SBQQ__UpgradedSubscription__c = NULL,
+ (NetPriceMonthly__c * BLANKVALUE(SBQQ__Quote__r.InitialTerm__c,1))/CASE( SBQQ__Quote__r.Billing_Frequency2__c, 
+ 'Semiannual', 2*SBQQ__Quote__r.Master_Prorate_Multiplier__c, 
+'Quarterly',4*SBQQ__Quote__r.Master_Prorate_Multiplier__c,1*SBQQ__Quote__r.Master_Prorate_Multiplier__c) , 
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE &&  ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Day') && SBQQ__UpgradedSubscription__c = NULL,fml_NetPriceNonAnnual__c,
+
+IF(
+OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && SBQQ__UpgradedSubscription__c <> NULL), Effective_Amended_Net_Price__c,
+Custom_Net_Unit_Price__c/12/SBQQ__ProrateMultiplier__c)))))",#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a830t0000000BCeAAM20191015055839Z20191015055835Z
+1b5689be-575b-46de-9715-79df1609934a,USD,a1c83103-8bda-464f-a3ed-973ec3c04203,ScopeOfWorkDocNeeded__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,FALSE,#N/A
+1dcc70b2-c23e-4cf9-870a-bf85315ddbd3,USD,a4c27ec8-6b76-46f6-a953-d9623e5ba845,Partner_Discount_Removed__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,TRUE,#N/A
+1eaa32fe-8ba0-4798-b15a-7eda030dc779,USD,acb5f686-6ab3-4ecc-9d5e-f3f9c4b38b51,AutoRenewValidationOverride__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+1eefcc67-2aa9-49c1-83f3-eafbe283c1f0,USD,2877cc60-9690-4300-a494-cc80272008d6,SBQQ__ListPrice__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,50,#N/A
+1fa37b50-283e-4a0b-8863-ddbfd70cb090,USD,207ed962-ee62-4c76-ac02-27208894081a,Payment_Term_Matched__c,"IF(MSA_Payment_Terms__c = SBQQ__PaymentTerms__c, TRUE, FALSE)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+2122bdf1-7d65-4afc-9052-e70f5420708c,USD,03fd5d88-4b85-4114-97d0-a202ecae4af8,SubscriptionUpdateTypeOverride__c,'n/a',#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004pA3AAI20210325230305Z20210325230301Z
+213d385a-fd36-4561-b4e7-3b82858dd39f,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,Rate_Plan_Name__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Annual__c,true,RatePlanName__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+217f346c-d4f2-4477-8039-7f55c701e43e,USD,6fcc06a4-fb8d-4669-84f9-b6cefeab24a5,DiscountApprovalMatrixFY26__c,#N/A,#N/A,true,Discount_Approval_Matrix_FY26__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+2335bcb7-bd1e-48b4-99a9-08c22a2e7107,USD,5a486541-605e-4233-877a-f6289009d781,DiscountApprovalLevel__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004jc2AAA20200403052027Z20200403052023Z
+23c1b6e6-249f-4ebf-bf13-84176365ba5a,USD,8c1678b8-7894-4073-8e88-47ac33f11506,PDorg__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+25ba3e37-baca-43a9-b501-271dfc496c12,USD,56e0a121-2cca-4a3f-8720-949365bf5e69,Net_Price_3__c,"/*  Any Change Requires Copy of this Formula to 'Populate Net Price on Quote Line Editor' Price Rule's Price Action And update of Net Price Formula and Net Price Non Annual in Quote Line Handler - Before Flow */
+
+BLANKVALUE(
+  NetPriceOverride__c,
+  IF(
+    AND(
+      Tiered_Product__c,
+      OR(
+        fml_QL_Quantity_Exempted_formula__c = FALSE,
+        CONTAINS(SBQQ__ProductFamily__c, 'Add-On'),
+        AND(
+          fml_QL_Quantity_Exempted_formula__c,
+          SBQQ__Quote__r.EarlyRenewal__c
+        )
+      )
+    ),
+    IF(
+      SBQQ__Quantity__c = 0,
+      SBQQ__UpgradedSubscription__r.Zuora_MRR__c / SBQQ__UpgradedSubscription__r.SBQQ__Quantity__c,
+      TieredMRR__c / 
+      IF(
+        CONTAINS(Product_Name__c, ""Stakeholder""),
+        1,
+        SBQQ__Quantity__c
+      ) / 
+      IF(
+        AND(
+          SBQQ__Product__r.fml_MixedPriceFormat__c,
+          SBQQ__Quote__r.NonAnnual__c
+        ),
+        12,
+        1
+      )
+    ),
+    IF(
+      AND(
+      NOT(ISBLANK(SBQQ__SubscriptionPercent__c)) ,
+      Product_Name__c != ""Visibility Site License""
+      ),                                            /* Added for Percent of total products */
+                                                  /* Streamlined Else Condition for BAEO2C-67 */
+       SBQQ__ListPrice__c * (1 - BLANKVALUE(SBQQ__Discount__c, 0)) / 12 * 
+                /* BAEO2C-119-> this removes multiplication of partner margin on % of ARR pricing */         
+       IF(
+          AND( RemoveMinimumPrice__c = FALSE ,
+          IncludeInPercentOfTotalRollup__c * CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 0.15 , 'PSSGLD-SE-SS-CPQ' , 0.2 , 0.1 ) + 
+          BLANKVALUE( SBQQ__UpgradedSubscription__r.Subscription_MRR_Excluding_Maintenance__c , 0) * 12 * CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 0.15 , 'PSSGLD-SE-SS-CPQ' , 0.2 , 0.1 ) <= 
+          CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 25000 , 'PSSGLD-SE-SS-CPQ' , 100000 , 5000 ) 
+       ), 
+          (1 - BLANKVALUE(fml_PartnerMargin__c, 0)) , 
+          1
+       ) , 
+ 
+      IF(
+        ISBLANK(SBQQ__UpgradedSubscription__c),
+        fml_Custom_Customer_Price__c / SBQQ__Quantity__c,
+        SBQQ__UpgradedSubscription__r.Zuora_MRR__c / SBQQ__UpgradedSubscription__r.SBQQ__Quantity__c /* Updated based on BAED-985 */
+      )
+    )
+  )
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004lWMAAY20200910170259Z20200910170254Z
+25cdeda0-639e-4806-be7d-f2061f585a9c,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,Multi_Year_Billed_all_Upfront__c,"IF(OR(EarlyRenewal__c, ScheduledRenewal__c, Override_Multi_Year_Billed_Upfront__c ), Multi_Year_Billed_all_Upfront__c, fml_Master_Contract_Billed_Upfront__c)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+26367af1-2c69-4f0a-8f20-9ced16b0ca5f,USD,cbe97e6c-04f8-4a66-83d8-1758568041ba,DiscountApprovalLevel__c,#N/A,#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004j7IAAQ20200124193655Z20200124193653Z
+27007e20-372d-4cd5-9d13-32a9523b8e8c,USD,8cfecd5a-416e-43db-b15c-35e9ba976333,SBQQ__ListPrice__c,"IF(
+    AND(
+        !ISBLANK( SBQQ__SubscriptionPercent__c ) ,
+        SBQQ__ProductName__c != 'Visibility Site License' , 
+        fml_QuoteIsEarlyRenewal__c = FALSE,
+        ISPICKVAL( SBQQ__Quote__r.SBQQ__Type__c , 'Amendment') ,
+        fml_SubscriptionQuantity__c > 0
+    ) ,
+
+    IF(
+
+/* Amend Context and Validates if TCV < 25k/100k and returns Previous List Price, else returns rollup * % of net tcv */
+
+        AND(
+            !RemoveMinimumPrice__c , 
+            IncludeInPercentOfTotalRollup__c * CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 0.15 , 'PSSGLD-SE-SS-CPQ' , 0.2 , 0.1 ) + BLANKVALUE( SBQQ__UpgradedSubscription__r.Subscription_MRR_Excluding_Maintenance__c , 0) * 12 * CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 0.15 , 'PSSGLD-SE-SS-CPQ' , 0.2 , 0.1 ) <= CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 25000 , 'PSSGLD-SE-SS-CPQ' , 100000 , 5000 ) 
+        ) ,
+
+        SBQQ__UpgradedSubscription__r.SBQQ__CustomerPrice__c / (1 - BLANKVALUE( TotalDiscountCustom__c , 0) ) / Original_Quote_Prorate_Multiplier__c ,
+
+        IF( 
+            SBQQ__SubscriptionPercent__c = 0,      /* Amend Context and Ensures Expert Services with 0% add on shift/retain net price */
+            SBQQ__UpgradedSubscription__r.SBQQ__CustomerPrice__c / (1 - BLANKVALUE( TotalDiscountCustom__c , 0) ) / Original_Quote_Prorate_Multiplier__c ,
+            SBQQ__SubscriptionPercent__c * 
+            (
+            IncludeInPercentOfTotalRollup__c -
+            IF(
+                AND( 
+                    fml_PercentOfTotalMinPriceAdjustment__c > 0,
+                    !RemoveMinimumPrice__c ,   /* Note Adjustment is only for shift from Minimum Price -> % of Total ARR Pricing */
+                    BLANKVALUE( SBQQ__UpgradedSubscription__r.Subscription_MRR_Excluding_Maintenance__c , 0) * 12 * CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 0.15 , 'PSSGLD-SE-SS-CPQ' , 0.2 , 0.1 ) <= CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 25000 , 'PSSGLD-SE-SS-CPQ' , 100000 , 5000 ) 
+                ),                  
+                fml_PercentOfTotalMinPriceAdjustment__c, 0
+            )
+            ) + SBQQ__UpgradedSubscription__r.SBQQ__CustomerPrice__c / (1 - BLANKVALUE( TotalDiscountCustom__c , 0) ) / Original_Quote_Prorate_Multiplier__c
+
+                /* IncludeInPercentOfTotalRollup__c is prorated + Subscription List Price */
+
+        )
+    ) , /* End of initial IF Amend conditions, to Else for New Busines/Renewals */
+
+    IF( 
+        /* This is NewBusiness/Renewal and Validates if Quote > 25k/100k and returns percent of total price, else returns original list price */
+
+        OR(
+            RemoveMinimumPrice__c ,
+            IncludeInPercentOfTotalRollup__c * CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 0.15 , 'PSSGLD-SE-SS-CPQ' , 0.2 , 0.1 ) >= CASE ( ParentOptionProductCode__c , 'PSSSLV-SE-SS-CPQ' , 25000 , 'PSSGLD-SE-SS-CPQ' , 100000 , 5000 ) 
+        ) ,
+        SBQQ__SubscriptionPercent__c * IncludeInPercentOfTotalRollup__c ,
+        SBQQ__OriginalPrice__c
+    )
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004mNRAAY20201027174611Z20201027174606Z
+275f6ce6-d8a9-4168-bae0-c54952ce3e01,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Credit_Memo_Template__c,"IF(fml_Use_Japan_Address__c,
+'Japan CM Template - JPY Tax',
+'PagerDuty Credit Memo'
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+27c94bec-1f5b-4ecd-bc6a-d102d9b1b80b,USD,affe9610-891f-41d9-a488-0ef54d458883,NumberOfJeliProducts__c,#N/A,#N/A,true,#N/A,true,#N/A,70a2a42c-4ddc-497a-948e-5d97a6706f64,Quote,#N/A,#N/A,#N/A
+2948e747-d26d-4880-ae29-ca28ee41eea9,USD,98420a6a-728a-424c-aa8e-01e08be33488,NumberOfBaseProductLineItems__c,#N/A,#N/A,true,#N/A,true,#N/A,dd833ff2-8952-4c18-be4b-1d58ec6085ac,Quote,#N/A,#N/A,#N/A
+2a6b90bb-ac4f-4bb5-a43a-aba93a718a66,USD,76c94117-15f6-4a58-90bd-220db4f12465,TermPeriod__c,"IF(MOD(ROUND(Master_Prorate_Multiplier__c*1,4),1) = 0, ""Month"", ""Day"")",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+2ab7c745-7669-4cd8-af9b-a74dd6fca006,USD,56e9f553-a512-4813-aaa7-d9c635437718,Subsidiary__c,"IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'01 PagerDuty, Inc.',
+'08 PagerDuty K.K. Japan'
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+2b7e526a-7db8-4eac-9e13-94365fa42287,USD,d82fb2ee-5d19-4f0a-9cd2-068bc74fe381,SBQQ__PartnerDiscount__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,#N/A
+2e89a637-a004-4eb3-b362-c1fa34914ec1,USD,0f772193-b1ad-499b-9a75-52653cba05cb,SBQQ__ExpirationDate__c,SBQQ__Opportunity2__r.CloseDate,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+320c791e-4de2-4c7c-855e-8f7b323b31be,USD,a317b2d7-4f00-48e1-bbf2-9740fdbaefed,OLI_Effective_Net_Price__c,"CASE( SBQQ__Quote__r.Billing_Frequency2__c,
+'Semiannual', 2*EffectiveNetPrice__c, 'Quarterly',4*EffectiveNetPrice__c,1*EffectiveNetPrice__c)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004k6pAAA20200505193826Z20200505193823Z
+3226ddcb-c7df-4f64-aebb-1ea257039818,USD,99e826e5-882a-4621-a20a-7152b16d2b00,SBQQ__ListPrice__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,1890,#N/A
+341e5332-6da8-44ee-992b-025a0d519d0b,USD,9c6d36f2-cd80-4a6b-82ce-af8c6ab3b646,SBQQ__ListPrice__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,159,#N/A
+35ad3378-ccc5-46f6-96ad-bf9c54c88fcd,USD,0fd3ba6b-c655-47bb-982f-2e9b67f48ae5,SBQQ__Discount__c,#N/A,#N/A,true,#N/A,true,#N/A,9ee05575-03a1-486a-a7f7-dc4c3f94fb71,Quote Line,#N/A,#N/A,#N/A
+3622189b-81ad-4a7e-b827-d5847e5cb501,USD,e5d2a435-1c35-497b-a937-2624e9c24ff2,DiscountApprovalMatrix__c,#N/A,#N/A,false,Discount_Approval_Matrix_FY22__c,true,Id,#N/A,Quote Line,#N/A,#N/A,a83110000004oBoAAI20210225090321Z20210225090318Z
+36ecef59-f642-43e5-a680-0a66eb5d5186,USD,f13b4db9-4a98-4b1a-b272-04428ef61bcc,NumberOfCatalyticProducts__c,#N/A,#N/A,true,#N/A,true,#N/A,fe7e5363-6e47-4018-930a-29993f500d84,Quote,#N/A,#N/A,#N/A
+3773b386-1f8d-4dd3-ad68-8673151646b4,USD,0e3c97cf-39b2-4468-81ac-e9280f9f8f4d,SBQQ__BillingFrequency__c,Billing_Frequency2__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+38f846a0-4f9c-4d8a-bf7e-1e3859b1e24e,USD,1168e43a-a6b7-484f-8f90-44bba76ae339,DiscountApprovalLevel__c,#N/A,20.0,false,NewBusinessBase__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+392e16f9-1b1d-4750-8370-fef0564e508b,USD,e6942c80-94a6-4c51-b562-cad78e6b24f0,Approvals__c,"IF( DiscountApprovalLevel__c = 0 , (IMAGE('https://i.imgur.com/uGyA3mR.png',"""",30,30)+"" OK""), 
+IF( DiscountApprovalLevel__c = 10, (IMAGE('https://i.imgur.com/TkIQnZs.png',"""",30,30)+"" Manager""), 
+IF( DiscountApprovalLevel__c = 20, (IMAGE('https://i.imgur.com/1n9ymzx.png',"""",30,30)+"" VP""), 
+IF( DiscountApprovalLevel__c = 30, (IMAGE('https://i.imgur.com/OrdVaMw.png',"""",30,30)+"" CRO""), 
+IF( DiscountApprovalLevel__c = 40, (IMAGE('https://i.imgur.com/tf5ZPsd.png',"""",30,30)+"" CEO""), """"))))) ",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+3c661a0c-8ac3-434d-9543-6bc8fe1b5dae,USD,f94cc1f6-738f-4b5f-b085-03219e3c7cef,Quoted_Term_Period__c,TermPeriod__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004kdhAAA20200707193902Z20200707193900Z
+3cb82ab3-56c3-4ad5-a11e-e83f5d0fddf7,USD,ef34467c-8a70-45e3-b49d-35b5f434c05f,EffectiveNetPrice__c,"IF( 
+   SBQQ__Quote__r.NonAnnual__c, 
+   Net_Price_3__c, 
+IF(
+   OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Quote') || (ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c && SBQQ__Quote__r.NonAnnual__c = FALSE)
+      ),
+   (Net_Price_3__c * 12 ) / CASE( SBQQ__Quote__r.Billing_Frequency2__c, 'Semiannual', 2 , 'Quarterly', 4, 1) ,
+IF(
+   ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && 
+ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Month') && SBQQ__UpgradedSubscription__c = NULL,
+(Net_Price_3__c * 12 )/CASE( SBQQ__Quote__r.Billing_Frequency2__c,
+'Semiannual', 2 , 'Quarterly' , 4 , 1) ,
+IF(
+   ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Day') && SBQQ__UpgradedSubscription__c = NULL,
+   Net_Price_3__c,
+
+IF(
+   OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && SBQQ__UpgradedSubscription__c <> NULL), 
+   (Net_Price_3__c * 12 )/CASE( SBQQ__Quote__r.Billing_Frequency2__c,
+'Semiannual', 2 , 'Quarterly' , 4 , 1)    ,
+   Net_Price_3__c /CASE( SBQQ__Quote__r.Billing_Frequency2__c,
+'Semiannual', 2 , 'Quarterly' , 4 , 1) 
+
+)))))",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004mRPAAY20201111233320Z20201111233316Z
+3e6b9ee6-f25b-42e8-856a-ad6a89d9f2c2,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Communication_Profile__c,"IF(
+NOT(ISBLANK(SBQQ__Partner__c)),
+'Reseller Communication Profile',
+IF(
+AND(
+ISBLANK(SBQQ__Partner__c),
+SBQQ__MasterContract__r.Communication_Profile__c = 'Reseller Communication Profile'
+),
+'Invoice Customer Communication Profile',
+SBQQ__MasterContract__r.Communication_Profile__c
+)
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+404cb2d9-d685-4034-89e8-5cd3028f2bad,USD,ef3a0009-e6a6-4793-b904-22b1ca2dc62b,EffectiveNetPrice__c,"IF( SBQQ__Quote__r.NonAnnual__c, SBQQ__NetPrice__c, IF(
+ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Quote') || ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Renewal') || (ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c),
+SBQQ__NetPrice__c,
+
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Month') && SBQQ__UpgradedSubscription__c = NULL,
+SBQQ__NetPrice__c,
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Day') && SBQQ__UpgradedSubscription__c = NULL,SBQQ__NetPrice__c,
+
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && SBQQ__UpgradedSubscription__c <> NULL, Effective_Amended_Net_Price__c,
+SBQQ__NetPrice__c )))))",#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+40ceea0f-a79c-4cce-8bac-cfd7b5c9c701,USD,1370a088-7cce-47eb-9f43-a9429f14ce21,UpgradedSubscriptionMRR__c,SBQQ__UpgradedSubscription__r.Zuora_MRR__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+44bd952f-9616-44e6-b9f6-274b61923698,USD,c0bb0c4b-026d-4115-8bd0-8957b6269fc7,Multi_Year_Billed_all_Upfront__c,FALSE,#N/A,false,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004nlcAAA20210204214436Z20210204214432Z
+45d3eb11-cb47-44c2-8330-7397c645cb37,USD,e8b89118-48ed-434d-9a57-a117bac6a903,Is_Rundeck_Only__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,FALSE,a83110000004pipAAA20210429172458Z20210429172454Z
+468ba511-8e56-45c6-a8eb-0459c9f4ef2a,USD,7c36bc6b-5900-4ac4-9572-6c30dec5c898,Is_Rundeck_Only__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,a83110000004pipAAA20210429172458Z20210429172454Z
+48495a60-f086-435c-ad00-8511aeabfe0b,USD,e8b89118-48ed-434d-9a57-a117bac6a903,AutoRenew__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,a83110000004piuAAA20210429175308Z20210429175304Z
+48fc566f-d20f-48ff-aef3-a113a49bb9fc,USD,f14bbd02-a627-43a0-af21-97e948cc5f17,Non_Annual_Subscription__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Annual__c,true,NonAnnual__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+492ed0b9-5c6c-4a70-a267-033d09d8a838,USD,6a38d05f-e9a0-4a0b-96ff-ab07ac958463,Number_of_QLIs__c,#N/A,#N/A,true,#N/A,true,#N/A,31a211ec-98bf-444c-8d43-524e63b2a256,Quote,#N/A,#N/A,#N/A
+4b6da2ff-4ddb-4b9c-b75d-427fbd73049d,USD,2e5d15fb-8f40-4b50-aba7-0571d8701e1d,ExistingBusinessApprovalWaiver__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,1,a83110000004oByAAI20210225101749Z20210225101746Z
+4bdda135-f3db-44ac-9a95-acea084bd5ae,USD,993493d9-3deb-4306-85d2-b709b870f1f6,Multi_Year_Billed_all_Upfront__c,TRUE,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004nlcAAA20210204214436Z20210204214432Z
+4ce49dd2-9c85-4171-9d98-d16f94934257,USD,1a63ddd1-ac4a-4b93-8ff4-78b3737e1179,DiscountApprovalLevel__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004jXBAAY20200318062001Z20200318061959Z
+4cf46264-ab26-427e-9562-4df5c25e6ac3,USD,ff0870fd-eb6e-44fb-be9f-a8b7b53a9f4f,DiscountApprovalLevel__c,#N/A,#N/A,false,AI_Ops_Discount_Approval_Matrix__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+4d237a9f-d8e9-4e56-b294-251e82b0da68,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,Communication_Profile__c,"IF(
+ISBLANK(SBQQ__Partner__c),
+IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'Invoice Customer Communication Profile',
+'Japan Customer Communication Profile'
+),
+IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'Reseller Communication Profile',
+'Japan Reseller Communication Profile'
+)
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+4fc7b811-2ee1-404f-8a85-8fe327d2d686,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,TermPeriod__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,Day,a83110000004j8GAAQ20200130200514Z20200130200512Z
+53fdd2ad-835b-4875-9cd2-013be59b9657,USD,0f8973de-3091-4e0f-a4ff-e9dbd7880567,PDAnalyticsQuantity__c,#N/A,10.0,true,#N/A,true,#N/A,62a6d8d1-bf25-4ea8-9548-c40d6aa743b2,Quote,#N/A,#N/A,#N/A
+56e57f12-7ab6-466d-ac1e-0a811e3922f4,USD,3e32d836-9987-42d4-bfe6-0b8810236a32,SBQQ__ShippingCity__c,ShipToContact__r.MailingCity,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+57748bf9-bb0b-4928-ad4e-ea5842664595,USD,4be9a98a-591d-4dbc-8fc7-2ed011339614,MaxQuantityOfPrimaryBaseProducts__c,#N/A,#N/A,true,#N/A,true,#N/A,830c5943-b702-4376-94ab-808e487a6f8b,Quote,#N/A,#N/A,#N/A
+593488cd-80b9-4484-85dd-dad2978bf583,USD,1142d3eb-3a4c-46b3-a781-c5d9ea9e7201,One_Time_Credit__c,-1 * One_Time_Credit__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004mkaAAA20201217172202Z20201217172158Z
+59ffdf3a-20b2-4bfe-846d-d75031772702,USD,d0127b1b-66a1-4376-8725-e3d1d7f0a57b,DiscountApprovalLevel__c,#N/A,#N/A,true,Usage_Discount_Approval_FY26__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+5dafb6d8-b53c-4155-ac2c-76b3319a70f1,USD,e5d2a435-1c35-497b-a937-2624e9c24ff2,DiscountApprovalLevel__c,#N/A,#N/A,false,Discount_Approval_Matrix_FY22__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,a83110000004oBtAAI20210225090426Z20210225090423Z
+5e0d9067-d9cd-41f7-900c-283e30afe1e7,USD,6c0cfbbe-93de-4644-83c2-271ba81f85f6,SBQQ__StartDate__c,TODAY(),#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004jyqAAA20200430223316Z20200430223313Z
+5f04f09e-5c09-4b8a-aec2-0f5b40db56f9,USD,993493d9-3deb-4306-85d2-b709b870f1f6,NonAnnual__c,TRUE,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004nlcAAA20210204214436Z20210204214432Z
+5f16a28b-46e8-49da-90c5-d815b1b80c66,USD,881d167a-ddf5-42c4-9d93-4d6190290100,DiscountApprovalLevel__c,#N/A,#N/A,true,SBQQ__QuoteLine__c,true,#N/A,#N/A,Quote Line,#N/A,0,#N/A
+5fc1a084-1f08-4530-bbc3-a2812e9a307f,USD,8c282707-ca45-41dc-ae21-1ad5440a2064,Is_Rundeck_Only__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+602151c6-4875-4ffb-86ec-d3a66bc1bf0c,USD,f0591ae3-a891-4ec7-8523-bb07add807e9,NonAnnual__c,TRUE,#N/A,false,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004nlcAAA20210204214436Z20210204214432Z
+61de5374-8e5e-4fa2-94b1-22c528670412,USD,a0fbc184-49d8-4360-a21b-8503f82ab8eb,SBQQ__Quantity__c,QuantityOfBase__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+65e6102b-d6dd-4d76-bf68-434cc57c4611,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,SBQQ__Discount__c,"IF(
+    AND(
+             SBQQ__Discount__c > 0,
+             TEXT( SBQQ__PricingMethod__c ) <> 'Block'
+    ),
+    0,
+    SBQQ__Discount__c
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+68ece76c-c0e4-4265-aa8f-1507ae73bf4a,USD,bebfe4e2-0990-465e-881a-35e4d2caa714,PackagePercentOfTotalContribution__c,#N/A,#N/A,true,Percent_Of_Total_Bundles_Amendment__c,true,PackagePercentOfTotalContribution__c,#N/A,Quote Line,#N/A,#N/A,a83110000004meaAAA20201211181528Z20201211181525Z
+69651f3c-0232-4201-9c31-08de8a39e808,USD,0911f057-08f5-4f7a-a829-14852c7d9a71,DiscountApprovalMatrixRundeckCluster__c,#N/A,#N/A,false,Discount_Approval_Matrix_Rundeck_Cluster__c,true,Id,#N/A,Quote Line,#N/A,#N/A,a83110000004qNjAAI20210601044154Z20210601044151Z
+6aec0b60-c31b-42c8-b2fe-7f439bb082b6,USD,8156babd-7724-4fdd-8e0d-fa06b0820fdd,SBQQ__ListPrice__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,630,#N/A
+6b460869-b8d7-42fa-ad13-8ec841fe97be,USD,999b8e7c-26c1-4968-ba93-ed7ef3a6130c,ParentBundleID__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Semi_Annual__c,true,ParentBundleID__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B9LAAU20190918193615Z20190918193613Z
+6cd6c186-be72-4184-9d59-c84e1eb80c03,USD,76c94117-15f6-4a58-90bd-220db4f12465,NonAnnual__c,"!(IF(
+OR(
+EarlyRenewal__c,
+ScheduledRenewal__c,
+evergreent_to_termed__c,
+ISBLANK(ZSubscriptionId__c)
+),
+OR(
+AND(
+DAY(SBQQ__EndDate__c + 1) = DAY(SBQQ__StartDate__c),
+MONTH(SBQQ__EndDate__c + 1) = MONTH(SBQQ__StartDate__c)
+), /**Below acounts for the start date being on a leap year day, by adding one to both the end and start it should push both to be 3/1*/
+AND(
+DAY(SBQQ__EndDate__c) <> DAY(SBQQ__StartDate__c),
+DAY(SBQQ__EndDate__c + 1) = DAY(SBQQ__StartDate__c + 1),
+MONTH(SBQQ__EndDate__c + 1) = MONTH(SBQQ__StartDate__c + 1)
+)
+),
+OR(
+AND(
+DAY(SBQQ__EndDate__c + 1) = DAY(SBQQ__MasterContract__r.StartDate),
+MONTH(SBQQ__EndDate__c + 1) = MONTH(SBQQ__MasterContract__r.StartDate)
+), /**Below acounts for the start date being on a leap year day, by adding one to both the end and start it should push both to be 3/1*/
+AND(
+DAY(SBQQ__EndDate__c) <> DAY(SBQQ__MasterContract__r.StartDate),
+DAY(SBQQ__EndDate__c + 1) = DAY(SBQQ__MasterContract__r.StartDate+ 1),
+MONTH(SBQQ__EndDate__c + 1) = MONTH(SBQQ__MasterContract__r.StartDate+ 1)
+)
+)
+)
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a830t0000000BCUAA220191009182234Z20191009182232Z
+6cdfb074-74c7-4497-a838-4740ce8da9fa,USD,ea5ace91-34c3-41f9-a1fc-40adf322df50,PDAnalyticsSold__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,a83110000004j7SAAQ20200125020311Z20200125020308Z
+6ce68c19-3346-435a-a35c-66eb056106f0,USD,047410ca-4ab8-4d55-9d25-348e2d71b48b,ServicesDiscountApprovalLevelRollup__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,0,a83110000004shBAAQ20211118204059Z20211118204054Z
+6d032068-159f-4887-913e-35e93610e47f,USD,188aee21-5a89-4bae-88f2-7c38cafa7bc3,PDorg__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,FALSE,#N/A
+6e0e3f72-eea2-4851-aca9-e0afd88de849,USD,6b430437-f9f9-428c-abb7-9c839bd6dfc7,NumberOfExpertServicesProducts__c,#N/A,1.0,false,#N/A,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,Quote,#N/A,#N/A,#N/A
+6ee20a83-ca64-436b-82e0-f6c43f47969f,USD,1e00b1ea-be3c-4724-bf57-b182332cc0fa,X100DiscountRequiresApproval__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,1,a83110000004rnCAAQ20210803231815Z20210803231811Z
+6f023491-899d-441a-8b4d-0dc4724a0575,USD,9f46e99a-8a54-4985-9593-3d132c5900c8,IncludeInPercentOfTotalRollup__c,#N/A,#N/A,true,#N/A,true,#N/A,1c681a9f-e42d-417f-b351-a7f6f316e248,Quote Line,#N/A,#N/A,a83110000004n5NAAQ20210112230344Z20210112230340Z
+6fd2145e-d04e-4027-a170-01551b6a6c81,USD,3774da80-839f-430f-89be-421966527f46,SBQQ__Discount__c,#N/A,#N/A,true,#N/A,true,#N/A,0d462a38-07b6-470a-b759-132664ff5303,Quote Line,#N/A,#N/A,a83110000004lGoAAI20200818040851Z20200818040848Z
+7289ba4a-33f6-4b8a-8e9e-43b46adfadeb,USD,5293eb00-c054-44ab-b4e7-a7f7f61483f9,NonAnnual__c,TRUE,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+7853a178-ea3b-41a7-be41-7f780381d7ec,USD,3a9120ce-a4e1-4134-879c-3e3d4fa93cbc,ExpirationDateisafterStartDate__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,FALSE,#N/A
+792f3261-fd03-444a-a915-d82392584615,USD,a807a298-6f70-46d4-8997-5fcdbc7c703d,ExpertServicesDiscount__c,#N/A,1.0,true,SBQQ__QuoteLine__c,true,#N/A,0c99a67d-2630-4cf4-b101-ef0863d85e1e,Quote,#N/A,#N/A,#N/A
+7adc64bf-f9b3-4270-9887-f1115c58a2af,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,Zuora_Invoice_Template__c,"IF(
+ISBLANK(SBQQ__Partner__c),
+IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'Sales Assisted Invoice',
+'Japan Sales Assisted Invoice - JPY Tax'
+),
+IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'Reseller Invoice Template',
+'Japan Reseller Invoice - JPY Tax'
+)
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+7be4e483-5706-47a7-9665-3931682377e0,USD,1370a088-7cce-47eb-9f43-a9429f14ce21,UpgradedSubscriptionNetPrice__c,SBQQ__UpgradedSubscription__r.SBQQ__NetPrice__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004oPIAAY20210226212147Z20210226212144Z
+7d030867-effd-452c-b1be-53447f5b0297,USD,56e9f553-a512-4813-aaa7-d9c635437718,TaxCompanyCode__c,"IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+IF( IsSandbox__c, 'PDINC-SBX' , 'PDINC' ),    /* IF function Appended -SBX for BAESIC-755 */ 
+IF( IsSandbox__c , 'PAGERDUTYKKJAPAN-SBX' , 'PAGERDUTYKKJAPAN' )
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+80955b75-a1be-4307-8e92-3967518ad74c,USD,7c36bc6b-5900-4ac4-9572-6c30dec5c898,AutoRenew__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,FALSE,a83110000004piuAAA20210429175308Z20210429175304Z
+81bdec10-4356-4c6e-9d5b-fb7f83c3b014,USD,5d9a94fe-edcc-457a-8af9-2bdbc027f1f8,InitialTerm__c,"IF(
+ISPICKVAL(SBQQ__Type__c, 'Quote') || ISPICKVAL(SBQQ__Type__c, 'Renewal') || (ISPICKVAL(SBQQ__Type__c, 'Amendment') && EarlyRenewal__c),
+SBQQ__SubscriptionTerm__c + IF(AND(NonAnnual__c, 
+
+/* There is at least a 7 year difference between the 2 years Ex: 2096 - 2103*/
+IF (OR(AND(MONTH(SBQQ__EndDate__c) = 2, DAY(SBQQ__EndDate__c)=29), /*BAED-2044*/
+     YEAR(SBQQ__EndDate__c) - YEAR(SBQQ__StartDate__c) >= 7),
+    TRUE,
+  
+  /* Start Date is a leap year */
+    IF((MOD(YEAR(SBQQ__StartDate__c),4) = 0 && (MOD(YEAR(SBQQ__StartDate__c),100) != 0 || MOD(YEAR(SBQQ__StartDate__c),400) = 0)), 
+        MONTH(SBQQ__StartDate__c) < 3,
+       
+ /* End Date is a leap year */
+        IF ((MOD(YEAR(SBQQ__EndDate__c),4) = 0 && (MOD(YEAR(SBQQ__EndDate__c),100) != 0 || MOD(YEAR(SBQQ__EndDate__c),400) = 0)),
+            MONTH(SBQQ__EndDate__c) > 2,
+            OR(
+               
+ /* Diff between Start Date and End Date is 1 year and that year is a leap year */
+                (YEAR(SBQQ__EndDate__c) - YEAR(SBQQ__StartDate__c) = 2  && MOD(YEAR(SBQQ__StartDate__c)+1,4) = 0 && (MOD(YEAR(SBQQ__StartDate__c)+1,100) != 0 || MOD(YEAR(SBQQ__StartDate__c)+1,400) = 0)),
+                
+/* There is at least a 3 year difference between the 2 years Ex: 2094 - 2100 AND account for the year having to be divisible by 400 if div by 100*/
+
+                ((YEAR(SBQQ__EndDate__c) - YEAR(SBQQ__StartDate__c) >= 3) && ( ( MOD(YEAR(SBQQ__StartDate__c),100) >=4 && MOD(YEAR(SBQQ__StartDate__c),100) <= 96) || MOD(YEAR(SBQQ__EndDate__c),100) >= 4 ))
+            )
+        )
+    )
+)) ,1,0),
+
+IF(ISPICKVAL(SBQQ__Type__c, 'Amendment') && EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.ContractTerm,0))",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+81bf9789-6cef-482b-9c59-9ee503cbcd4d,USD,5e670777-4737-4962-8241-9423ad257373,EffectiveNetPriceOverride__c,SBQQ__UpgradedSubscription__r.fml_CalculatedEffectiveNetPrice__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+88ba41a1-2013-4fe8-8889-c38faab7c4a3,USD,bebfe4e2-0990-465e-881a-35e4d2caa714,SBQQ__SubscriptionPercent__c,#N/A,#N/A,true,Percent_Of_Total_Bundles_Amendment__c,true,PercentOfTotal__c,#N/A,Quote Line,#N/A,#N/A,a83110000004me6AAA20201210202127Z20201210202124Z
+89459ca8-a397-4f9e-b974-7fb36d0efd1e,USD,44b38296-d2ca-4a31-a92f-41250e28b1b7,InvoiceToContact__c,BillToContact__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+8c302130-59f7-4db7-a9f7-25bbd4385614,USD,bd36be01-51b4-4d65-a1ee-1a070c84f836,DiscountApprovalLevel__c,"IF( CONTAINS( SBQQ__ProductName__c , ""TAM"") && TotalDiscountCustom__c > 0.45 , 30 , 
+IF( TotalDiscountCustom__c > 0.70 , 30 , 
+IF( CONTAINS( SBQQ__ProductName__c , ""TAM"") && TotalDiscountCustom__c > 0.3 , 25 ,
+IF( TotalDiscountCustom__c > 0.45 , 25 ,
+IF( TotalDiscountCustom__c > 0.25 , 20 ,
+IF( TotalDiscountCustom__c > 0.2 , 10 , NULL )
+)))))",#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004qNtAAI20210601174402Z20210601174357Z
+8cb225e4-4c4e-4d1b-b370-00fd1b9603fe,USD,ddf02164-adfd-44f9-baa1-2c9e92abceae,Quoted_Term__c,InitialTerm__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+900383bc-d699-4d8d-b597-1644f6202254,USD,0911f057-08f5-4f7a-a829-14852c7d9a71,DiscountApprovalLevel__c,#N/A,#N/A,false,Discount_Approval_Matrix_Rundeck_Cluster__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,a83110000004qNeAAI20210601044115Z20210601044111Z
+900cc1de-8796-417c-a692-3330c57f2996,USD,355266b0-d544-48e7-b08f-77a1fd8d859d,EffectiveNetPrice__c,"IF( SBQQ__UpgradedSubscription__c = NULL,
+ NetPriceMonthly__c,Effective_Amended_Net_Price__c
+)",#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a830t0000000BCeAAM20191015055839Z20191015055835Z
+905629e1-d7df-42e6-8bb7-b0d54d8ae589,USD,85789319-e606-4940-ba8b-a9ec21bb6b38,DiscountApprovalLevel__c,#N/A,#N/A,false,NewBusinessAddOn__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+92dadb67-cc80-4296-bed6-cb3911855652,USD,6fa8d231-176f-444f-bd6a-7538ef4e243e,PDUDiscount__c,#N/A,1.0,true,SBQQ__QuoteLine__c,true,#N/A,5017ccaa-8332-4bc8-905d-6ceb7fdafc11,Quote,#N/A,#N/A,#N/A
+931e66da-ee31-4751-ab2e-d7c3eab5a3f1,USD,85b34c96-e511-40ca-a69f-212fbdf24d81,ServicesDiscountApprovalLevelRollup__c,#N/A,#N/A,true,#N/A,true,#N/A,0c99a67d-2630-4cf4-b101-ef0863d85e1e,Quote,#N/A,#N/A,a83110000004sXLAAY20210929172755Z20210929172750Z
+94028aae-d804-4bd0-b18d-5b0e52326897,USD,33a81dc3-5e53-4df1-9174-9177a20609d8,NumberOfExpertServicesProducts__c,#N/A,1.0,true,#N/A,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,Quote,#N/A,#N/A,a830t0000000B8wAAE20190911223021Z20190911223019Z
+94adeea1-5de9-4fe8-ae32-f6417719dbbc,USD,895c2753-47af-4917-9124-4bc3c9ea087a,EffectiveNetPrice__c,"IF( SBQQ__Quote__r.NonAnnual__c, NetPriceMonthly__c, IF(
+OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Quote') ||
+(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') &&  SBQQ__Quote__r.EarlyRenewal__c &&  SBQQ__Quote__r.NonAnnual__c  = FALSE)),
+Custom_Net_Unit_Price__c/ Order_Form_Quantity__c/ CASE( SBQQ__Quote__r.Billing_Frequency2__c, 
+ 'Semiannual', 2*SBQQ__ProrateMultiplier__c,                                                                                  'Quarterly',4*SBQQ__ProrateMultiplier__c,1*SBQQ__ProrateMultiplier__c) ,
+
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE &&  ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Month') && SBQQ__UpgradedSubscription__c = NULL,
+ (NetPriceMonthly__c * SBQQ__Quote__r.InitialTerm__c)/CASE( SBQQ__Quote__r.Billing_Frequency2__c, 
+ 'Semiannual', 2*SBQQ__Quote__r.Master_Prorate_Multiplier__c, 
+'Quarterly',4*SBQQ__Quote__r.Master_Prorate_Multiplier__c,1*SBQQ__Quote__r.Master_Prorate_Multiplier__c) , 
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE &&  ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Day') && SBQQ__UpgradedSubscription__c = NULL,NetPriceMonthly__c,
+
+IF(
+OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && SBQQ__UpgradedSubscription__c <> NULL), Effective_Amended_Net_Price__c,
+Custom_Net_Unit_Price__c/12/SBQQ__ProrateMultiplier__c)))))",#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a830t0000000BCeAAM20191015055839Z20191015055835Z
+94e1d75f-c4d6-4def-b75b-6bb4ebbdd572,USD,f0591ae3-a891-4ec7-8523-bb07add807e9,Multi_Year_Billed_all_Upfront__c,TRUE,#N/A,false,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004nlcAAA20210204214436Z20210204214432Z
+95a2cc3f-c5a9-4a22-8462-22366e5c9257,USD,ee0c21f6-b001-4493-9f78-4218bf0f7638,X100DiscountRequiresApproval__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004sW0AAI20210921034432Z20210921034427Z
+95e9eeec-c5b6-4a6c-ae8e-dab0cb2ae35b,USD,6c0cfbbe-93de-4644-83c2-271ba81f85f6,SBQQ__EndDate__c,TODAY () + 364,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004jyvAAA20200430223404Z20200430223401Z
+98278561-e191-4d73-b5d6-c623f3f0c100,USD,430d846e-16bd-4a22-b44a-8fea0820bfce,EffectiveNetPrice__c,"IF( SBQQ__Quote__r.NonAnnual__c, fml_NetPriceNonAnnual__c, IF(
+OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Quote') ||
+(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') &&  SBQQ__Quote__r.EarlyRenewal__c &&  SBQQ__Quote__r.NonAnnual__c  = FALSE)),
+Custom_Net_Unit_Price__c / CASE( SBQQ__Quote__r.Billing_Frequency2__c, 
+ 'Semiannual', 2*SBQQ__ProrateMultiplier__c,                                                                                  'Quarterly',4*SBQQ__ProrateMultiplier__c,1*SBQQ__ProrateMultiplier__c) ,
+
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE &&  ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Month') && SBQQ__UpgradedSubscription__c = NULL,
+ (NetPriceMonthly__c * BLANKVALUE(SBQQ__Quote__r.InitialTerm__c,1))/CASE( SBQQ__Quote__r.Billing_Frequency2__c, 
+ 'Semiannual', 2*SBQQ__Quote__r.Master_Prorate_Multiplier__c, 
+'Quarterly',4*SBQQ__Quote__r.Master_Prorate_Multiplier__c,1*SBQQ__Quote__r.Master_Prorate_Multiplier__c) , 
+IF(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE &&  ISPICKVAL(SBQQ__Quote__r.TermPeriod__c,'Day') && SBQQ__UpgradedSubscription__c = NULL,fml_NetPriceNonAnnual__c,
+
+IF(
+OR(ISPICKVAL(SBQQ__Quote__r.SBQQ__Type__c, 'Amendment') && SBQQ__Quote__r.EarlyRenewal__c = FALSE && SBQQ__UpgradedSubscription__c <> NULL), Effective_Amended_Net_Price__c,
+Custom_Net_Unit_Price__c/12/SBQQ__ProrateMultiplier__c)))))",#N/A,false,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+98db80e2-4d29-4a1c-89c7-29c809b434bb,USD,fb1a2f45-fef0-4d60-8cce-70064e952723,Quantity_Net_New_Tier1_Product__c,#N/A,#N/A,true,#N/A,true,#N/A,dc1991af-b650-4722-a72a-ed67b2c70062,Quote,#N/A,#N/A,#N/A
+99e8bf89-4a2a-4ac6-8a4c-7150335e1b80,USD,f8665231-cc3a-44f5-83d0-66c16c5a657d,SubscriptionType__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,Termed,a830t0000000BDIAA220191029195940Z20191029195938Z
+9ae11ef1-3ff6-477c-bf46-9a7f1cd7beeb,USD,db2626be-0fa4-4e34-9364-b5e9b5c35210,NumberOfRundeckProducts__c,#N/A,#N/A,true,#N/A,true,#N/A,35890766-8d7a-4786-97c3-f34540fed6f8,Quote,#N/A,#N/A,a83110000004pjEAAQ20210430232110Z20210430232106Z
+9bcb19d9-94d4-43a4-9f1a-5325d1f607b9,USD,482170df-20a9-4796-894b-adcfa0143fb2,DiscountApprovalLevel__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004jc3AAA20200403052131Z20200403052129Z
+a287c2bd-a75d-49f6-96ac-57446aad72ce,USD,24c79be9-844c-4e24-a146-2e92dcad7380,X100DiscountRequiresApprovalRollup__c,#N/A,#N/A,true,#N/A,true,#N/A,6b0f2da9-0a3b-43e7-88cc-ffde68dd0878,Quote,#N/A,#N/A,a83110000004rp4AAA20210804182543Z20210804182539Z
+a299316f-e0e2-434c-b5c8-ec503746d066,USD,ea99eabf-4e7b-4339-b58a-2eacd742de36,QuantityOfBase__c,#N/A,#N/A,true,#N/A,true,#N/A,b4c75b04-9c30-4324-822e-985a7c7ea0bc,Quote Line,#N/A,#N/A,#N/A
+a85b59f5-d8ed-4a33-9b45-677d7a2959e7,USD,753b4245-1423-4132-bbd1-0e8049a2c608,Do_Not_Calculate_Net_Contract_Amount__c,"!OR(
+  SBQQ__EffectiveQuantity__c <> 0,
+  ISBLANK(Rate_Plan_Charge__c),
+  SBQQ__Quote__r.EarlyRenewal__c,
+  SBQQ__Quote__r.ScheduledRenewal__c,
+  ISPICKVAL(SBQQ__SubscriptionPricing__c, 'Percent Of Total')
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004smzAAA20220111003045Z20220111003036Z
+a89f6d63-a6e4-4fd6-ab4b-c273b9067278,USD,165ed002-328e-47fb-85ac-67dfe99fad3e,QuantityOfTier3IncidentResponse__c,#N/A,#N/A,true,#N/A,true,#N/A,4df709c6-ff07-4c36-9e74-88d2f36ae04d,Quote,#N/A,#N/A,#N/A
+aa4eba1b-67ce-47c0-b3b7-ebbb0f43118d,USD,999b8e7c-26c1-4968-ba93-ed7ef3a6130c,ProductRatePlanChargeId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Semi_Annual__c,true,ProductRatePlanChargeId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B6qAAE20190804035134Z20190804035133Z
+aaf58ba7-2271-4af0-b5ba-6b394680fa1c,USD,9a75457f-a6fe-4036-8bdc-06c1cffd3507,ExistingBusinessAddOnTable__c,#N/A,#N/A,false,ExistingBusinessAddOn__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+ab9156a5-100d-4194-b8cc-8b8da0bcbdeb,USD,25315d68-a669-4834-96c9-4f25a9a42b58,ProductRatePlanId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Monthly__c,true,ProductRatePlanId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B24AAE20190730130627Z20190730130626Z
+ad133667-64f3-4bc4-9924-fd7017c3affa,USD,66273d6a-8f84-4910-9edb-a41c6e8ee18d,SBQQ__ListPrice__c,SBQQ__Quote__r.One_Time_Credit__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+ae41ab12-53a9-49cc-8f3f-70eb7e99a4d2,USD,e95954e6-a1eb-4f0c-8ff1-66567dfe811c,ExistingBusinessApprovalWaiver__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,#N/A
+b6526664-c40f-4a9d-85c5-b89c49e5fce1,USD,6c0cfbbe-93de-4644-83c2-271ba81f85f6,Date_Prepopulated__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,a83110000004jz0AAA20200430223445Z20200430223443Z
+b79737b4-0141-491c-8232-5e483e3b794b,USD,c6992b39-23ca-4fd6-8a5d-0e0ad0a82f04,RemovePublicityClause__c,"IF(
+AND(Is_Rundeck_Only__c = FALSE,
+ISPICKVAL(Paper_Type__c, 'Rundeck')),
+RemovePublicityClause__c,
+TRUE)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004lXFAAY20201006221101Z20201006221058Z
+b7b05d6c-591b-4a28-a020-4978e22219f1,USD,0e3c97cf-39b2-4468-81ac-e9280f9f8f4d,SBQQ__BillingFrequency__c,SBQQ__Quote__r.Billing_Frequency2__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004qCNAAY20210525185059Z20210525185053Z
+b838547a-0844-4fe0-b81b-b0b1ad28667b,USD,85789319-e606-4940-ba8b-a9ec21bb6b38,NewBusinessAddOnTable__c,#N/A,#N/A,false,NewBusinessAddOn__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+b860efff-8a28-47b2-a562-38ce12607955,USD,caec0148-5a19-4e59-8ac3-27c1a1a0e23b,LastDiscountTierUpperBoundPopulated__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+b8b120a2-5b8c-48b2-b272-608992c35554,USD,feb03d8f-6ce6-4b4f-a092-3bb91bd687bc,Charge_Name__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Quarterly__c,true,RatePlanChargeName__c,#N/A,Quote Line,#N/A,#N/A,a83110000004lN2AAI20200825215753Z20200825215751Z
+badd0a28-72c1-47bf-ab9e-7132ae1fc31c,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Tax_Exempt__c,"IF(
+  OR(
+      AND(
+              NOT(ISBLANK(SBQQ__Opportunity2__r.Partner__c)),
+              SBQQ__MasterContract__r.Communication_Profile__c != 
+              'Reseller Communication Profile'
+              ),
+      AND(
+              ISBLANK(SBQQ__Partner__c),
+              SBQQ__MasterContract__r.Communication_Profile__c = 
+              'Reseller Communication Profile'
+              )
+         ),
+    Tax_Exempt__c,
+    SBQQ__MasterContract__r.Zuora_TaxExemptStatus__c
+  )",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+bd3bab67-91f1-4497-b84c-abd42abe4a5d,USD,83ffce22-c398-4a86-b2d4-ac291feb953e,SBQQ__PartnerDiscount__c,SBQQ__Quote__r.SBQQ__PartnerDiscount__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+bf5dace9-155c-4e09-9e52-b7ee35806f22,USD,6b108991-1c1e-4a20-994f-0c26ab87b75d,DiscountApprovalLevel__c,#N/A,1.0,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,#N/A
+bfbaff32-ec1a-490f-85ee-960527f1e08a,USD,52a94725-f738-4bc3-8cfe-2c43aabd1385,RenewalSubstituteProductId__c,SBQQ__RenewedSubscription__r.SBQQ__RenewalProductOptionProductId__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+bfe044e7-0b8d-4182-8286-b39245a5196e,USD,bc5ed2f0-102a-40f9-b9a3-1f7e9fc1cc39,NumberOfExpertServicesProducts__c,#N/A,#N/A,true,#N/A,true,#N/A,ae204ee8-7df3-4df1-989f-5446692f7fce,Quote,#N/A,#N/A,a83110000004sYOAAY20211013190929Z20211013190923Z
+bfe3ea68-1d58-40dc-9ed7-d259dd933243,USD,140d6059-30de-4e1a-91be-499dc1a28298,MaxQuantityOfCustomerServiceProduct__c,#N/A,#N/A,true,#N/A,true,#N/A,9167077a-5cc1-4b69-a07a-4a2f39c8454a,Quote,#N/A,#N/A,#N/A
+c0759828-de21-4aaa-800b-105a43d9522d,USD,1168e43a-a6b7-484f-8f90-44bba76ae339,NewBusinessBaseTable__c,#N/A,30.0,false,NewBusinessBase__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+c0bdc159-c156-4cf4-8502-422d33507f1f,USD,a4c27ec8-6b76-46f6-a953-d9623e5ba845,SBQQ__Discount__c,(SBQQ__RenewedSubscription__r.SBQQ__ListPrice__c - SBQQ__RenewedSubscription__r.SBQQ__CustomerPrice__c)/SBQQ__RenewedSubscription__r.SBQQ__ListPrice__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+c32e551e-9aa7-4b87-aa93-13a38bbb4394,USD,999b8e7c-26c1-4968-ba93-ed7ef3a6130c,ProductRatePlanId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Semi_Annual__c,true,ProductRatePlanId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B6lAAE20190804035110Z20190804035109Z
+c4501002-5291-411f-a0dc-d9fdaa6e3247,USD,601e3b72-2812-46a6-b11d-f56bf7127eb3,SBQQ__SubscriptionTerm__c,"(SBQQ__EndDate__c - SBQQ__StartDate__c) + IF(/* There is at least a 7 year difference between the 2 years Ex: 2096 - 2103*/
+IF (OR(AND(MONTH(SBQQ__EndDate__c) = 2, DAY(SBQQ__EndDate__c)=29), /*BAED-2044*/
+YEAR(SBQQ__EndDate__c) - YEAR(SBQQ__StartDate__c) >= 7),
+TRUE,
+/* Start Date is a leap year */
+IF((MOD(YEAR(SBQQ__StartDate__c),4) = 0 && (MOD(YEAR(SBQQ__StartDate__c),100) != 0 || MOD(YEAR(SBQQ__StartDate__c),400) = 0)),
+MONTH(SBQQ__StartDate__c) < 3,
+/* End Date is a leap year */
+IF ((MOD(YEAR(SBQQ__EndDate__c),4) = 0 && (MOD(YEAR(SBQQ__EndDate__c),100) != 0 || MOD(YEAR(SBQQ__EndDate__c),400) = 0)),
+MONTH(SBQQ__EndDate__c) > 2,
+OR(
+/* Diff between Start Date and End Date is 1 year and that year is a leap year */
+(YEAR(SBQQ__EndDate__c) - YEAR(SBQQ__StartDate__c) = 2 && MOD(YEAR(SBQQ__StartDate__c)+1,4) = 0 && (MOD(YEAR(SBQQ__StartDate__c)+1,100) != 0 || MOD(YEAR(SBQQ__StartDate__c)+1,400) = 0)),
+/* There is at least a 3 year difference between the 2 years Ex: 2094 - 2100 AND account for the year having to be divisible by 400 if div by 100*/
+((YEAR(SBQQ__EndDate__c) - YEAR(SBQQ__StartDate__c) >= 3) && ( ( MOD(YEAR(SBQQ__StartDate__c),100) >=4 && MOD(YEAR(SBQQ__StartDate__c),100) <= 96) || MOD(YEAR(SBQQ__EndDate__c),100) >= 4 ))
+)
+)
+)
+) ,0,1)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a830t0000000B8NAAU20190823212708Z20190823212704Z
+c7d924dc-9336-447e-bdf8-3f2185bfdefa,USD,426df93b-eca9-440d-82e2-e1d34becbf88,DiscountApprovalLevel__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004j7NAAQ20200124194348Z20200124194347Z
+cc8c55b1-638d-49b8-bcbb-08a35765e024,USD,5d9a94fe-edcc-457a-8af9-2bdbc027f1f8,Quoted_Term__c,InitialTerm__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+d1d014d3-bcea-429f-9c8d-e1f0f7b47bad,USD,0a6d512d-5d4b-4d29-9a3f-24241c3ad65f,QtyIncreaseLineCount__c,#N/A,#N/A,true,#N/A,true,#N/A,4c77f102-6481-4f77-8552-27217f69dea4,Quote,#N/A,#N/A,#N/A
+d3428a1d-b786-4e80-a03e-62aff071f425,USD,85c6acb0-04af-4342-a162-c9232025aa44,LastDiscountTierUpperBoundPopulated__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,FALSE,#N/A
+d36e2935-9c12-445f-9092-98a5431a377c,USD,2d9b0eb2-85ad-4eba-b84e-10601946f4e9,CountOfPagerDutyAdvance__c,#N/A,#N/A,true,#N/A,true,#N/A,172398b8-ef4e-4e1e-a5f9-5d34c05cb5d4,Quote,#N/A,#N/A,#N/A
+d59b6bc4-52c4-4fa3-afd8-3ecc59e295b4,USD,2a96b1d4-721d-47d8-9546-a8c99661ed0f,ProductRatePlanChargeId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Annual__c,true,ProductRatePlanChargeId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B29AAE20190730130649Z20190730130648Z
+d6164040-4068-48f7-8a6e-f5a0e35dd7ea,USD,2a96b1d4-721d-47d8-9546-a8c99661ed0f,ParentBundleID__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Annual__c,true,ParentBundleID__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B96AAE20190917064909Z20190917064906Z
+d6c39423-1ced-4837-8b95-580cb35615d3,USD,4badb129-d881-4f61-80f4-0e4afc6ff249,DiscountApprovalMatrixRundeckUser__c,#N/A,#N/A,false,Discount_Approval_Matrix_Rundeck_User__c,true,Id,#N/A,Quote Line,#N/A,#N/A,a83110000004qNZAAY20210601043156Z20210601043153Z
+d7ae66c0-c8ed-414e-a826-2ca8b44e97a8,USD,e3c177ba-b243-4d61-bc95-0f7c0545802a,Renewal_Term_Period__c,Quoted_Term_Period__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004kdrAAA20200707194838Z20200707194836Z
+d92d0eff-2610-4aca-ad39-275942cc2db6,USD,d0127b1b-66a1-4376-8725-e3d1d7f0a57b,UsageDiscountApprovalMatrixFY26__c,#N/A,#N/A,true,Usage_Discount_Approval_FY26__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+da498cec-83f8-45da-9991-9f647db74694,USD,be5f207f-6bae-4b04-b869-27cca384ab16,QuantityOfNewSilverGold__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,1,a83110000004q61AAA20210519085326Z20210519085321Z
+dc928058-2763-41a6-89ac-5f0e5cc91fe7,USD,1547369b-578c-41ba-a0e8-5520c47663ba,PD_Data__c,SBQQ__Opportunity2__r.PD_Data__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+dc99e8f4-ec1f-4243-811a-9b25ac766d64,USD,b048e0f6-436b-43a9-9256-bc009ca805c6,Licenses_Entitled__c,#N/A,#N/A,true,#N/A,true,#N/A,3df34bd1-79dc-46a3-9a78-f707f08a28d6,Quote,#N/A,#N/A,a83110000004qh7AAA20210608223225Z20210608223219Z
+dd4d6305-cc30-4c16-844c-4982de0bff4f,USD,1e0548c0-6830-4423-b27f-45e6ff96fb4b,QuantityOfPrimaryBase__c,#N/A,#N/A,true,#N/A,true,#N/A,830c5943-b702-4376-94ab-808e487a6f8b,Quote Line,#N/A,#N/A,#N/A
+ddbd076c-8d82-4cc6-b0f3-2ef30312473b,USD,415561af-5e0a-4428-abf8-0f229998649f,SBQQ__Discount__c,"ROUND(SBQQ__Discount__c,9)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+dde10bf6-ebc9-4a3c-a3bb-8cb60ed581fc,USD,5ea0e184-f6ed-417a-a68e-b55599b3fc40,AIOPs_Overage_Price__c,#N/A,#N/A,true,#N/A,true,#N/A,1948989a-d040-4eb9-89e7-e7dff9a4bfeb,Quote,#N/A,#N/A,#N/A
+df6467f1-417e-40ca-9f56-1379e0660314,USD,9a75457f-a6fe-4036-8bdc-06c1cffd3507,DiscountApprovalLevel__c,#N/A,#N/A,false,ExistingBusinessAddOn__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+dfa1b7ee-2c14-4de5-83c5-4b9c1615d023,USD,d93a9f36-97df-4efd-8c0e-7c3a25d1d9e5,Debit_Memo_Template__c,"IF(
+!OR(
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Quote'),
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = FALSE,
+SBQQ__MasterContract__r.BillingCountry = 'Japan',
+SBQQ__MasterContract__r.ShippingCountry = 'Japan',
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+),
+AND(
+ISPICKVAL(SBQQ__Type__c, 'Amendment'),
+EarlyRenewal__c = TRUE,
+BilltoContactCountry__c = 'Japan',
+ShipToContactCountry__c = 'Japan'
+)
+),
+'PagerDuty Debit Memo',
+'Japan DM Template - JPY Tax'
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+dff56c64-b0ad-4e60-bcdf-bdd86f1b5fae,USD,4badb129-d881-4f61-80f4-0e4afc6ff249,DiscountApprovalLevel__c,#N/A,#N/A,false,Discount_Approval_Matrix_Rundeck_User__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,a83110000004qNUAAY20210601043058Z20210601043052Z
+e0288d4d-0878-46eb-ac6f-7f9b31b61975,USD,1370a088-7cce-47eb-9f43-a9429f14ce21,UpgradedSubscriptionProrateMultiplier__c,SBQQ__UpgradedSubscription__r.CalculatedProrateMultiplier__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004oPSAAY20210227034140Z20210227034133Z
+e0ec9e67-c369-4fb3-b5fb-f6cfe6a626d0,USD,2e86fb5c-d140-4176-a344-e0722065e9ae,SBQQ__ShippingStreet__c,ShipToContact__r.MailingStreet,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+e421b12f-fba1-4a06-adff-f670bad7c1ee,USD,ff0870fd-eb6e-44fb-be9f-a8b7b53a9f4f,AI_Ops_Discount_Approval_Matrix__c,#N/A,#N/A,false,AI_Ops_Discount_Approval_Matrix__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+e62cc15b-3b81-45e4-b919-76298f5d0d0f,USD,14413d53-b46f-43e7-8e37-75e4efa3f86e,ExpirationDateisafterStartDate__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+e6e02c10-e0dc-495a-9f47-aa704c8e82f8,USD,78f78776-9d5b-43c8-9009-dcc27619c126,SBQQ__Discount__c,(SBQQ__RenewedSubscription__r.SBQQ__ListPrice__c - SBQQ__RenewedSubscription__r.SBQQ__CustomerPrice__c)/SBQQ__RenewedSubscription__r.SBQQ__ListPrice__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+e715f803-1ef4-4ad4-aa65-68f1f78c5f27,USD,bad4e919-fb24-4072-9d04-685f1a10843d,ZSubscriptionId__c,NULL,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004sWXAAY20210923193347Z20210923193342Z
+e779cbaa-e11d-41e0-91c4-dc497f56d08e,USD,25315d68-a669-4834-96c9-4f25a9a42b58,Charge_Name__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Monthly__c,true,RatePlanChargeName__c,#N/A,Quote Line,#N/A,#N/A,a83110000004lMsAAI20200825215617Z20200825215614Z
+e89c84e7-485f-42d8-b23f-6db06dd83e9e,USD,1895aaa9-90c3-4d5d-9e0a-663de97d988f,Quoted_Term_Period__c,TermPeriod__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+e8f59c67-45b0-42f9-89dd-a8a567d581fc,USD,feb03d8f-6ce6-4b4f-a092-3bb91bd687bc,ParentBundleID__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Quarterly__c,true,ParentBundleID__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B9GAAU20190918193429Z20190918193427Z
+e9199772-27ed-47a0-9a99-7e8b5c85f8b5,USD,431e7ef9-0199-4261-ad6e-e35ee4a317f0,DiscountApprovalLevel__c,"IF(  
+            TotalDiscountCustom__c > 0.35 , 
+            30 , 
+            IF( 
+                AND(
+                    TotalDiscountCustom__c <= 0.35,
+                    TotalDiscountCustom__c > 0.20 
+                ),
+                25,
+                IF( 
+                    AND(
+                        TotalDiscountCustom__c <= 0.20,
+                        TotalDiscountCustom__c > 0.10 
+                    ),
+                    20,
+                    IF( 
+                        AND(
+                            TotalDiscountCustom__c <= 0.10,
+                            TotalDiscountCustom__c > 0 
+                        ),
+                        10,
+                        0
+                    )
+                )     
+            )
+        )",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+e9b0720e-a775-493f-a828-296d3444bc76,USD,280fbad3-6cd0-4a1e-a2a8-0554dab4fe24,NumberOfJeliLineItems__c,#N/A,#N/A,true,#N/A,true,#N/A,29c79f28-99a4-4f18-a5d1-89e9ebb06373,Quote,#N/A,#N/A,#N/A
+e9c3b697-9282-43b5-81de-563f20cfa679,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Zuora_Invoice_Template__c,"IF(
+  NOT(ISBLANK(SBQQ__Partner__c)),
+  'Reseller Invoice Template',
+  IF(
+    AND(
+      ISBLANK(SBQQ__Partner__c),
+      SBQQ__MasterContract__r.Invoice_Template_Name__c = 'Reseller Invoice Template'
+    ),
+    'Sales Assisted Invoice',
+    SBQQ__MasterContract__r.Invoice_Template_Name__c
+  )
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+ea86d752-ac24-4b03-8cd3-8beed0bb3bb3,USD,15a8d209-bdb5-47f8-af2d-862216293139,ScopeOfWorkDocNeeded__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,TRUE,#N/A
+ebc41863-7045-4cb7-ac95-bfa1dac66284,USD,8e567d66-e402-45c2-be76-7c833ce7a4a1,AutoRenew__c,"IF(
+OR(
+AND(Is_Rundeck_Only__c = TRUE,
+ISPICKVAL(Paper_Type__c, 'Rundeck')),
+fml_Is_Partner_Opportunity__c = TRUE),
+FALSE,
+AutoRenew__c)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a83110000004lXFAAY20201006221101Z20201006221058Z
+ec5a64c1-5a0c-4fbe-9291-424f67d08a36,USD,fd466c8c-bf10-43ac-931e-01a712ef8ede,SBQQ__ListPrice__c,SBQQ__OriginalPrice__c * 0.6,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+ef5daa38-5bd3-46f0-a641-5bd584b71977,USD,3a473b4f-a9c4-4379-84f6-b47b3bf789db,AnnualTCV__c,"IF(
+    AND(                                        /*    Initial LOGICAL TEST -- AMEND Existing Silver Gold */
+        ISPICKVAL ( SBQQ__Quote__r.SBQQ__Type__c , ""Amendment"") ,
+        fml_QuoteIsEarlyRenewal__c = FALSE ,
+        OR(
+            QuantityOfNewSilverGoldLinesRollup__c < 1 ,
+            ISBLANK( QuantityOfNewSilverGoldLinesRollup__c )
+        )
+    ),
+
+    IF(                        /* Initial TRUE IF Function -- Discount Schedule */
+        AND(
+            Tiered_Product__c ,
+            !QL_Quantity_Exempted__c,
+            Order_Form_Quantity__c != 0 
+        ),
+        ( Calculated_MRR__c - BLANKVALUE( SBQQ__UpgradedSubscription__r.Zuora_MRR__c , 0) ) * 12 , /* This calculates ARR directly since tiered products Net Price is blended */
+        IF(                                                            /* BAESIC-584 Moved this IF Function up from Main Else portion to Fix SH/AIOPS No Change NNARR bug  */
+            AND(
+                !ISBLANK( SBQQ__UpgradedSubscription__c ) ,
+                fml_SubscriptionQuantity__c = SBQQ__Quantity__c  ,
+                OR(
+                    CONTAINS( ProductNameOrderForm__c , 'Stakeholder' ) , 
+                    IsAIOpsQuoteLine__c = TRUE           
+                )             /* BAESIC-373  By setting this to all use cases fixes issue for AiOps No Qty Change on Amend Should = 0 ARR input to POT Calcs */
+            ) ,                    
+            0,
+            Order_Form_Quantity__c * NetPriceMonthly__c * 12 
+        )
+    ),
+
+    IF(                       /* Initial FALSE/Else -- All other Use Cases (NewQuote/Renewal, etc.) in Final IF for Stakeholder Qty adjustment */
+            AND(
+                CONTAINS( SBQQ__ProductName__c , 'Stakeholder' ) ,
+                QL_Quantity_Exempted__c
+            ),
+            1,             /* Stakeholder on Amend upsell will use Qty 1, addressed here */
+            SBQQ__Quantity__c    /* All other Use Cases here, including New Business/Renewals/etc  */    
+        )
+     * Net_Price_3__c * 12
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004n5DAAQ20210112224446Z20210112224440Z
+efaf0ca7-fd8f-4cf4-afdb-9c04ae87f3a0,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Debit_Memo_Template__c,"IF(fml_Use_Japan_Address__c,
+'Japan DM Template - JPY Tax',
+'PagerDuty Debit Memo'
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+efbfcf93-a449-4dec-90f3-e5808df435ff,USD,e45f3816-09c5-4eb3-8129-c89343deec7a,Zuora_Invoice_Template__c,"IF(
+AND(ISBLANK(SBQQ__Partner__c), fml_Use_Japan_Address__c),
+'Japan Sales Assisted Invoice - JPY Tax',
+Zuora_Invoice_Template__c)",#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+f463625c-2d3b-4425-a3fc-5b44ce401e09,USD,76c94117-15f6-4a58-90bd-220db4f12465,Quoted_Term_Period__c,TermPeriod__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+f708ae62-2fa2-4556-95c5-dda8d89dd8bc,USD,6fcc06a4-fb8d-4669-84f9-b6cefeab24a5,DiscountApprovalLevel__c,#N/A,#N/A,true,Discount_Approval_Matrix_FY26__c,true,DiscountApprovalLevel__c,#N/A,Quote Line,#N/A,#N/A,#N/A
+f8276721-dccc-4939-a83c-90093da51481,USD,4c3f2166-2e00-498a-bea3-d647988fcdf8,ExistingBusinessBaseTable__c,#N/A,#N/A,false,ExistingBusinessBase__c,true,Id,#N/A,Quote Line,#N/A,#N/A,#N/A
+f838da5c-ccdc-4659-a141-c3173a1aefd8,USD,ddff0d64-119c-4a95-bb17-f3aa28dd6711,MRR__c,"IF (SBQQ__Quantity__c != 0,
+    IF (AND(	Tiered_Product__c,NOT(ISBLANK(SBQQ__DiscountSchedule__c))),
+        Calculated_MRR__c,
+        IF (OR(IsTraining__c,IsService__c),
+            0,
+            IF (NOT(ISBLANK(SBQQ__UpgradedSubscription__c)),
+                SBQQ__UpgradedSubscription__r.Zuora_MRR__c/SBQQ__UpgradedSubscription__r.SBQQ__Quantity__c,
+                IF (NOT(ISBLANK(SBQQ__RenewedSubscription__c)),
+                    SBQQ__RenewedSubscription__r.Zuora_MRR__c/SBQQ__RenewedSubscription__r.SBQQ__Quantity__c,
+                    SBQQ__ListPrice__c * (1- TotalDiscountCustom__c)/12
+                )
+            )
+        )
+    ) * SBQQ__Quantity__c,
+    0
+)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004kmJAAQ20200717182722Z20200717182718Z
+f839c124-5038-497b-903c-0e18956bc3e1,USD,25315d68-a669-4834-96c9-4f25a9a42b58,ProductRatePlanChargeId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Monthly__c,true,ProductRatePlanChargeId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B29AAE20190730130649Z20190730130648Z
+f8fbb5b7-af34-461d-ba1b-633803503f63,USD,f94cc1f6-738f-4b5f-b085-03219e3c7cef,MaxProrateMultiplier__c,#N/A,10.0,true,#N/A,true,#N/A,8bfd20cb-e163-45e6-8a2d-c45c0fcbf01f,Quote,#N/A,#N/A,a830t0000000BCPAA220191009174152Z20191009174150Z
+faaec725-f4d6-41af-9e59-d0c7945bf315,USD,2a96b1d4-721d-47d8-9546-a8c99661ed0f,Charge_Name__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Annual__c,true,RatePlanChargeName__c,#N/A,Quote Line,#N/A,#N/A,a83110000004lMnAAI20200825214616Z20200825214611Z
+fb351fd3-1266-4397-808b-bd1c35c5afd5,USD,b06054fa-aa7d-4f86-8835-438c611b0283,Unit_Discount_Amount__c,"IF(
+OR(IsService__c,
+IsTraining__c),
+0,
+ListPriceMonthly__c  - NetPriceMonthly__c + Price_Delta_from_Annual_to_Monthly__c)",#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,a83110000004mOKAAY20201104195645Z20201104195641Z
+fca46b2c-c873-4a35-b5b7-8adcd8f3072d,USD,f7ff5eed-825c-4270-ba70-917f0bc65155,NumberOfRunbookAutomationProducts__c,#N/A,#N/A,true,#N/A,true,#N/A,a9781d29-1a19-499f-8e88-564b3f4f12c9,Quote,#N/A,#N/A,#N/A
+fd10f905-b856-4d8e-8eb2-bc19e0583fde,USD,8e662f10-f417-48ba-a698-d5ef03e99662,SBQQ__ShippingState__c,ShipToContact__r.MailingState,#N/A,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,#N/A
+fdb5aef0-14aa-4a33-86a7-f1894b27432a,USD,8cfecd5a-416e-43db-b15c-35e9ba976333,SBQQ__SpecialPrice__c,PremiumSuccessAmendTotal__c,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,#N/A,#N/A
+fdf0fc34-acf9-4182-b272-982fec172afa,USD,06ee174d-f13c-4a6f-aaf0-17d613433321,DiscountApprovalLevel__c,#N/A,#N/A,true,#N/A,true,#N/A,#N/A,Quote Line,#N/A,0,a83110000004op9AAA20210311043109Z20210311043105Z
+fefbfb0a-5ec1-4ca7-a7b0-6052c9841185,USD,feb03d8f-6ce6-4b4f-a092-3bb91bd687bc,ProductRatePlanChargeId__c,#N/A,#N/A,true,CPQ_Zuora_Mapping_Quarterly__c,true,ProductRatePlanChargeId__c,#N/A,Quote Line,#N/A,#N/A,a830t0000000B6bAAE20190804034243Z20190804034242Z
+ffda6d10-fc91-4ea4-a198-3ba247a1c9ee,USD,f94cc1f6-738f-4b5f-b085-03219e3c7cef,TermPeriod__c,"IF(NonAnnual__c = FALSE && Multi_Year_Billed_all_Upfront__c = FALSE, ""Month"", ""Day"")",20.0,true,#N/A,true,#N/A,#N/A,Quote,#N/A,#N/A,a830t0000000BCPAA220191009174152Z20191009174150Z
+fffe2e0b-80a5-4ed1-81a2-cc2ab3a5c2e2,USD,d0cd8a98-315a-4c07-a47d-8df041fe24ba,QuantityOfNewSilverGoldLinesRollup__c,#N/A,#N/A,true,#N/A,true,#N/A,2a89f7b8-59d7-4e02-a1df-351cda88d5c1,Quote Line,#N/A,#N/A,a83110000004q66AAA20210519085416Z20210519085413Z
