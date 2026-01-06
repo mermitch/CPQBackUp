@@ -1,0 +1,2 @@
+Guid,Name,CurrencyIsoCode,IsActive,IsArchived,Description,IsStandard,PriceBookExternalID__c
+4861353f-43ea-4659-af7d-b14a8d769281,Current PD Pricebook [as of 5.12.2014],USD,true,false,Post pricing uplift pricebook. Launched 5.12.2014,false,#N/A
