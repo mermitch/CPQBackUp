@@ -1,0 +1,359 @@
+Guid,Name,CurrencyIsoCode,SBQQ__EffectiveDate__c,SBQQ__LowerBound__c,SBQQ__PriceBook2__c,SBQQ__Price__c,SBQQ__Product__c,SBQQ__UpperBound__c,PriceFormat__c,OverageRate__c,MixedBlockTierOFPrice__c,ProductCode__c
+011cfdae-dd58-4dae-a1dc-e9e7fb8a8049,Work.com Tiered Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,f3a4220f-ba29-41f3-a789-38048d8ee9e6,51.0,FlatFee,#N/A,#N/A,SHWKT-BP-XX-CPQ
+017dd018-1b04-4c56-95d4-2d320fe74042,Included Users - Tier 1,USD,#N/A,1.0,4861353f-43ea-4659-af7d-b14a8d769281,10.0,3f01b799-cdff-4e1c-9478-868f04a2cdc7,7.0,FlatFee,#N/A,#N/A,STFU1S-BP-MM-CPQ
+0180fd34-697a-4426-929d-7745f07bc702,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,77a61120-afd6-4a1c-ad54-3dafee4636c5,501.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ
+01a23c57-79da-463c-b65d-f342d19d0de4,Stakeholder PD.Org Tier 2,USD,#N/A,1.0,#N/A,1800.0,5d3f59dc-4a4b-45db-86e6-f5fb568b9b4e,51.0,FlatFee,#N/A,#N/A,S3PR-BP-XX-CPQ
+02833158-2536-4d96-807b-523b2034ad2a,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,5cbffc6b-822e-41d0-a7b7-0b9c89caec16,1001.0,FlatFee,#N/A,#N/A,STPPX-BP-XX-CPQ
+038ee3c5-b243-45a0-9b78-b4e7e42e87d6,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,3f67ed44-a6d0-4f93-b964-4d6ee31b78c5,501.0,FlatFee,#N/A,#N/A,STPR-BP-XX-CPQ
+06a93c97-576e-4a9f-953f-6f05103fe93e,Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,8be8f77e-6d8d-4229-990c-44aa9f37f640,1001.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ-FY21
+07a513ef-cda7-479a-acfa-85e433782c02,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,b202ea13-946e-4388-95a2-dc9a810e1687,51.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ
+07d9dc5a-3e0e-4eb8-afaf-5ac93ef740ec,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,f15edf92-92ab-4d31-9d58-8b2e27bdeb6e,1001.0,FlatFee,#N/A,#N/A,STPRC-BP-XX-CPQ
+09dbcd8d-ca3c-455b-8897-a1a477db46f9,Work.com Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,0f285a71-3d9b-4c2e-bfe1-475ee7d27e9a,51.0,FlatFee,#N/A,#N/A,SHWK-BP-XX-CPQ
+0a69704d-b66c-4578-a35b-a3a3d42b560b,Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,133fe117-c33e-4023-a8a7-7abb872479ad,1.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ-FY21
+0af5a397-f3e0-4ca6-b98b-b7a881cfb50d,Tier 2 Professional Tiered,USD,#N/A,1.0,#N/A,252.0,081091f6-4ad4-4df2-9a61-48c869eba7ed,6.0,FlatFee,#N/A,252.0,PRS-BP-XX-CPQ
+0b13234a-d83e-453c-b776-37a3c2183836,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,844d059a-e26c-4c2f-bcc7-e01470f66ee2,501.0,FlatFee,#N/A,#N/A,SHP-BP-XX-CPQ
+0b9db524-5bb1-428e-9749-e908f61c373a,Professional Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,771b5f45-18b8-4a71-9368-2baf60244aa4,501.0,FlatFee,#N/A,#N/A,PRSU-BP-MM-CPQ
+0d167da9-12e3-40ae-932b-477f24066355,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,29827e59-b171-46de-96cb-a3baaf7a60dc,51.0,FlatFee,#N/A,#N/A,TTPS-BP-MM-CPQ
+0d62f6ec-09ce-456f-a2b0-33a110561d62,1-10 PD.Org Users - Tier 1,USD,#N/A,1.0,#N/A,0.0,a8ac0e06-e12d-49c9-b9d1-4308f992d03a,11.0,FlatFee,#N/A,#N/A,PTPL-BP-XX-CPQ
+0e6e54bb-97f7-4e8b-8410-769c8d1726cd,Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,5366ad91-6892-4c85-a1a6-f9bb7833a3e6,251.0,FlatFee,#N/A,#N/A,TPSU-BP-MM-CPQ
+0e8eb28e-8f95-44e8-a011-4480818a12a0,Standard Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,63901c13-c9c3-4dfe-b90d-be70986a3bcd,1001.0,FlatFee,#N/A,#N/A,SHS-BP-XX-CPQ
+102a767c-1551-4269-8687-6ff72d10011a,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,77a61120-afd6-4a1c-ad54-3dafee4636c5,#N/A,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ
+125bb744-f411-49cf-94cf-c6401a18e1fe,Additional Users - Tier 2,USD,#N/A,7.0,#N/A,15.0,c2ac1fc3-99cb-4d2f-becf-d776257e2ac4,#N/A,FlatFee,15.0,#N/A,STFU-BP-MM-CPQ
+130d2c18-fadc-4c01-a69e-530bd5172b51,Tier 1 Business Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,1f032fda-b3e1-4f00-a687-fedbb2ad9180,1.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ
+144bb20e-8d56-4051-a0db-55cbbac8d776,Tier 1,USD,#N/A,1.0,4861353f-43ea-4659-af7d-b14a8d769281,120.0,8381ea6b-e45a-4a0b-ae5c-0a8de044a101,4.0,FlatFee,#N/A,#N/A,STR3-BP-XX-CPQ
+15318622-ae68-46b1-965e-8ddb154ce530,Team Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,44d351d3-39c0-4ff8-9682-377665d1d9d0,501.0,FlatFee,#N/A,#N/A,S2T-BP-XX-CPQ
+16ef3dad-5004-4607-94d1-91fe1169ed40,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,c5766468-8553-4e45-b120-e92e0cc50e56,#N/A,FlatFee,#N/A,#N/A,STPP-BP-XX-CPQ
+17de8daa-5176-46f0-b4ef-21f4a0b62e84,Work.com Tiered Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,f3a4220f-ba29-41f3-a789-38048d8ee9e6,1.0,FlatFee,#N/A,#N/A,SHWKT-BP-XX-CPQ
+18f90eb6-3b84-434d-bba2-f839daa9e51c,Tier 3,USD,#N/A,4.0,#N/A,180.0,97a23ce0-9bf7-4c70-b22e-a0c69e4b4b68,6.0,#N/A,#N/A,#N/A,PDVT-AO-LU-CPQ
+19c3b046-3e37-4edf-b553-42ca6a3cfd72,Professional Plus Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,367002fc-3a65-4a35-99db-42e0347be3b0,501.0,FlatFee,#N/A,#N/A,PPSU-BP-MM-CPQ
+19c6289f-d44a-47a4-80a0-5cb009ad6fb2,Tier 6 PD.Org Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,f8847893-6609-4f6b-982f-d07d6236000f,#N/A,FlatFee,240.0,#N/A,S3PPL-BP-XX-CPQ
+1b276272-6396-448a-9788-6230d56f7bd6,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,34942e64-b97d-4256-a75c-937954c0e0ef,501.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ-FY21
+1bc0da6c-4861-48c1-aea6-dc0c753d26bb,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,844d059a-e26c-4c2f-bcc7-e01470f66ee2,251.0,FlatFee,#N/A,#N/A,SHP-BP-XX-CPQ
+1c1a064b-7464-49c7-af3a-1808b681a979,Professional Services Optimize With ServiceNow (X-Large) Tier 4,USD,#N/A,1001.0,#N/A,90000.0,a7ca1efe-216a-4f06-a124-7c73191f523f,1501.0,FlatFee,#N/A,#N/A,PSVOS-SE-SS-CPQ
+1c9fcd7a-163f-4d42-8e17-9458be04e843,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,34942e64-b97d-4256-a75c-937954c0e0ef,1001.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ-FY21
+1d8ac699-c63d-4061-9ce4-a779abafdbb8,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,86ec9e71-9297-40d4-aadb-f4ebd4230c99,1001.0,FlatFee,#N/A,#N/A,SHPX-BP-XX-CPQ
+1dd864b9-0008-4c52-973c-aa320c932495,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,62738144-95ea-4f3d-bf96-784a1b0a7462,1001.0,FlatFee,#N/A,#N/A,PXTSU-BP-MM-CPQ
+1e0eb8c5-54b4-4be1-9d1f-71c426ea147a,Team Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,44d351d3-39c0-4ff8-9682-377665d1d9d0,51.0,FlatFee,#N/A,#N/A,S2T-BP-XX-CPQ
+1e759820-3d5c-4e49-be8f-83e0f143785f,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,29827e59-b171-46de-96cb-a3baaf7a60dc,501.0,FlatFee,#N/A,#N/A,TTPS-BP-MM-CPQ
+1e85d032-1389-4ccf-855b-9dd083e64049,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,3f67ed44-a6d0-4f93-b964-4d6ee31b78c5,51.0,FlatFee,#N/A,#N/A,STPR-BP-XX-CPQ
+1eaa2282-45c0-4bd5-9e8f-317130fb852b,0 PD.Org Users - Tier 0,USD,#N/A,0.0,#N/A,0.0,c19785df-6f9f-449a-b989-9ca6cc5a8d09,1.0,FlatFee,#N/A,#N/A,PTP-BP-XX-CPQ
+1ef8b592-c9a3-4032-9daa-6e4ec263b080,Tier 6 PD.Org Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,#N/A,PerUnit,240.0,#N/A,S3TL-BP-XX-CPQ
+1f18276f-2a2a-4735-8b14-582c7d82ace5,Professional Services Optimize (Large) Tier 4,USD,#N/A,501.0,#N/A,60000.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,1001.0,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+1f408b45-094c-4777-9cb3-c48562913447,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,62738144-95ea-4f3d-bf96-784a1b0a7462,51.0,FlatFee,#N/A,#N/A,PXTSU-BP-MM-CPQ
+1f865f4d-22c3-464a-8e3e-617e05aff0aa,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,f15edf92-92ab-4d31-9d58-8b2e27bdeb6e,501.0,FlatFee,#N/A,#N/A,STPRC-BP-XX-CPQ
+1fb355d8-11df-4523-985f-aa2bd8227499,Work.com Tiered Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,f3a4220f-ba29-41f3-a789-38048d8ee9e6,501.0,FlatFee,#N/A,#N/A,SHWKT-BP-XX-CPQ
+20d3783a-2050-43bf-8d84-e8b22d4bd838,Professional Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,771b5f45-18b8-4a71-9368-2baf60244aa4,251.0,FlatFee,#N/A,#N/A,PRSU-BP-MM-CPQ
+212732d3-8cb2-49d7-b047-9d0ad54d9e9e,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,5cbffc6b-822e-41d0-a7b7-0b9c89caec16,251.0,FlatFee,#N/A,#N/A,STPPX-BP-XX-CPQ
+213decdb-7a75-4deb-ae04-8169423dc572,Standard Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,bb1cf1d2-8422-4df5-9900-f415b52807c9,1001.0,FlatFee,#N/A,#N/A,S2SC-BP-XX-CPQ
+2234dd5b-697a-4f99-9391-50d77b0fe403,Tier 4,USD,#N/A,6.0,#N/A,180.0,97a23ce0-9bf7-4c70-b22e-a0c69e4b4b68,#N/A,#N/A,#N/A,#N/A,PDVT-AO-LU-CPQ
+229e5764-5f5b-455b-840c-2543a8346eb8,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,08aa77ce-86d4-456a-91e2-d31b45b1cb18,#N/A,FlatFee,#N/A,#N/A,PRTSU-BP-MM-CPQ
+22b733b0-0c84-44bf-8d94-6d87800fb092,Professional Plus Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,1ecd40d1-aa88-44d8-a8ff-a5c15ac97b7f,#N/A,FlatFee,#N/A,#N/A,SHPP-BP-XX-CPQ
+2356576f-6174-486d-8270-baa26b1d7925,Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,e69f6830-a5c2-4938-a8b0-45417431342d,51.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ
+23e6b273-0115-4553-a64a-9a26b8738404,Work.com Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,0f285a71-3d9b-4c2e-bfe1-475ee7d27e9a,1001.0,FlatFee,#N/A,#N/A,SHWK-BP-XX-CPQ
+24916264-038f-4045-a327-49b005a48bd2,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,ec4f1c60-b390-4ff2-a52c-8c40ef19dd29,251.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ
+249778b7-5f2a-44a1-81be-5fd227c5ba73,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,62738144-95ea-4f3d-bf96-784a1b0a7462,1.0,FlatFee,#N/A,#N/A,PXTSU-BP-MM-CPQ
+27aadcdd-73e1-4980-9828-753750fa73df,Team Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,51a01acd-c95b-4c11-a90e-abb5c9167908,251.0,FlatFee,#N/A,#N/A,SHT-BP-XX-CPQ
+28ccfe38-45f0-44c5-b04d-2219be1db2a7,Stakeholder PD.Org Tier 1,USD,#N/A,0.0,#N/A,0.0,c473f9fe-1517-4a3c-8fe6-fbff97063407,1.0,FlatFee,#N/A,#N/A,S3PX-BP-XX-CPQ
+2b132a84-de48-4e4f-b19e-72109e234b69,Professional Services Optimize (XXX-Large) Tier 7,USD,#N/A,2501.0,#N/A,120000.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,#N/A,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+2b3bfaf4-7766-47b8-8457-a280349f120c,Professional Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,5cce8dad-000a-4f23-bcf6-6ce1dc2d6916,501.0,FlatFee,#N/A,#N/A,PPSX-BP-MM-CPQ
+2b3d06d7-5fbb-4b5c-b973-7da0e5bca665,Stakeholder User Tier 1,USD,#N/A,0.0,#N/A,0.0,7f1be504-05f3-4518-b7f8-c74b1c685c75,1.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ-FY21
+2b97bfcf-819d-42ef-bff3-6a93bba5beed,Standard Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,bb1cf1d2-8422-4df5-9900-f415b52807c9,5001.0,FlatFee,#N/A,#N/A,S2SC-BP-XX-CPQ
+2cbc5519-6c87-4b59-8236-e39c3bcad39c,11+ PD.Org Users - Tier 2,USD,#N/A,11.0,#N/A,348.0,a8ac0e06-e12d-49c9-b9d1-4308f992d03a,#N/A,PerUnit,348.0,#N/A,PTPL-BP-XX-CPQ
+2cd3fdca-cc98-4c34-bee7-6f9efa3839c0,Tier 1,USD,#N/A,1.0,#N/A,180.0,a165039d-1244-4ac7-a04c-96b2a1b6d3b8,2.0,#N/A,#N/A,#N/A,MIRT-AO-LU-CPQ
+2d30a831-45b7-437c-958e-f8f06d60966c,Professional PD.Org Tier 1,USD,#N/A,0.0,#N/A,0.0,dcafdb54-9f85-447b-990c-5df5f19deff4,6.0,FlatFee,#N/A,#N/A,PPPX-BP-XX-CPQ
+2d365d9b-c39f-4510-ba5f-85d8430d3a81,Professional PD.Org Tier 1,USD,#N/A,1.0,#N/A,0.0,96afeaa0-3e47-4e03-aa16-2390498fcfb9,11.0,PerUnit,#N/A,#N/A,PPR-BP-XX-CPQ
+2d77806b-45ca-4809-a5b5-af58cfb8eabd,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,ec4f1c60-b390-4ff2-a52c-8c40ef19dd29,501.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ
+2d9a955c-3445-420c-b457-cfb6bd007841,Stakeholder PD.Org Tier 5,USD,#N/A,501.0,#N/A,14400.0,c473f9fe-1517-4a3c-8fe6-fbff97063407,1001.0,FlatFee,#N/A,#N/A,S3PX-BP-XX-CPQ
+2da17288-2c3f-4e17-848c-f1563f635324,Stakeholder PD.Org Tier 3,USD,#N/A,51.0,#N/A,5040.0,c473f9fe-1517-4a3c-8fe6-fbff97063407,251.0,FlatFee,#N/A,#N/A,S3PX-BP-XX-CPQ
+2dd2b8e5-68f8-4db9-abc8-4aab0503686e,Tier 1 PD.Org Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,1.0,FlatFee,#N/A,#N/A,S3TL-BP-XX-CPQ
+2ff5aa89-669d-4c8d-b153-8524c098a162,Tier 2 Business Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,e94c8f03-eb7b-4a73-a0f4-f329a1608dbb,2.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ-FY21
+302b6391-90eb-4a81-8f51-3ad3ba991882,Professional Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,771b5f45-18b8-4a71-9368-2baf60244aa4,1.0,FlatFee,#N/A,#N/A,PRSU-BP-MM-CPQ
+30ad6343-29aa-45c8-8c25-17474d221ef3,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,c5766468-8553-4e45-b120-e92e0cc50e56,251.0,FlatFee,#N/A,#N/A,STPP-BP-XX-CPQ
+30cdffb7-867d-4c14-bf8e-a3a11fe526c9,Team Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,51a01acd-c95b-4c11-a90e-abb5c9167908,#N/A,FlatFee,#N/A,#N/A,SHT-BP-XX-CPQ
+31039e02-27ab-4c79-afde-e4cc7d48bcbe,Professional Plus Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,367002fc-3a65-4a35-99db-42e0347be3b0,5001.0,FlatFee,#N/A,#N/A,PPSU-BP-MM-CPQ
+32379676-d4dd-4af2-80cb-08937abd7808,Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,5366ad91-6892-4c85-a1a6-f9bb7833a3e6,1001.0,FlatFee,#N/A,#N/A,TPSU-BP-MM-CPQ
+33231706-d922-4380-93d5-306d1064155c,Standard Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,65b66f27-653e-4e64-846e-5988a2720e82,501.0,FlatFee,#N/A,#N/A,S2S-BP-XX-CPQ
+3337d5c4-c7fe-4164-aeb3-f986bb0c3324,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,ef4348d4-be09-4af5-96db-f3770e9e1691,1.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ
+33ec62b1-180a-4fdb-8143-a642ddc21ab0,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,900.0,5cbffc6b-822e-41d0-a7b7-0b9c89caec16,51.0,FlatFee,#N/A,#N/A,STPPX-BP-XX-CPQ
+33f14275-0e5a-484b-87e2-da7f9f738d38,Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,8be8f77e-6d8d-4229-990c-44aa9f37f640,51.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ-FY21
+36e27242-ef9d-48d1-a24c-261ec10d4e4d,Professional Services Optimize With Advanced Integrations (X-Large) Tier 4,USD,#N/A,1001.0,#N/A,90000.0,b932b875-715d-4f98-8e13-46b20d8d564c,1501.0,FlatFee,#N/A,#N/A,PSVOI-SE-SS-CPQ
+37285716-baa4-4115-b9ec-452e86851657,Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,e69f6830-a5c2-4938-a8b0-45417431342d,1.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ
+3846e817-a7ac-4b14-96ec-f33e670e5967,Tier 1 Professional Tiered,USD,#N/A,0.0,#N/A,0.0,081091f6-4ad4-4df2-9a61-48c869eba7ed,1.0,FlatFee,#N/A,0.0,PRS-BP-XX-CPQ
+38a10a8a-1ba8-4bb5-ae1a-1f838ce68e1e,Standard Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,fb3627ba-d135-48ed-a1dd-f7f7a28b099a,251.0,FlatFee,#N/A,#N/A,SPSU-BP-MM-CPQ
+39252554-dbd6-486d-9ff3-cf40f36c5493,Professional Plus Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,d7c789d5-c096-4b94-8e4f-3794f56d1185,1.0,FlatFee,#N/A,#N/A,STPPC-BP-XX-CPQ
+392b32aa-2e89-4feb-8cc6-d4c9f9a9ad28,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,c5766468-8553-4e45-b120-e92e0cc50e56,501.0,FlatFee,#N/A,#N/A,STPP-BP-XX-CPQ
+3a69d282-4ba7-4d7a-abce-35181b30cfa7,Work.com Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,8a31742c-ddc6-45cf-b433-1096f041d22d,#N/A,FlatFee,#N/A,#N/A,WKSU-BP-MM-CPQ
+3d6b4982-596a-44fc-996f-b49b95087c77,Tier 1 Business Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,e94c8f03-eb7b-4a73-a0f4-f329a1608dbb,1.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ-FY21
+3e88569d-c540-4f09-8d4a-5d9f82819f6c,Standard Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,63901c13-c9c3-4dfe-b90d-be70986a3bcd,#N/A,FlatFee,#N/A,#N/A,SHS-BP-XX-CPQ
+3ec1a3fa-eef2-4498-9dc6-a902d45e3274,Included Users - Tier 1,USD,#N/A,1.0,4861353f-43ea-4659-af7d-b14a8d769281,10.0,8500904f-5fe4-48e0-aa09-c76eec503f77,4.0,FlatFee,#N/A,#N/A,STFU3-BP-MM-CPQ
+41108a99-1b3e-4d84-b02f-2e347f9da362,Tier 3 Professional Tiered,USD,#N/A,6.0,#N/A,252.0,081091f6-4ad4-4df2-9a61-48c869eba7ed,#N/A,PerUnit,252.0,504.0,PRS-BP-XX-CPQ
+428bbb87-ce8f-4cfc-b61b-8ed45e10ee97,Professional Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,5cce8dad-000a-4f23-bcf6-6ce1dc2d6916,51.0,FlatFee,#N/A,#N/A,PPSX-BP-MM-CPQ
+43918a73-e9eb-4e87-8c48-c1e77b6c6ae8,Professional Services Optimize With Advanced Integrations (XXX-Large) Tier 6,USD,#N/A,2501.0,#N/A,135000.0,b932b875-715d-4f98-8e13-46b20d8d564c,#N/A,FlatFee,#N/A,#N/A,PSVOI-SE-SS-CPQ
+43d17160-9ef9-4e43-a874-9e4155c540ea,Professional Plus Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,8a4fe5d5-5492-423b-b1f3-7ec4d717ab48,1.0,FlatFee,#N/A,#N/A,PPTSU-BP-MM-CPQ
+443c007b-9322-43fe-8623-75b3c733707c,Tier 2,USD,#N/A,6.0,#N/A,120.0,7ecb351a-69a1-4373-846a-8d3406268b59,#N/A,FlatFee,180.0,#N/A,STR-BP-XX-CPQ
+465a12e3-047f-4ced-b246-f548afd8f34e,Work.com Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,0f285a71-3d9b-4c2e-bfe1-475ee7d27e9a,5001.0,FlatFee,#N/A,#N/A,SHWK-BP-XX-CPQ
+46e3725d-3e02-45d9-b2a6-7f231a9ec77a,Professional Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,771b5f45-18b8-4a71-9368-2baf60244aa4,#N/A,FlatFee,#N/A,#N/A,PRSU-BP-MM-CPQ
+470a9d28-e8bb-47f3-b197-586edc6aceca,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,3f67ed44-a6d0-4f93-b964-4d6ee31b78c5,251.0,FlatFee,#N/A,#N/A,STPR-BP-XX-CPQ
+4777ca1a-4bb8-4626-8429-d9b621b89c35,Professional Plus Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,367002fc-3a65-4a35-99db-42e0347be3b0,51.0,FlatFee,#N/A,#N/A,PPSU-BP-MM-CPQ
+488229d4-192b-4d4a-9399-54dd7ed6e53b,Stakeholder PD.Org Tier 3,USD,#N/A,51.0,#N/A,8400.0,5d3f59dc-4a4b-45db-86e6-f5fb568b9b4e,251.0,FlatFee,#N/A,#N/A,S3PR-BP-XX-CPQ
+48988f11-ef18-484a-a567-8b12e9651692,Team Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,51a01acd-c95b-4c11-a90e-abb5c9167908,1001.0,FlatFee,#N/A,#N/A,SHT-BP-XX-CPQ
+49083821-aebc-4026-9f49-0965524f6c4e,Professional Plus Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,d7c789d5-c096-4b94-8e4f-3794f56d1185,501.0,FlatFee,#N/A,#N/A,STPPC-BP-XX-CPQ
+49299b42-a173-4d8b-b070-bd6263ef64fb,Tier 6 Team Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,4356d58b-e565-432c-a9a8-37857c10d652,#N/A,PerUnit,240.0,#N/A,S2TL-BP-XX-CPQ
+492a4226-3e6e-44e4-a5f8-093392f458e4,Team Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,44d351d3-39c0-4ff8-9682-377665d1d9d0,251.0,FlatFee,#N/A,#N/A,S2T-BP-XX-CPQ
+49cabbbe-3b05-482f-aa69-eaa8655a072f,Team Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,ff2edd6b-8e7a-4a33-9b53-a4ec30838363,251.0,FlatFee,#N/A,#N/A,S2TC-BP-XX-CPQ
+49cb7b2f-6a0a-4763-8b95-c02ae63aaa9b,Professional Plus Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,d7c789d5-c096-4b94-8e4f-3794f56d1185,#N/A,FlatFee,#N/A,#N/A,STPPC-BP-XX-CPQ
+49fcd7f6-5f0d-47c2-9cd8-465a9834314c,Professional Plus PD.Org Tier 2,USD,#N/A,11.0,#N/A,228.0,e7fb4f5b-847b-40a9-b283-ce700cf8621a,#N/A,FlatFee,228.0,#N/A,PPP-BP-XX-CPQ
+4c611725-9dc0-415f-8ae6-89ca9afa3703,Tier 5 Team Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,4356d58b-e565-432c-a9a8-37857c10d652,5.0,FlatFee,#N/A,#N/A,S2TL-BP-XX-CPQ
+4cd632fe-3fd5-4df0-b89f-cfb0b8577da1,Tier 1,USD,#N/A,1.0,4861353f-43ea-4659-af7d-b14a8d769281,120.0,25dd93fa-c6e3-4a6d-a173-a3053912fd12,4.0,FlatFee,#N/A,#N/A,#N/A
+4d2dcb87-6fea-46b9-bac6-d3b8b2e5b006,Professional Plus Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,8a4fe5d5-5492-423b-b1f3-7ec4d717ab48,251.0,FlatFee,#N/A,#N/A,PPTSU-BP-MM-CPQ
+4d708ae6-893e-4f41-ba95-7abedbb402e7,Stakeholder PD.Org Tier 6,USD,#N/A,1001.0,#N/A,54000.0,c473f9fe-1517-4a3c-8fe6-fbff97063407,5001.0,FlatFee,#N/A,#N/A,S3PX-BP-XX-CPQ
+4db495eb-f11a-4f0f-98a7-c31a94a0b115,Standard Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,bb1cf1d2-8422-4df5-9900-f415b52807c9,1.0,FlatFee,#N/A,#N/A,S2SC-BP-XX-CPQ
+4e973744-3a1d-4acc-b320-2bd7c46260ff,Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,e69f6830-a5c2-4938-a8b0-45417431342d,251.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ
+4ecde326-7828-49fb-9aac-33aff929cbac,Tier 1,USD,#N/A,1.0,#N/A,120.0,7ecb351a-69a1-4373-846a-8d3406268b59,6.0,FlatFee,#N/A,#N/A,STR-BP-XX-CPQ
+4ef07b16-6b3c-4c9d-91e9-fd45ea24c548,Team Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,51a01acd-c95b-4c11-a90e-abb5c9167908,501.0,FlatFee,#N/A,#N/A,SHT-BP-XX-CPQ
+4f23e2c6-e0f7-4c79-b349-14c173bb6e22,Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,133fe117-c33e-4023-a8a7-7abb872479ad,501.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ-FY21
+4f747aed-a5f2-4b46-8d95-8083e07a90f9,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,ec4f1c60-b390-4ff2-a52c-8c40ef19dd29,#N/A,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ
+4f80b879-8b78-4078-aff7-7cbc8a7162f0,Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,8be8f77e-6d8d-4229-990c-44aa9f37f640,1.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ-FY21
+501f3649-8009-4e71-8435-11800860d190,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,34942e64-b97d-4256-a75c-937954c0e0ef,1.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ-FY21
+5180acb8-7721-4465-b167-c67bccb86aff,Professional Services Optimize With ServiceNow (XX-Large) Tier 5,USD,#N/A,1501.0,#N/A,110000.0,a7ca1efe-216a-4f06-a124-7c73191f523f,2501.0,FlatFee,#N/A,#N/A,PSVOS-SE-SS-CPQ
+519f524e-b261-4616-ae00-62c206bdfaf1,1-10 PD.Org Users - Tier 1,USD,#N/A,1.0,#N/A,0.0,c19785df-6f9f-449a-b989-9ca6cc5a8d09,11.0,FlatFee,#N/A,#N/A,PTP-BP-XX-CPQ
+52055989-2f9c-45b8-9571-3f3766cbac74,Standard Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,3936d099-2d5f-4eb6-978d-83bb4647f93a,1001.0,FlatFee,#N/A,#N/A,STPS-BP-MM-CPQ
+53f77e63-c442-45d2-9e5c-ba888e844707,Team Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,ff2edd6b-8e7a-4a33-9b53-a4ec30838363,1.0,FlatFee,#N/A,#N/A,S2TC-BP-XX-CPQ
+54174c79-c543-44ff-9405-43bfedc07171,Tier 4 Team Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,4356d58b-e565-432c-a9a8-37857c10d652,4.0,FlatFee,#N/A,#N/A,S2TL-BP-XX-CPQ
+55aa1218-e62f-4022-bb69-9493f172f46c,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,c5766468-8553-4e45-b120-e92e0cc50e56,1.0,FlatFee,#N/A,#N/A,STPP-BP-XX-CPQ
+563e108f-1d82-42a9-8ded-0167ff4fbd3e,Professional Plus Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,d7c789d5-c096-4b94-8e4f-3794f56d1185,1001.0,FlatFee,#N/A,#N/A,STPPC-BP-XX-CPQ
+56908181-3633-416d-aade-eb67bc8b7ee9,Tier 2 PD.Org Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,2.0,FlatFee,#N/A,#N/A,S3TL-BP-XX-CPQ
+56b8002f-6f4b-4a29-96c8-b4bde23e29d7,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,62738144-95ea-4f3d-bf96-784a1b0a7462,501.0,FlatFee,#N/A,#N/A,PXTSU-BP-MM-CPQ
+57504765-48a3-499a-b19b-d271e634afc0,Team Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,51a01acd-c95b-4c11-a90e-abb5c9167908,51.0,FlatFee,#N/A,#N/A,SHT-BP-XX-CPQ
+57734a43-8262-41bd-bb09-820626daf2e6,Stakeholder PD.Org Tier 6,USD,#N/A,1001.0,#N/A,90000.0,5d3f59dc-4a4b-45db-86e6-f5fb568b9b4e,5001.0,FlatFee,#N/A,#N/A,S3PR-BP-XX-CPQ
+577feee4-c6ab-4e3c-b6ec-ebc29cc64d3e,Stakeholder PD.Org Tier 6,USD,#N/A,1001.0,#N/A,90000.0,f3f2385c-da26-478c-83df-75f4947d881d,5001.0,FlatFee,#N/A,#N/A,S3PP-BP-XX-CPQ
+57cbe93f-3232-4ef7-920f-0cc02944dd48,Professional Plus Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,8a4fe5d5-5492-423b-b1f3-7ec4d717ab48,5001.0,FlatFee,#N/A,#N/A,PPTSU-BP-MM-CPQ
+59d3873c-0d7f-4f56-a67a-bc25910e9705,Professional Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,5cce8dad-000a-4f23-bcf6-6ce1dc2d6916,1.0,FlatFee,#N/A,#N/A,PPSX-BP-MM-CPQ
+5b274989-92d3-4d68-9d1b-5a209500996a,Professional Plus Stakeholder Tier 2,USD,#N/A,1.0,#N/A,900.0,d7c789d5-c096-4b94-8e4f-3794f56d1185,51.0,FlatFee,#N/A,#N/A,STPPC-BP-XX-CPQ
+5b331d93-d7cf-4f52-a399-4d8d58d8aa5b,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,ef4348d4-be09-4af5-96db-f3770e9e1691,5001.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ
+5c438190-b3ff-48ce-8aa5-44adef44ba27,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,5cbffc6b-822e-41d0-a7b7-0b9c89caec16,1.0,FlatFee,#N/A,#N/A,STPPX-BP-XX-CPQ
+5c57cf5a-cf59-4350-b9f3-1b40c6ef90de,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,900.0,ef4348d4-be09-4af5-96db-f3770e9e1691,51.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ
+5efda861-f479-4890-b388-822ee57699ed,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,77a61120-afd6-4a1c-ad54-3dafee4636c5,51.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ
+60a9c5c6-506c-4729-ae14-9c7babba5b84,Professional Services Migration (Small) Tier 2,USD,#N/A,101.0,#N/A,30000.0,35287239-5c87-443a-bf25-3786d6903253,501.0,FlatFee,#N/A,#N/A,PSVM-SE-SS-CPQ
+60e67254-4fa9-4e2e-ae32-c3cdaf98da5f,Tier 1 Professional Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,23c941bd-c319-4136-bd3f-a8b30f435c8b,1.0,FlatFee,#N/A,#N/A,STPPL-BP-XX-CPQ
+61399a90-00fe-412f-b644-9e62c050f725,Work.com Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,0f285a71-3d9b-4c2e-bfe1-475ee7d27e9a,251.0,FlatFee,#N/A,#N/A,SHWK-BP-XX-CPQ
+6157ae9d-dff7-400c-9cbe-0aee24483107,Professional Plus Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,367002fc-3a65-4a35-99db-42e0347be3b0,251.0,FlatFee,#N/A,#N/A,PPSU-BP-MM-CPQ
+61a5949a-f4e9-4f95-a985-8e5900d45fe0,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,86ec9e71-9297-40d4-aadb-f4ebd4230c99,51.0,FlatFee,#N/A,#N/A,SHPX-BP-XX-CPQ
+648b40f7-fa65-471d-99d1-f6a103fb8345,Professional Plus PD.Org Tier 1,USD,#N/A,0.0,#N/A,0.0,e7fb4f5b-847b-40a9-b283-ce700cf8621a,11.0,FlatFee,#N/A,#N/A,PPP-BP-XX-CPQ
+66860fe6-9840-443a-8a05-48ed2939e6a8,Standard Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,65b66f27-653e-4e64-846e-5988a2720e82,51.0,FlatFee,#N/A,#N/A,S2S-BP-XX-CPQ
+66c18197-f7b2-4951-a8c5-9b62980b4f73,Professional Services Migration (Micro) Tier 1,USD,#N/A,1.0,#N/A,15000.0,35287239-5c87-443a-bf25-3786d6903253,101.0,FlatFee,#N/A,#N/A,PSVM-SE-SS-CPQ
+67665e7b-a0a4-4202-9e16-04263b656283,Team Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,44d351d3-39c0-4ff8-9682-377665d1d9d0,1.0,FlatFee,#N/A,#N/A,S2T-BP-XX-CPQ
+67816afe-5479-47f3-b697-da9128a7cc5f,Stakeholder PD.Org Tier 5,USD,#N/A,501.0,#N/A,24000.0,f3f2385c-da26-478c-83df-75f4947d881d,1001.0,FlatFee,#N/A,#N/A,S3PP-BP-XX-CPQ
+67eec98e-d125-4eab-9916-2d004a3c9dc5,Tier 4 Standard Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,10f3f097-8c8c-43dd-9ec3-fcbbad623368,4.0,FlatFee,#N/A,#N/A,S2SL-BP-XX-CPQ
+69f9f8ee-14c6-4bba-8663-028ca5d87960,Standard Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,63901c13-c9c3-4dfe-b90d-be70986a3bcd,1.0,FlatFee,#N/A,#N/A,SHS-BP-XX-CPQ
+6abd00be-ee00-4e1b-b2e3-587231d1f09e,Stakeholder PD.Org Tier 5,USD,#N/A,501.0,#N/A,24000.0,7811e015-30ef-4817-8c52-89807b3adb3b,1001.0,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+6b15d847-cca7-4c94-938d-5f50a614fd4d,Tier 6 Business Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,e94c8f03-eb7b-4a73-a0f4-f329a1608dbb,#N/A,FlatFee,240.0,#N/A,S2BL-BP-XX-CPQ-FY21
+6bebd7d8-ffb5-44dd-a897-20a0e22cc3cf,Stakeholder PD.Org Tier 2,USD,#N/A,1.0,#N/A,1080.0,c473f9fe-1517-4a3c-8fe6-fbff97063407,51.0,FlatFee,#N/A,#N/A,S3PX-BP-XX-CPQ
+6c1ce939-3b48-4879-9ff1-fa3e945c6cc9,Professional Plus Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,1ecd40d1-aa88-44d8-a8ff-a5c15ac97b7f,1.0,FlatFee,#N/A,#N/A,SHPP-BP-XX-CPQ
+6cad855a-779b-4a97-9e17-9f9d8da84217,Stakeholder PD.Org Tier 1,USD,#N/A,0.0,#N/A,0.0,f3f2385c-da26-478c-83df-75f4947d881d,1.0,FlatFee,#N/A,#N/A,S3PP-BP-XX-CPQ
+6cf802a7-9c9b-4478-8de5-752d220fb18c,Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,133fe117-c33e-4023-a8a7-7abb872479ad,5001.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ-FY21
+6e240f34-e146-4255-93ca-5bb43566f845,Stakeholder User Tier 4,USD,#N/A,251.0,#N/A,15000.0,7f1be504-05f3-4518-b7f8-c74b1c685c75,501.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ-FY21
+6ee8d6cd-63aa-40fb-81a3-f9529102952e,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,3f67ed44-a6d0-4f93-b964-4d6ee31b78c5,1001.0,FlatFee,#N/A,#N/A,STPR-BP-XX-CPQ
+701890fa-e8a5-4eac-ab5f-4ec52051a730,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,8c8bb0e7-3ff8-4874-a8bc-a8ba1a4965fd,251.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ-FY21
+70f5aea5-5212-4c88-8355-fe3ef8641b35,Team Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,51a01acd-c95b-4c11-a90e-abb5c9167908,1.0,FlatFee,#N/A,#N/A,SHT-BP-XX-CPQ
+71c1d003-7b6e-48c9-8d7c-aad268b913a5,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,844d059a-e26c-4c2f-bcc7-e01470f66ee2,1.0,FlatFee,#N/A,#N/A,SHP-BP-XX-CPQ
+72827a35-eab9-4372-925f-936ccf043522,Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,e69f6830-a5c2-4938-a8b0-45417431342d,501.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ
+737214e8-e5a8-4c5d-bc15-35491f65a319,Tier 2,USD,#N/A,6.0,#N/A,120.0,f14e6a87-1c5a-4415-bc9a-dff9ed79cc24,#N/A,PerUnit,180.0,#N/A,#N/A
+74080c96-33f2-481a-85ed-fab4e34c6b93,Tier 5 Business Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,e94c8f03-eb7b-4a73-a0f4-f329a1608dbb,5.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ-FY21
+74dc75d9-3790-44a6-9417-f9b10c3cbd39,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,29827e59-b171-46de-96cb-a3baaf7a60dc,251.0,FlatFee,#N/A,#N/A,TTPS-BP-MM-CPQ
+752a7805-3c09-4e3f-aa27-4eb0ff85cc6c,Stakeholder PD.Org Tier 2,USD,#N/A,1.0,#N/A,1800.0,7811e015-30ef-4817-8c52-89807b3adb3b,51.0,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+7592bdac-fb7a-40d6-bc67-a2aef69cb679,Tier 3 Team Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,4356d58b-e565-432c-a9a8-37857c10d652,3.0,FlatFee,#N/A,#N/A,S2TL-BP-XX-CPQ
+76f16532-25c6-47d4-b0fe-67adc2889779,Tier 2 Professional Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,23c941bd-c319-4136-bd3f-a8b30f435c8b,2.0,FlatFee,#N/A,#N/A,STPPL-BP-XX-CPQ
+7b32ab1b-4c8a-4a1a-a3ad-5eddcd0d05de,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,77a61120-afd6-4a1c-ad54-3dafee4636c5,1001.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ
+7cb2f7bb-97a2-420b-8283-06917b4d7b47,Professional Services Optimize With ServiceNow (Medium) Tier 2,USD,#N/A,251.0,#N/A,54000.0,a7ca1efe-216a-4f06-a124-7c73191f523f,501.0,FlatFee,#N/A,#N/A,PSVOS-SE-SS-CPQ
+7cc29690-240c-4029-be7c-017b92592d02,Tier 4,USD,#N/A,6.0,#N/A,180.0,a165039d-1244-4ac7-a04c-96b2a1b6d3b8,8.0,#N/A,#N/A,#N/A,MIRT-AO-LU-CPQ
+7cda91f2-0ab8-4be1-b876-07465a4d52cc,Tier 3 PD.Org Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,3.0,FlatFee,#N/A,#N/A,S3TL-BP-XX-CPQ
+7cf695b9-21db-44c7-85bf-6491e5291980,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,8c8bb0e7-3ff8-4874-a8bc-a8ba1a4965fd,1.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ-FY21
+7e1f09d8-e880-4386-ae3c-921876883334,Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,5366ad91-6892-4c85-a1a6-f9bb7833a3e6,51.0,FlatFee,#N/A,#N/A,TPSU-BP-MM-CPQ
+7e2f2ffc-c6f3-4b84-a8c0-d90c70b65c10,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,86ec9e71-9297-40d4-aadb-f4ebd4230c99,501.0,FlatFee,#N/A,#N/A,SHPX-BP-XX-CPQ
+7e9fa0bb-7c72-4eb9-81f2-33da8fb0fae1,Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,5366ad91-6892-4c85-a1a6-f9bb7833a3e6,5001.0,FlatFee,#N/A,#N/A,TPSU-BP-MM-CPQ
+7fa17384-bee7-4eae-8494-35c48f384de8,Tier 3 Standard Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,10f3f097-8c8c-43dd-9ec3-fcbbad623368,3.0,FlatFee,#N/A,#N/A,S2SL-BP-XX-CPQ
+80de17bf-5322-40ba-a1c4-03b58fcc9821,Tier 5 Standard Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,10f3f097-8c8c-43dd-9ec3-fcbbad623368,5.0,FlatFee,#N/A,#N/A,S2SL-BP-XX-CPQ
+81d70b97-e82b-4298-accb-c29854367472,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,08aa77ce-86d4-456a-91e2-d31b45b1cb18,1.0,FlatFee,#N/A,#N/A,PRTSU-BP-MM-CPQ
+81de585d-d297-4da4-9e32-22da854fccde,Standard Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,fb3627ba-d135-48ed-a1dd-f7f7a28b099a,5001.0,FlatFee,#N/A,#N/A,SPSU-BP-MM-CPQ
+828521a7-c320-4e22-8094-65d9bda03413,Team Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,44d351d3-39c0-4ff8-9682-377665d1d9d0,1001.0,FlatFee,#N/A,#N/A,S2T-BP-XX-CPQ
+82dd73a5-f9bb-4531-b9a5-31daba5383ac,Stakeholder PD.Org Tier 2,USD,#N/A,1.0,#N/A,1800.0,f3f2385c-da26-478c-83df-75f4947d881d,51.0,FlatFee,#N/A,#N/A,S3PP-BP-XX-CPQ
+83aaf7b5-16da-43ca-820f-c39bfb6256e0,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,b202ea13-946e-4388-95a2-dc9a810e1687,251.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ
+854a70e5-99b7-4f65-ab65-c69e885b1749,Professional Services Optimize With Advanced Integrations (XX-Large) Tier 5,USD,#N/A,1501.0,#N/A,110000.0,b932b875-715d-4f98-8e13-46b20d8d564c,2501.0,FlatFee,#N/A,#N/A,PSVOI-SE-SS-CPQ
+8551ed72-77e2-40bb-a284-291eb389c681,Standard Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,3936d099-2d5f-4eb6-978d-83bb4647f93a,1.0,FlatFee,#N/A,#N/A,STPS-BP-MM-CPQ
+860586bd-839f-48ca-bb85-221371e8e2e0,Work.com Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,8a31742c-ddc6-45cf-b433-1096f041d22d,251.0,FlatFee,#N/A,#N/A,WKSU-BP-MM-CPQ
+8638f830-238b-46cd-80fa-ced9e6cfa2e8,Professional Services Optimize With ServiceNow (XXX-Large) Tier 6,USD,#N/A,2501.0,#N/A,135000.0,a7ca1efe-216a-4f06-a124-7c73191f523f,#N/A,FlatFee,#N/A,#N/A,PSVOS-SE-SS-CPQ
+871b8dac-8adb-46ae-9d5b-6b35d299b40d,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,a835eda1-54f2-4e50-98d1-18bb1e53ea42,51.0,FlatFee,#N/A,#N/A,STPX-BP-XX-CPQ
+874c8344-4d0b-4230-9a20-5a4df21581d2,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,29827e59-b171-46de-96cb-a3baaf7a60dc,5001.0,FlatFee,#N/A,#N/A,TTPS-BP-MM-CPQ
+8809bc5c-c55e-4ea5-9d9f-520c94fd7602,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,a835eda1-54f2-4e50-98d1-18bb1e53ea42,#N/A,FlatFee,#N/A,#N/A,STPX-BP-XX-CPQ
+887bbd5d-3b4d-4c88-a504-c15dd0c7718c,Stakeholder User Tier 5,USD,#N/A,501.0,#N/A,24000.0,7f1be504-05f3-4518-b7f8-c74b1c685c75,1001.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ-FY21
+89840704-8d55-4dfb-a545-e541469cfa33,Professional Services Optimize (Small) Tier 2,USD,#N/A,101.0,#N/A,25000.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,251.0,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+8bf441ad-0edd-4b2e-a940-5977bf375773,Stakeholder PD.Org Tier 4,USD,#N/A,251.0,#N/A,9000.0,c473f9fe-1517-4a3c-8fe6-fbff97063407,501.0,FlatFee,#N/A,#N/A,S3PX-BP-XX-CPQ
+8bfd562d-4a87-4d50-89e5-f99608fc3aee,Work.com Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,8a31742c-ddc6-45cf-b433-1096f041d22d,51.0,FlatFee,#N/A,#N/A,WKSU-BP-MM-CPQ
+8c2b80a6-c67b-45f8-80fe-9f03a5b34a07,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,34942e64-b97d-4256-a75c-937954c0e0ef,5001.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ-FY21
+8cc05fc7-5bdf-4917-a2bc-b112f71070c3,Stakeholder User Tier 6,USD,#N/A,1001.0,#N/A,90000.0,7f1be504-05f3-4518-b7f8-c74b1c685c75,5001.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ-FY21
+8cc0b638-ecc2-4baf-b224-1a3c1873ff05,Tier 2 PD.Org Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,f8847893-6609-4f6b-982f-d07d6236000f,2.0,FlatFee,#N/A,#N/A,S3PPL-BP-XX-CPQ
+8cfb0de0-54d7-427e-b0b0-99f9f05bf73e,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,ec4f1c60-b390-4ff2-a52c-8c40ef19dd29,1.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ
+8debb448-781a-4fea-a792-cad5f7696ddd,Standard Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,3936d099-2d5f-4eb6-978d-83bb4647f93a,5001.0,FlatFee,#N/A,#N/A,STPS-BP-MM-CPQ
+8e7f1b59-f6cb-45ce-bc6e-b343705ea373,Tier 4 Professional Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,23c941bd-c319-4136-bd3f-a8b30f435c8b,4.0,FlatFee,#N/A,#N/A,STPPL-BP-XX-CPQ
+8f151f21-a579-42f5-9e36-ffdfac61ec5e,Tier 6 Business Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,1f032fda-b3e1-4f00-a687-fedbb2ad9180,#N/A,PerUnit,240.0,#N/A,S2BL-BP-XX-CPQ
+8f831699-bfea-49d4-a84a-9530c3bc3d1e,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,f15edf92-92ab-4d31-9d58-8b2e27bdeb6e,1.0,FlatFee,#N/A,#N/A,STPRC-BP-XX-CPQ
+8fa7aba0-590c-4df4-94ab-6fad0823217d,Tier 2 Team Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,4356d58b-e565-432c-a9a8-37857c10d652,2.0,FlatFee,#N/A,#N/A,S2TL-BP-XX-CPQ
+9033d0d7-e4ff-4917-b83b-c4a7b275750a,Standard Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,65b66f27-653e-4e64-846e-5988a2720e82,#N/A,FlatFee,#N/A,#N/A,S2S-BP-XX-CPQ
+909c2498-6ab4-463d-9162-6e6858c38427,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,b202ea13-946e-4388-95a2-dc9a810e1687,5001.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ
+9246515c-895e-435a-b7b8-715e1b46855b,Professional Plus Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,1ecd40d1-aa88-44d8-a8ff-a5c15ac97b7f,251.0,FlatFee,#N/A,#N/A,SHPP-BP-XX-CPQ
+925c6c60-a17f-440a-963f-f8d7ac95ccbb,Stakeholder PD.Org Tier 5,USD,#N/A,501.0,#N/A,24000.0,5d3f59dc-4a4b-45db-86e6-f5fb568b9b4e,1001.0,FlatFee,#N/A,#N/A,S3PR-BP-XX-CPQ
+92706241-86fd-4935-a0b9-eebfcc33591a,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,ec4f1c60-b390-4ff2-a52c-8c40ef19dd29,1001.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ
+92c7c3bd-8a43-40db-b0a1-3906468b905a,Team Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,ff2edd6b-8e7a-4a33-9b53-a4ec30838363,1001.0,FlatFee,#N/A,#N/A,S2TC-BP-XX-CPQ
+92cb2aac-7a07-416b-9281-12060cdedf55,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,3f67ed44-a6d0-4f93-b964-4d6ee31b78c5,1.0,FlatFee,#N/A,#N/A,STPR-BP-XX-CPQ
+93f9f9c7-a6aa-41a8-8922-dfd45dbc0156,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,a835eda1-54f2-4e50-98d1-18bb1e53ea42,501.0,FlatFee,#N/A,#N/A,STPX-BP-XX-CPQ
+94044cd0-824d-493d-997c-7fae19cf8bed,Standard Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,63901c13-c9c3-4dfe-b90d-be70986a3bcd,51.0,FlatFee,#N/A,#N/A,SHS-BP-XX-CPQ
+94103ad8-5831-414e-afd2-9f899f6fa6d7,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,c5766468-8553-4e45-b120-e92e0cc50e56,1001.0,FlatFee,#N/A,#N/A,STPP-BP-XX-CPQ
+941c9142-3b2b-4bb0-8292-d59c51373611,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,08aa77ce-86d4-456a-91e2-d31b45b1cb18,501.0,FlatFee,#N/A,#N/A,PRTSU-BP-MM-CPQ
+949d8d08-6bfc-4d5b-8aa4-bed753600a72,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,844d059a-e26c-4c2f-bcc7-e01470f66ee2,#N/A,FlatFee,#N/A,#N/A,SHP-BP-XX-CPQ
+959b1ca8-b76a-4758-996b-714141a98ed8,Stakeholder PD.Org Tier 1,USD,#N/A,0.0,#N/A,0.0,5d3f59dc-4a4b-45db-86e6-f5fb568b9b4e,1.0,FlatFee,#N/A,#N/A,S3PR-BP-XX-CPQ
+96a27740-e013-4bbb-aade-a6280b077004,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,a835eda1-54f2-4e50-98d1-18bb1e53ea42,1001.0,FlatFee,#N/A,#N/A,STPX-BP-XX-CPQ
+97a8eb6a-80cc-419b-9230-db834dc6115a,Professional Services Migration (Large) Tier 4,USD,#N/A,1501.0,#N/A,90000.0,35287239-5c87-443a-bf25-3786d6903253,2501.0,FlatFee,#N/A,#N/A,PSVM-SE-SS-CPQ
+97d8aeb4-840a-431f-a094-d7971844e64c,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,f15edf92-92ab-4d31-9d58-8b2e27bdeb6e,251.0,FlatFee,#N/A,#N/A,STPRC-BP-XX-CPQ
+98ef9839-f0ae-4e71-975e-d3c80e0727f6,Professional Plus Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,367002fc-3a65-4a35-99db-42e0347be3b0,1.0,FlatFee,#N/A,#N/A,PPSU-BP-MM-CPQ
+9a85f1fd-6a4e-4a19-b6df-90efa1a276c6,Tier 2 PD.Org Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,2.0,FlatFee,#N/A,#N/A,S3TL-BP-XX-CPQ
+9af4ea1f-aa08-46d2-90c4-c4fb7d1348e9,Stakeholder PD.Org Tier 3,USD,#N/A,51.0,#N/A,8400.0,7811e015-30ef-4817-8c52-89807b3adb3b,251.0,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+9b28d45f-277d-4ede-aa52-b2a4b6b17b04,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,86ec9e71-9297-40d4-aadb-f4ebd4230c99,1.0,FlatFee,#N/A,#N/A,SHPX-BP-XX-CPQ
+9b6e1b00-7659-47bb-8166-4422b71bce07,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,34942e64-b97d-4256-a75c-937954c0e0ef,251.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ-FY21
+9b7ca099-3cb4-44d9-a215-a0a5c774501c,Tier 6 Professional Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,23c941bd-c319-4136-bd3f-a8b30f435c8b,#N/A,FlatFee,240.0,#N/A,STPPL-BP-XX-CPQ
+9bd42611-4ad2-4c7e-89a4-74f0d4aa5cb5,Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,133fe117-c33e-4023-a8a7-7abb872479ad,251.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ-FY21
+9ce705dc-8734-402a-9441-01c596d49507,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,3f67ed44-a6d0-4f93-b964-4d6ee31b78c5,#N/A,FlatFee,#N/A,#N/A,STPR-BP-XX-CPQ
+9eceaf7e-3366-41f1-bf95-877eb5c88b3f,Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,e69f6830-a5c2-4938-a8b0-45417431342d,5001.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ
+9f0536cb-0741-431d-bf8c-0fdc7292342f,Work.com Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,8a31742c-ddc6-45cf-b433-1096f041d22d,501.0,FlatFee,#N/A,#N/A,WKSU-BP-MM-CPQ
+9f6cb427-8a66-497e-8316-5d822ee99e2f,Tier 4 Business Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,1f032fda-b3e1-4f00-a687-fedbb2ad9180,4.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ
+9f7c04e0-58fd-43be-a02e-30903e5d0d4f,Professional Services Optimize With Advanced Integrations (Medium) Tier 2,USD,#N/A,251.0,#N/A,54000.0,b932b875-715d-4f98-8e13-46b20d8d564c,501.0,FlatFee,#N/A,#N/A,PSVOI-SE-SS-CPQ
+9fbbe36b-9664-4f4d-a0fd-d971e457de74,Professional Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,771b5f45-18b8-4a71-9368-2baf60244aa4,1001.0,FlatFee,#N/A,#N/A,PRSU-BP-MM-CPQ
+9ff9b448-1608-4340-acf1-9b2e524174e5,Standard Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,3936d099-2d5f-4eb6-978d-83bb4647f93a,51.0,FlatFee,#N/A,#N/A,STPS-BP-MM-CPQ
+a101b866-09ec-43e8-8417-17fe6d1d38d9,Standard Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,fb3627ba-d135-48ed-a1dd-f7f7a28b099a,51.0,FlatFee,#N/A,#N/A,SPSU-BP-MM-CPQ
+a2c31965-df93-442c-9628-fd69dce8422b,Stakeholder PD.Org Tier 6,USD,#N/A,1001.0,#N/A,90000.0,7811e015-30ef-4817-8c52-89807b3adb3b,#N/A,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+a4c548a8-8e4a-4b5e-856c-cd18a4f0d50f,Professional Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,5cbffc6b-822e-41d0-a7b7-0b9c89caec16,501.0,FlatFee,#N/A,#N/A,STPPX-BP-XX-CPQ
+a4f7206e-d110-4121-ace5-3e38f57eb9e9,Professional Services Optimize With Advanced Integrations (Small) Tier 1,USD,#N/A,1.0,#N/A,36000.0,b932b875-715d-4f98-8e13-46b20d8d564c,251.0,FlatFee,#N/A,#N/A,PSVOI-SE-SS-CPQ
+a50f7f00-26cb-4668-92b2-75b083a503b0,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,f15edf92-92ab-4d31-9d58-8b2e27bdeb6e,51.0,FlatFee,#N/A,#N/A,STPRC-BP-XX-CPQ
+a7376618-2313-487c-b148-cf6da7bdff6e,Tier 1 Professional M2M Tiered,USD,#N/A,1.0,#N/A,23.0,1c2ec536-1b1e-4341-8152-c9b49e6859b5,6.0,FlatFee,#N/A,#N/A,PRFU-BP-MM-CPQ
+a8099054-4ed5-482f-a2ae-cf85c894d3f8,Stakeholder User Tier 2,USD,#N/A,1.0,#N/A,900.0,7f1be504-05f3-4518-b7f8-c74b1c685c75,51.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ-FY21
+a82cb8f1-42f2-44e8-900f-80880c7b1cf6,Standard Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,fb3627ba-d135-48ed-a1dd-f7f7a28b099a,1.0,FlatFee,#N/A,#N/A,SPSU-BP-MM-CPQ
+a83385ed-a38b-4c43-9745-556d3b45c17f,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,ef4348d4-be09-4af5-96db-f3770e9e1691,1001.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ
+a9812034-5eb0-4628-8367-2df44df53ff9,Work.com Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,0f285a71-3d9b-4c2e-bfe1-475ee7d27e9a,1.0,FlatFee,#N/A,#N/A,SHWK-BP-XX-CPQ
+a98b9a56-0fb1-4ea0-8de5-8d41188b51f6,Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,8be8f77e-6d8d-4229-990c-44aa9f37f640,251.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ-FY21
+aa4241ae-4db8-4466-b287-6bbb74e7a150,Standard Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,65b66f27-653e-4e64-846e-5988a2720e82,1.0,FlatFee,#N/A,#N/A,S2S-BP-XX-CPQ
+aadf2760-dde4-4f1f-94b7-c2ccdb62466e,Tier 3 Business Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,e94c8f03-eb7b-4a73-a0f4-f329a1608dbb,3.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ-FY21
+ab8c08d6-807d-473f-ac3b-024da4d04db1,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,29827e59-b171-46de-96cb-a3baaf7a60dc,1001.0,FlatFee,#N/A,#N/A,TTPS-BP-MM-CPQ
+abd167d4-dfb5-4ce7-8018-b389d143b8b5,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,b202ea13-946e-4388-95a2-dc9a810e1687,501.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ
+ac43b2d9-82ff-4f54-a91f-72fcb3b68a5e,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,34942e64-b97d-4256-a75c-937954c0e0ef,51.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ-FY21
+ac941366-bb03-4904-8934-1ca16b779e83,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,b202ea13-946e-4388-95a2-dc9a810e1687,1001.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ
+ad5f544b-68a1-4d66-939e-641cbdef9ec2,Team Stakeholder Tier 2,USD,#N/A,1.0,#N/A,900.0,ff2edd6b-8e7a-4a33-9b53-a4ec30838363,51.0,FlatFee,#N/A,#N/A,S2TC-BP-XX-CPQ
+af639ad5-96e2-417d-a0b9-bbf8b7149806,Tier 3,USD,#N/A,4.0,#N/A,180.0,a165039d-1244-4ac7-a04c-96b2a1b6d3b8,6.0,#N/A,#N/A,#N/A,MIRT-AO-LU-CPQ
+af63d8d9-f668-4cca-b562-2fb654af652b,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,ec4f1c60-b390-4ff2-a52c-8c40ef19dd29,51.0,FlatFee,#N/A,#N/A,SHB-BP-XX-CPQ
+afdb1ae5-cc5e-4a7c-914a-f80a19b4880a,Business Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,8c8bb0e7-3ff8-4874-a8bc-a8ba1a4965fd,51.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ-FY21
+b022829b-1a61-42f8-bbe1-72e654003c1f,Professional Plus Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,367002fc-3a65-4a35-99db-42e0347be3b0,1001.0,FlatFee,#N/A,#N/A,PPSU-BP-MM-CPQ
+b05c4471-5c0e-49a1-b2a9-bc290e6acc2e,Standard Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,3936d099-2d5f-4eb6-978d-83bb4647f93a,501.0,FlatFee,#N/A,#N/A,STPS-BP-MM-CPQ
+b0e452f8-3eb9-49c1-9e9c-3e1fa14c7296,Professional Services Optimize (Medium) Tier 3,USD,#N/A,251.0,#N/A,42000.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,501.0,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+b157ec71-aad8-402f-b35e-9d189a06a902,Tier 1,USD,#N/A,1.0,#N/A,10.0,c2ac1fc3-99cb-4d2f-becf-d776257e2ac4,7.0,FlatFee,#N/A,#N/A,STFU-BP-MM-CPQ
+b1583dc9-95d2-4ebb-aeae-49534ac17392,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,a835eda1-54f2-4e50-98d1-18bb1e53ea42,251.0,FlatFee,#N/A,#N/A,STPX-BP-XX-CPQ
+b1a8777b-972e-45fa-9615-8cc66b19ab26,Stakeholder PD.Org Tier 3,USD,#N/A,51.0,#N/A,8400.0,f3f2385c-da26-478c-83df-75f4947d881d,251.0,FlatFee,#N/A,#N/A,S3PP-BP-XX-CPQ
+b2b99974-5c08-4466-a77d-77186d8d5d24,Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,5366ad91-6892-4c85-a1a6-f9bb7833a3e6,1.0,FlatFee,#N/A,#N/A,TPSU-BP-MM-CPQ
+b4c42537-b9d9-47b8-a62a-efd03ee1facc,Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,8be8f77e-6d8d-4229-990c-44aa9f37f640,5001.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ-FY21
+b66ce3f4-7db1-481b-a546-bcaeb91c5984,Professional Stakeholder User Fee Tier 6,USD,#N/A,1001.0,#N/A,7500.0,5cce8dad-000a-4f23-bcf6-6ce1dc2d6916,5001.0,FlatFee,#N/A,#N/A,PPSX-BP-MM-CPQ
+b7d566be-f984-48fa-ac03-63c7e57f7e37,Tier 4 PD.Org Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,4.0,FlatFee,#N/A,#N/A,S3TL-BP-XX-CPQ
+b8a5244f-8b53-4ed3-a812-1b2cd6801b0c,Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,133fe117-c33e-4023-a8a7-7abb872479ad,1001.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ-FY21
+b9d0ef84-ef3a-4e88-a1ff-8697b4490e85,Work.com Tiered Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,f3a4220f-ba29-41f3-a789-38048d8ee9e6,1001.0,FlatFee,#N/A,#N/A,SHWKT-BP-XX-CPQ
+ba7ad023-6223-4369-9445-0350bf2779e2,Team Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,ff2edd6b-8e7a-4a33-9b53-a4ec30838363,501.0,FlatFee,#N/A,#N/A,S2TC-BP-XX-CPQ
+ba8c0695-13af-45b6-886e-3dfb3fcd85e0,Standard Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,fb3627ba-d135-48ed-a1dd-f7f7a28b099a,1001.0,FlatFee,#N/A,#N/A,SPSU-BP-MM-CPQ
+bd0f9514-b4ff-4bae-96c8-91f844147a9d,Tier 4 Business Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,e94c8f03-eb7b-4a73-a0f4-f329a1608dbb,4.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ-FY21
+bd8501b7-af98-4de8-95e4-efa492e75059,Stakeholder PD.Org Tier 4,USD,#N/A,251.0,#N/A,15000.0,f3f2385c-da26-478c-83df-75f4947d881d,501.0,FlatFee,#N/A,#N/A,S3PP-BP-XX-CPQ
+bd97f9af-9dc9-46fc-b307-fb78fb42c2e6,Standard Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,65b66f27-653e-4e64-846e-5988a2720e82,1001.0,FlatFee,#N/A,#N/A,S2S-BP-XX-CPQ
+bd99cc2f-81de-4c21-aed4-8abec03bd074,Tier 3 Professional Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,23c941bd-c319-4136-bd3f-a8b30f435c8b,3.0,FlatFee,#N/A,#N/A,STPPL-BP-XX-CPQ
+be65ffb9-fba4-4137-b295-f8e5d36fc361,Professional Plus Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,1ecd40d1-aa88-44d8-a8ff-a5c15ac97b7f,501.0,FlatFee,#N/A,#N/A,SHPP-BP-XX-CPQ
+bfbe946f-4943-4863-b1ff-65222f27de27,Work.com Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,0f285a71-3d9b-4c2e-bfe1-475ee7d27e9a,501.0,FlatFee,#N/A,#N/A,SHWK-BP-XX-CPQ
+c15e524e-002b-4e0a-b639-c18e23cf1af5,Professional Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,a835eda1-54f2-4e50-98d1-18bb1e53ea42,1.0,FlatFee,#N/A,#N/A,STPX-BP-XX-CPQ
+c20f992d-f186-4ed7-b5ea-e03384e2ffb5,Professional Services Migration (Medium) Tier 3,USD,#N/A,501.0,#N/A,60000.0,35287239-5c87-443a-bf25-3786d6903253,1501.0,FlatFee,#N/A,#N/A,PSVM-SE-SS-CPQ
+c2fca2d9-8032-4df7-b083-56235f4c91b9,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,08aa77ce-86d4-456a-91e2-d31b45b1cb18,1001.0,FlatFee,#N/A,#N/A,PRTSU-BP-MM-CPQ
+c3195bc3-6f59-4478-96c9-ad365e6c6ff2,Stakeholder PD.Org Tier 2,USD,#N/A,1.0,#N/A,1800.0,7811e015-30ef-4817-8c52-89807b3adb3b,51.0,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+c383cdcb-1581-4d9a-9793-f06229f03cbd,Professional Stakeholder User Fee Tier 3,USD,#N/A,51.0,#N/A,700.0,5cce8dad-000a-4f23-bcf6-6ce1dc2d6916,251.0,FlatFee,#N/A,#N/A,PPSX-BP-MM-CPQ
+c3c7d8f2-af6d-40ef-8992-6a8318d50e43,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,86ec9e71-9297-40d4-aadb-f4ebd4230c99,#N/A,FlatFee,#N/A,#N/A,SHPX-BP-XX-CPQ
+c46a0a07-8ccb-4776-b2f2-451b2c277bfd,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,7500.0,62738144-95ea-4f3d-bf96-784a1b0a7462,5001.0,FlatFee,#N/A,#N/A,PXTSU-BP-MM-CPQ
+c47ce07c-9f7d-4554-bf13-4279e1fba008,Tier 1,USD,#N/A,1.0,4861353f-43ea-4659-af7d-b14a8d769281,120.0,b2115577-fd24-4406-a61f-b3466d626030,7.0,FlatFee,#N/A,#N/A,STR1S-BP-XX-CPQ
+c535b729-990c-4c60-95ba-b8e177f395b3,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,f15edf92-92ab-4d31-9d58-8b2e27bdeb6e,#N/A,FlatFee,#N/A,#N/A,STPRC-BP-XX-CPQ
+c574862a-a258-4630-8308-1930724120eb,Professional Plus Stakeholder Tier 5,USD,#N/A,501.0,#N/A,2000.0,8a4fe5d5-5492-423b-b1f3-7ec4d717ab48,1001.0,FlatFee,#N/A,#N/A,PPTSU-BP-MM-CPQ
+c5ed603c-3e2a-4053-9fd8-d0d06445baf4,Professional Services Optimize (Micro) Tier 1,USD,#N/A,1.0,#N/A,12500.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,101.0,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+c666d53b-ace3-4f1b-821d-f9e92a704680,Work.com Tiered Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,f3a4220f-ba29-41f3-a789-38048d8ee9e6,251.0,FlatFee,#N/A,#N/A,SHWKT-BP-XX-CPQ
+c6c89cb0-cbfe-4471-936d-17edf4d879f9,Professional Services Optimize With ServiceNow (Small) Tier 1,USD,#N/A,1.0,#N/A,36000.0,a7ca1efe-216a-4f06-a124-7c73191f523f,251.0,FlatFee,#N/A,#N/A,PSVOS-SE-SS-CPQ
+c7335827-8e35-4b36-a604-e50bb4cbe6d8,Tier 2 Standard Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,10f3f097-8c8c-43dd-9ec3-fcbbad623368,2.0,FlatFee,#N/A,#N/A,S2SL-BP-XX-CPQ
+c7548ac3-d70a-4b36-820c-359d638580c3,Tier 5 Professional Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,23c941bd-c319-4136-bd3f-a8b30f435c8b,5.0,FlatFee,#N/A,#N/A,STPPL-BP-XX-CPQ
+c7bebc2c-d0f8-4cd3-8fa8-4bfb18a084c1,Team Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,ff2edd6b-8e7a-4a33-9b53-a4ec30838363,5001.0,FlatFee,#N/A,#N/A,S2TC-BP-XX-CPQ
+c9bd4ed1-3956-4d3a-ab73-ed61af12e968,Standard Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,bb1cf1d2-8422-4df5-9900-f415b52807c9,251.0,FlatFee,#N/A,#N/A,S2SC-BP-XX-CPQ
+cab0b4cf-e14d-435e-8bec-9a993d96d074,Tier 4 PD.Org Tiered Legacy Stakeholder,USD,#N/A,3.0,#N/A,240.0,f8847893-6609-4f6b-982f-d07d6236000f,4.0,FlatFee,#N/A,#N/A,S3PPL-BP-XX-CPQ
+cba2cce4-91f3-443e-9552-14670e86c177,Standard Stakeholder Tier 2,USD,#N/A,1.0,#N/A,900.0,bb1cf1d2-8422-4df5-9900-f415b52807c9,51.0,FlatFee,#N/A,#N/A,S2SC-BP-XX-CPQ
+cc0d6647-10f7-4911-af57-ca3b16d08699,Professional Plus Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,1ecd40d1-aa88-44d8-a8ff-a5c15ac97b7f,1001.0,FlatFee,#N/A,#N/A,SHPP-BP-XX-CPQ
+cc576a06-e483-4984-aceb-b9ce1089c604,Professional Plus Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,d7c789d5-c096-4b94-8e4f-3794f56d1185,251.0,FlatFee,#N/A,#N/A,STPPC-BP-XX-CPQ
+cc60f0ee-c117-4070-8987-a9030cf88b9d,Stakeholder PD.Org Tier 1,USD,#N/A,0.0,#N/A,0.0,7811e015-30ef-4817-8c52-89807b3adb3b,1.0,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+ccdbb4ed-a8b8-452d-99a1-25b7063e2ada,Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,133fe117-c33e-4023-a8a7-7abb872479ad,51.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ-FY21
+cd8f4e8e-427c-4116-8c80-61c7f4b5dd5e,Standard Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,bb1cf1d2-8422-4df5-9900-f415b52807c9,501.0,FlatFee,#N/A,#N/A,S2SC-BP-XX-CPQ
+cdef6bfd-5ada-4bf5-b2bd-d728beefe49d,Professional Services Optimize (X-Large) Tier 5,USD,#N/A,1001.0,#N/A,80000.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,1501.0,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+ce6cf796-13b2-44a3-a20e-083b84079f73,Tier 3 Business Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,1f032fda-b3e1-4f00-a687-fedbb2ad9180,3.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ
+cf0cfaac-60d3-4084-b555-a72d9a6ca5ab,Standard Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,63901c13-c9c3-4dfe-b90d-be70986a3bcd,251.0,FlatFee,#N/A,#N/A,SHS-BP-XX-CPQ
+cf117dc5-b000-451d-aca0-ca8cf7470e75,Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,e69f6830-a5c2-4938-a8b0-45417431342d,1001.0,FlatFee,#N/A,#N/A,BSPSU-BP-MM-CPQ
+d09e5919-217c-46f1-bf98-57dc0923f7b1,Work.com Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,0.0,8a31742c-ddc6-45cf-b433-1096f041d22d,1.0,FlatFee,#N/A,#N/A,WKSU-BP-MM-CPQ
+d2c8913c-9703-4882-8c86-603bdaad8ad2,Tier 1,USD,#N/A,1.0,#N/A,120.0,f14e6a87-1c5a-4415-bc9a-dff9ed79cc24,6.0,FlatFee,#N/A,#N/A,#N/A
+d2e5356f-eafd-4006-91c6-7c4b88fc213b,Work.com Tiered Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,f3a4220f-ba29-41f3-a789-38048d8ee9e6,5001.0,FlatFee,#N/A,#N/A,SHWKT-BP-XX-CPQ
+d3e6107b-02cb-48cd-824d-18b86185edcd,Tier 1 PD.Org Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,f8847893-6609-4f6b-982f-d07d6236000f,1.0,FlatFee,#N/A,#N/A,S3PPL-BP-XX-CPQ
+d600a40e-a3ac-4e72-9c7d-01b30a41d4e1,Professional Plus Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,1ecd40d1-aa88-44d8-a8ff-a5c15ac97b7f,51.0,FlatFee,#N/A,#N/A,SHPP-BP-XX-CPQ
+d61b26d1-d9b0-4556-8880-e3fcf28b1229,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,c5766468-8553-4e45-b120-e92e0cc50e56,51.0,FlatFee,#N/A,#N/A,STPP-BP-XX-CPQ
+d998a797-c59f-44f4-a707-b3ee8db5d8b7,Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,5366ad91-6892-4c85-a1a6-f9bb7833a3e6,501.0,FlatFee,#N/A,#N/A,TPSU-BP-MM-CPQ
+da0b83f6-5558-4630-b1b2-7c0a771a46db,Professional Plus Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,8a4fe5d5-5492-423b-b1f3-7ec4d717ab48,51.0,FlatFee,#N/A,#N/A,PPTSU-BP-MM-CPQ
+da20acf0-21d1-4466-abb5-3511a01b518a,Professional Services Optimize With Advanced Integrations (Large) Tier 3,USD,#N/A,501.0,#N/A,75000.0,b932b875-715d-4f98-8e13-46b20d8d564c,1001.0,FlatFee,#N/A,#N/A,PSVOI-SE-SS-CPQ
+da83f610-c8f6-426d-b601-30123aefafc7,Tier 5 PD.Org Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,c4e9b6c7-e4b7-41ac-95d7-d2ad231d8090,5.0,FlatFee,#N/A,#N/A,S3TL-BP-XX-CPQ
+da8601b4-7958-48ac-ada7-2fdbcd251f32,Tier 5 Business Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,1f032fda-b3e1-4f00-a687-fedbb2ad9180,5.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ
+daf306d8-b982-4f50-85eb-e30da37db094,Tier 1,USD,#N/A,1.0,#N/A,180.0,97a23ce0-9bf7-4c70-b22e-a0c69e4b4b68,2.0,#N/A,#N/A,#N/A,PDVT-AO-LU-CPQ
+dbb8741d-4a12-4576-b347-a90e9cde90db,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,ef4348d4-be09-4af5-96db-f3770e9e1691,251.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ
+dbe47327-0353-4c0a-a0ec-edf145df8b1d,Professional Plus Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,8a4fe5d5-5492-423b-b1f3-7ec4d717ab48,501.0,FlatFee,#N/A,#N/A,PPTSU-BP-MM-CPQ
+dcc47abd-2ffe-41bd-9846-958a42aa54fd,Tier 2 Business Tiered Legacy Stakeholder,USD,#N/A,1.0,#N/A,240.0,1f032fda-b3e1-4f00-a687-fedbb2ad9180,2.0,FlatFee,#N/A,#N/A,S2BL-BP-XX-CPQ
+dd75ac0d-a181-4fe6-bb71-efb91d7b3c14,Tier 5 PD.Org Tiered Legacy Stakeholder,USD,#N/A,4.0,#N/A,240.0,f8847893-6609-4f6b-982f-d07d6236000f,5.0,FlatFee,#N/A,#N/A,S3PPL-BP-XX-CPQ
+de64dd53-5488-4911-9949-8a2adf5f7683,Professional Services Optimize (XX-Large) Tier 6,USD,#N/A,1501.0,#N/A,100000.0,323dae2b-b5d9-4bb2-8bb6-00cacdafccac,2501.0,FlatFee,#N/A,#N/A,PSVO-SE-SS-CPQ
+df036228-46cb-41ee-abc3-a928e30860e6,Professional Services Optimize With ServiceNow (Large) Tier 3,USD,#N/A,501.0,#N/A,75000.0,a7ca1efe-216a-4f06-a124-7c73191f523f,1001.0,FlatFee,#N/A,#N/A,PSVOS-SE-SS-CPQ
+df54bc82-46a4-498a-b270-ebd93963d0aa,Work.com Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,8a31742c-ddc6-45cf-b433-1096f041d22d,1001.0,FlatFee,#N/A,#N/A,WKSU-BP-MM-CPQ
+dfeb98d6-4531-4a04-be96-331966d30786,Professional Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,5cbffc6b-822e-41d0-a7b7-0b9c89caec16,#N/A,FlatFee,#N/A,#N/A,STPPX-BP-XX-CPQ
+e0241e41-87ed-4b41-97b0-e46053d4eac4,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,1800.0,844d059a-e26c-4c2f-bcc7-e01470f66ee2,51.0,FlatFee,#N/A,#N/A,SHP-BP-XX-CPQ
+e16e0e41-de74-4a1c-a766-093330a083e6,Stakeholder User Fee Tier 4,USD,#N/A,251.0,#N/A,1250.0,8be8f77e-6d8d-4229-990c-44aa9f37f640,501.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ-FY21
+e19c80c8-1d70-43d2-aa20-45a84f565b59,Professional Stakeholder User Fee Tier 2,USD,#N/A,1.0,#N/A,150.0,771b5f45-18b8-4a71-9368-2baf60244aa4,51.0,FlatFee,#N/A,#N/A,PRSU-BP-MM-CPQ
+e2ff6c46-6a05-4fdf-bc15-dd8ebcd4b771,Standard Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,65b66f27-653e-4e64-846e-5988a2720e82,251.0,FlatFee,#N/A,#N/A,S2S-BP-XX-CPQ
+e3317f3d-6eb9-43ce-95ac-fff21cace19c,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,62738144-95ea-4f3d-bf96-784a1b0a7462,251.0,FlatFee,#N/A,#N/A,PXTSU-BP-MM-CPQ
+e3d26f8d-8c73-4e4f-b0af-c1843d53792d,11+ PD.Org Users - Tier 2,USD,#N/A,11.0,#N/A,348.0,c19785df-6f9f-449a-b989-9ca6cc5a8d09,#N/A,PerUnit,348.0,#N/A,PTP-BP-XX-CPQ
+e4123481-9a28-4bef-a79d-5a111912bda6,Professional Stakeholder Tier 2,USD,#N/A,1.0,#N/A,150.0,08aa77ce-86d4-456a-91e2-d31b45b1cb18,51.0,FlatFee,#N/A,#N/A,PRTSU-BP-MM-CPQ
+e4c8afa4-ecef-4ee9-bc6e-38b846f95dbe,Professional Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,844d059a-e26c-4c2f-bcc7-e01470f66ee2,1001.0,FlatFee,#N/A,#N/A,SHP-BP-XX-CPQ
+e50f2f7d-3122-4ff5-b10b-7fd161c4b549,Team Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,44d351d3-39c0-4ff8-9682-377665d1d9d0,5000.0,FlatFee,#N/A,#N/A,S2T-BP-XX-CPQ
+e539eed4-028a-4d02-8b04-530dc5bcf2e4,Professional Services Migration (X-Large) Tier 5,USD,#N/A,2501.0,#N/A,120000.0,35287239-5c87-443a-bf25-3786d6903253,5001.0,FlatFee,#N/A,#N/A,PSVM-SE-SS-CPQ
+e6472121-57e1-4ced-9d01-063855beab39,Stakeholder User Fee Tier 1,USD,#N/A,0.0,#N/A,20.0,7925e2cb-71d0-437b-801b-8d985da7c143,#N/A,PerUnit,20.0,#N/A,TTS-BP-MM-CPQ
+e6c7410e-479d-4ef5-a588-4217a9bfe161,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,29827e59-b171-46de-96cb-a3baaf7a60dc,1.0,FlatFee,#N/A,#N/A,TTPS-BP-MM-CPQ
+e74aec52-8b83-463c-a5b5-9e4ff913f0ae,Tier 2,USD,#N/A,2.0,#N/A,180.0,97a23ce0-9bf7-4c70-b22e-a0c69e4b4b68,4.0,#N/A,#N/A,#N/A,PDVT-AO-LU-CPQ
+e83c7ae6-73c3-4057-94aa-4428fb0b059a,Professional Stakeholder User Fee Tier 5,USD,#N/A,501.0,#N/A,2000.0,5cce8dad-000a-4f23-bcf6-6ce1dc2d6916,1001.0,FlatFee,#N/A,#N/A,PPSX-BP-MM-CPQ
+e92c8219-54ba-42b2-856a-dad3b8a8b9f5,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,08aa77ce-86d4-456a-91e2-d31b45b1cb18,251.0,FlatFee,#N/A,#N/A,PRTSU-BP-MM-CPQ
+eacb9807-49e1-4ebd-9865-d08c642ee32a,Tier 2,USD,#N/A,2.0,#N/A,180.0,a165039d-1244-4ac7-a04c-96b2a1b6d3b8,4.0,#N/A,#N/A,#N/A,MIRT-AO-LU-CPQ
+eaefd397-2cfa-40a6-85c3-5baf4d1e5e45,Tier 6 Standard Tiered Legacy Stakeholder,USD,#N/A,5.0,#N/A,240.0,10f3f097-8c8c-43dd-9ec3-fcbbad623368,#N/A,PerUnit,240.0,#N/A,S2SL-BP-XX-CPQ
+eb58f08c-9fd8-4b89-b361-9cf711f201e5,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,77a61120-afd6-4a1c-ad54-3dafee4636c5,1.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ
+ee8283c8-8fb5-4faa-a833-bd6af3f50bb0,Tier 2 Professional M2M Tiered,USD,#N/A,6.0,#N/A,46.0,1c2ec536-1b1e-4341-8152-c9b49e6859b5,#N/A,FlatFee,23.0,#N/A,PRFU-BP-MM-CPQ
+eeaeda5a-7442-46ce-98b4-51aaa28fadb7,Professional PD.Org Tier 2,USD,#N/A,6.0,#N/A,151.2,dcafdb54-9f85-447b-990c-5df5f19deff4,#N/A,PerUnit,151.2,302.4,PPPX-BP-XX-CPQ
+ef3e3793-ac12-4778-8157-424c793d068a,Business Stakeholder Tier 5,USD,#N/A,501.0,#N/A,24000.0,8c8bb0e7-3ff8-4874-a8bc-a8ba1a4965fd,1001.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ-FY21
+f145840b-4897-442a-ac2b-aa8ebc8bcabd,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,ef4348d4-be09-4af5-96db-f3770e9e1691,501.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ
+f1661ea6-97c1-45b5-b035-3e8e98be76f8,Tier 1 Standard Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,10f3f097-8c8c-43dd-9ec3-fcbbad623368,1.0,FlatFee,#N/A,#N/A,S2SL-BP-XX-CPQ
+f38a6d0e-e513-4434-ad62-de23f42d9d26,Standard Stakeholder Tier 3,USD,#N/A,51.0,#N/A,700.0,3936d099-2d5f-4eb6-978d-83bb4647f93a,251.0,FlatFee,#N/A,#N/A,STPS-BP-MM-CPQ
+f5f0e215-735c-40d6-a929-fa755cd444e5,Business Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,8c8bb0e7-3ff8-4874-a8bc-a8ba1a4965fd,501.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ-FY21
+f6d4adb7-4e2a-425a-a472-dc2de65a92cb,Standard Stakeholder Tier 4,USD,#N/A,251.0,#N/A,15000.0,63901c13-c9c3-4dfe-b90d-be70986a3bcd,501.0,FlatFee,#N/A,#N/A,SHS-BP-XX-CPQ
+f71b96fe-46d0-4bd1-a507-7ae8449079bb,Business Stakeholder Tier 1,USD,#N/A,0.0,#N/A,0.0,b202ea13-946e-4388-95a2-dc9a810e1687,1.0,FlatFee,#N/A,#N/A,BSTPS-BP-MM-CPQ
+f7cd6de5-41ac-438c-abe4-d9f65222ba04,Professional Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,86ec9e71-9297-40d4-aadb-f4ebd4230c99,251.0,FlatFee,#N/A,#N/A,SHPX-BP-XX-CPQ
+f800c648-7291-45e4-b9ec-2a9f40ebf247,Stakeholder PD.Org Tier 4,USD,#N/A,251.0,#N/A,15000.0,7811e015-30ef-4817-8c52-89807b3adb3b,501.0,FlatFee,#N/A,#N/A,S3T-BP-XX-CPQ
+f88234b2-5b53-407e-ba69-d86158ceb20c,Professional Services Migration (XX-Large) Tier 6,USD,#N/A,5001.0,#N/A,150000.0,35287239-5c87-443a-bf25-3786d6903253,#N/A,FlatFee,#N/A,#N/A,PSVM-SE-SS-CPQ
+f8ed7f57-6ef6-4f65-8de9-145ed0dbef0e,Standard Stakeholder Tier 4,USD,#N/A,251.0,#N/A,1250.0,fb3627ba-d135-48ed-a1dd-f7f7a28b099a,501.0,FlatFee,#N/A,#N/A,SPSU-BP-MM-CPQ
+fa3aef54-ff62-48d3-a7c8-b792f62d0b9f,Stakeholder PD.Org Tier 4,USD,#N/A,251.0,#N/A,15000.0,5d3f59dc-4a4b-45db-86e6-f5fb568b9b4e,501.0,FlatFee,#N/A,#N/A,S3PR-BP-XX-CPQ
+fba080e1-c917-4e33-851c-071455ad8bb9,Stakeholder User Tier 3,USD,#N/A,51.0,#N/A,8400.0,7f1be504-05f3-4518-b7f8-c74b1c685c75,251.0,FlatFee,#N/A,#N/A,S2BC-BP-XX-CPQ-FY21
+fbda2589-507e-4571-b5db-8fc3f3fc7978,Tier 1 Team Tiered Legacy Stakeholder,USD,#N/A,0.0,#N/A,0.0,4356d58b-e565-432c-a9a8-37857c10d652,1.0,FlatFee,#N/A,#N/A,S2TL-BP-XX-CPQ
+fd144323-4a61-4ec4-b262-2df3b4185b74,Professional PD.Org Tier 2,USD,#N/A,11.0,#N/A,228.0,96afeaa0-3e47-4e03-aa16-2390498fcfb9,#N/A,PerUnit,228.0,228.0,PPR-BP-XX-CPQ
+fd81b533-05b0-4136-a135-0f447138d2c8,Business Stakeholder Tier 6,USD,#N/A,1001.0,#N/A,90000.0,8c8bb0e7-3ff8-4874-a8bc-a8ba1a4965fd,5001.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ-FY21
+fdf91bb3-d9d9-4caa-acf8-7d2bbda4ad79,Tier 5,USD,#N/A,8.0,#N/A,180.0,a165039d-1244-4ac7-a04c-96b2a1b6d3b8,#N/A,#N/A,#N/A,#N/A,MIRT-AO-LU-CPQ
+fe840650-b2af-4ca9-907f-8e619d2882c8,Business Stakeholder Tier 3,USD,#N/A,51.0,#N/A,8400.0,77a61120-afd6-4a1c-ad54-3dafee4636c5,251.0,FlatFee,#N/A,#N/A,S2B-BP-XX-CPQ
+ff85a156-a285-46df-8143-45daccdfa5a5,Tier 3 PD.Org Tiered Legacy Stakeholder,USD,#N/A,2.0,#N/A,240.0,f8847893-6609-4f6b-982f-d07d6236000f,3.0,FlatFee,#N/A,#N/A,S3PPL-BP-XX-CPQ
