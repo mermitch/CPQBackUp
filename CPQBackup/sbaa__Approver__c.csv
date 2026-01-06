@@ -1,0 +1,26 @@
+Guid,Name,CurrencyIsoCode,sbaa__DelegatedUserId__c,sbaa__DelegationEnd__c,sbaa__DelegationStart__c,sbaa__GroupId__c,sbaa__Unanimous__c,sbaa__User__c,ApproverExternalID__c,X18_Digit_Group_Id__c
+006e53cb-f0d6-42cf-accf-3e7ed3349ef5,PDU Discount Approval Group,USD,#N/A,#N/A,#N/A,00GV4000003CLi5,false,#N/A,#N/A,00GV4000003CLi5MAG
+0422e6f6-9859-4ec9-9bc9-2fc7e3b5ce54,Renewal Approval Group Non Commercial,USD,#N/A,#N/A,#N/A,00GV4000000b4vuMAA,false,#N/A,#N/A,00GV4000000b4vuMAA
+112930b3-e5eb-4804-8fbe-8c1d6ba64d36,EMEA Finance Approval Group,USD,#N/A,#N/A,#N/A,00G4W000007FrIvUAK,false,#N/A,#N/A,00G4W000007FrIvUAK
+252e31da-2715-423d-9459-dc62e1e6c136,Order Form Terms Manual Edit,USD,#N/A,#N/A,#N/A,00G4W0000076HubUAE,false,#N/A,#N/A,00G4W0000076HubUAE
+393c975d-52b9-4cf5-b9bf-42c0c8964d0c,Scale Approval Group Tier 1,USD,#N/A,#N/A,#N/A,00G4W0000058ZswUAE,false,#N/A,#N/A,00G4W0000058ZswUAE
+3a43c3a3-169a-4c62-81a3-7660b57541e0,Maxelia Vargas-Morillo,USD,#N/A,#N/A,#N/A,#N/A,false,0052R000009yY65QAE,#N/A,#N/A
+44842203-d6cd-4f43-83b9-c6d3303163e5,Jennifer,USD,#N/A,#N/A,#N/A,#N/A,false,005E0000006pSK6IAM,#N/A,#N/A
+49b1fd59-1a05-4b75-a052-594c38109dd4,Chung,USD,#N/A,#N/A,#N/A,#N/A,false,00544000008Y8nWAAS,#N/A,#N/A
+4ddeac50-dd67-4c93-89a1-979cee595d4c,Nisha Kadaba,USD,#N/A,#N/A,#N/A,#N/A,false,0052R000009xdkhQAA,#N/A,#N/A
+51dd363e-2f9e-4375-97dd-96d134c091fd,Ling Zhou,USD,#N/A,#N/A,#N/A,#N/A,false,005V4000007mrIwIAI,#N/A,#N/A
+657f1288-d5f6-461c-8b1c-b67e545379b5,Process Automation Services Approval Group,USD,#N/A,#N/A,#N/A,00G4W000007FcHpUAK,false,#N/A,#N/A,00G4W000007FcHpUAK
+7627d723-2f7c-4fb4-8f4b-d7c84254eaeb,Non-Scale Approval Group,USD,#N/A,#N/A,#N/A,00G4W0000058ZsvUAE,false,#N/A,#N/A,00G4W0000058ZsvUAE
+990c34bd-1e27-4565-b224-d4a152f2af4d,KC Jansson,USD,#N/A,#N/A,#N/A,#N/A,false,0052R000009y4ruQAA,#N/A,#N/A
+9b517106-97cb-42f4-99c5-bffe257f125d,Renewal Approval Group Commercial,USD,#N/A,#N/A,#N/A,00GV4000000b4vtMAA,false,#N/A,#N/A,00GV4000000b4vtMAA
+9b8df8b7-f2ce-4452-9bc8-d9e03bea8cc2,Todd McNabb,USD,#N/A,#N/A,#N/A,#N/A,false,005V400000GV1ZhIAL,#N/A,#N/A
+9ddd8d3d-e0a2-4f48-933c-d99c3b1a39e7,Sowmya Bala,USD,#N/A,#N/A,#N/A,#N/A,false,00544000009RuCDAA0,#N/A,#N/A
+aac5baef-36da-4ed1-abb2-c5e0fc914294,Allison Corley,USD,#N/A,#N/A,#N/A,#N/A,false,005V400000AQAnZIAX,#N/A,#N/A
+b1f74a4d-663c-444d-82f2-09d03f9ee02b,Grace Period Exception Request Approval Group,USD,#N/A,#N/A,#N/A,00GV4000004GLarMAG,true,#N/A,#N/A,00GV4000004GLarMAG
+d849ff0c-a3a6-45e3-8587-7144d152eedb,Grace Period Request Approval Group,USD,#N/A,#N/A,#N/A,00GV400000490RVMAY,false,#N/A,#N/A,00GV400000490RVMAY
+d89d4a57-f3b4-4793-87f4-ff02e4c2035e,Scale Approval Group Tier 2,USD,#N/A,#N/A,#N/A,00G4W0000058ZsxUAE,false,#N/A,#N/A,00G4W0000058ZsxUAE
+db383ead-0556-4098-8f73-de32b753abef,Deal Desk Approval Group,USD,#N/A,#N/A,#N/A,00G4W0000080SfNUAU,false,#N/A,#N/A,00G4W0000080SfNUAU
+e3f7a23d-85fe-4011-9016-511737bb8433,Michele Prashaw,USD,#N/A,#N/A,#N/A,#N/A,false,00544000008YFaeAAG,#N/A,#N/A
+e45abd84-8ae6-49e0-80e3-3548267b4bbe,Carol Bumbaca,USD,#N/A,#N/A,#N/A,#N/A,false,0052R000009yKy8QAE,#N/A,#N/A
+e65245fb-5816-43ae-aa4e-4e7f31a14b9d,Professional Services Approval Group,USD,#N/A,#N/A,#N/A,00G4W0000077LqRUAU,false,#N/A,#N/A,00G4W0000077LqRUAU
+f2051226-800b-4cff-8e65-3458e18abf7e,Finance Approval Group,USD,#N/A,#N/A,#N/A,00G4W0000077JH5UAM,false,#N/A,#N/A,00G4W0000077JH5UAM
