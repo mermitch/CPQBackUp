@@ -40,3 +40,42 @@ dc1991af-b650-4722-a72a-ed67b2c70062,Sum of Enterprise Quantity,USD,Quantity,Sum
 dd833ff2-8952-4c18-be4b-1d58ec6085ac,Count Base Product Line Item Quantity (non-Stakeholder),USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,NonStakeholderBaseProduct__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
 e4f51266-172a-432f-bd54-0a546bae285c,Base Product Total Discount,USD,TotalDiscountCustom__c,Max,#N/A,#N/A,#N/A,SBQQ__ProductFamily__c,Base Product,equals,Quote,Quote Line,#N/A,#N/A
 fe7e5363-6e47-4018-930a-29993f500d84,Count of Catalytic Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,WA-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+0f725204-6f3f-4ee9-ad66-83dbc95074fa,Sum Of Silver Gold Product Options,USD,Quantity,Sum,#N/A,#N/A,#N/A,SilverGoldProductOption__c,TRUE,equals,Quote,Product Option,#N/A,#N/A
+17757b13-6bc0-49fb-99ef-e2c29664c0c0,Max Base Product Quantity (non-Stakeholder),USD,SBQQ__Quantity__c,Max,#N/A,#N/A,#N/A,NonStakeholderBaseProduct__c,TRUE,equals,Quote,Quote Line,#N/A,a8c0t0000004FrBAAU20190819204044Z20190819204042Z
+23671ece-b6ec-4efb-a83e-3dce904d150a,Count Of Base Product Options,USD,Quantity,Count,#N/A,#N/A,#N/A,Product Family,Base Product,equals,Quote,Product Option,#N/A,#N/A
+23aaad17-00bd-4825-9717-c61413fee043,Count Of Primary Base Product Options,USD,Quantity,Count,#N/A,#N/A,#N/A,fml_PrimaryBaseProduct__c,TRUE,equals,Quote,Product Option,#N/A,#N/A
+244537ec-ebc7-4a90-84e7-fad15ba9abdd,Count Of Event Intelligence Products,USD,Quantity,Count,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Event Intelligence,starts with,Quote,Product Option,#N/A,#N/A
+290859de-c705-468e-81e1-ed0ac91e36e6,Count of Business Products,USD,Quantity,Count,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Business,contains,Quote,Quote Line,#N/A,#N/A
+2dae8071-dafc-4661-9ef1-fc81d2cc5a3a,Quantity Of Legacy Business Tiered Product Options,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,PBTL,starts with,Quote,Product Option,#N/A,#N/A
+348beeb0-3171-480a-aefe-bdc70e9d7b9f,Quantity Of Digital Operations Product,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Digital,starts with,Quote,Product Option,#N/A,#N/A
+36313caf-82d8-48a9-8cdd-1ca578fa2659,Max Quantity of AIOPs (Quote Line),USD,Quantity,Sum,#N/A,#N/A,#N/A,Product Code,AIO,starts with,Quote,Quote Line,#N/A,#N/A
+3ada905e-8cb5-43c5-aad8-b415e03a2878,Quantity Of Primary Base Product Options,USD,Quantity,Max,#N/A,#N/A,#N/A,fml_PrimaryBaseProduct__c,TRUE,equals,Quote,Product Option,#N/A,#N/A
+3b5d9e89-8785-4e71-8407-e7e4b8618751,Count Of Positive Quantity PagerDuty Advance Products,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,fml_PD_Advance_Quote_Line__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+485bcd33-ec72-48f7-a5e8-87c5139f14a1,Quantity Of Advisory Services Product,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Advisory,contains,Quote,Quote Line,#N/A,#N/A
+48a7ad79-8ab5-4c9c-a954-924412e61f81,Quantity Of Customer Service Product Options,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,CS,starts with,Quote,Product Option,#N/A,#N/A
+4d16af3d-a246-4b37-a4d1-f05ed28cea3d,Count of PagerDuty Bundle,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,Product Code,PDSUB-XX-XX-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+52421ca7-bcae-4274-89d4-d67f1d48fd8d,Quantity Of Team Product Options,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Team,contains,Quote,Product Option,#N/A,#N/A
+61320187-0a31-46b6-85c5-16a7b82fd0e8,Count of Root Bundles,USD,SBQQ__Quantity__c,Count,#N/A,#N/A,#N/A,fml_IsRootBundle__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+6ae26dfc-636a-4f42-ba9f-90dda1c5dadb,Max Quantity of Legacy SKUs (Quote Line),USD,Quantity,Sum,#N/A,#N/A,#N/A,Legacy_SKU__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+6c2aea9b-8719-4da5-a776-5b41908a0780,Quantity of Expert Services on Demand,USD,Quantity,Max,#N/A,#N/A,#N/A,Product Code,ESD-SE-SS-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+76c06d22-985d-4fb1-9163-ceb36c9fc4f1,Max Quantity of Professional Products,USD,Quantity,Max,#N/A,#N/A,#N/A,Professional_Base_Product__c,True,equals,Quote,Product Option,#N/A,#N/A
+94ce8fc5-0058-46d5-9a45-8259eaf0c02f,Max Quantity of Business Products,USD,Quantity,Sum,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Business,starts with,Quote,Product Option,#N/A,#N/A
+9e2f856b-5ce7-43e0-8999-124d30ea6864,Sum Of Professional Products,USD,Quantity,Sum,#N/A,#N/A,#N/A,fml_Is_Professional_Base__c,true,equals,Quote,Product Option,#N/A,#N/A
+9f129ff9-440f-4122-9aea-d72825dce9d1,Count Of Customer Service Products,USD,Quantity,Count,#N/A,#N/A,#N/A,fml_CustomerServiceAdded__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+9f7245e9-a638-4d5e-9beb-c0e6787b009a,Max Quantity of AIOPs,USD,Quantity,Sum,#N/A,#N/A,#N/A,Product Code,AIO,starts with,Quote,Product Option,#N/A,#N/A
+a304c602-7d72-431c-ab4a-f9b244066e6a,Count of Platinums,USD,Quantity,Count,#N/A,#N/A,#N/A,fml_Is_Rundeck_Platinum_Base__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+b1f00940-4ee5-4323-b4aa-23e99ca6129d,Max Of PD Cloud Automation Platform Fee,USD,SBQQ__Quantity__c,Max,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,AUTP-,starts with,Quote,Quote Line,#N/A,#N/A
+b55e482e-ef1c-4090-823e-eefcee3ed1a5,Quantity Of Digital Operations Product,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Digital,contains,Quote,Product Option,#N/A,#N/A
+b609472d-3d47-4ed2-ad60-defabb4b53c9,Max Quantity of Enterprise Product Options,USD,Quantity,Max,#N/A,#N/A,#N/A,Product Code,ENT,starts with,Quote,Product Option,#N/A,#N/A
+b6f45890-89a0-4d69-8bba-7f169a0b07f8,Count of PD.Org Products Product Options,USD,Quantity,Count,#N/A,#N/A,#N/A,SBQQ__ProductName__c,PD.Org,equals,Quote,Product Option,#N/A,#N/A
+bab5e04e-6039-4b8d-aa14-be360a624400,Quantity Of Primary Base Products for RBA,USD,Quantity,Sum,#N/A,#N/A,#N/A,BaseProductRBA__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+c0c07e19-ce15-4379-90e3-df5ed1a80cca,Count of Products with Stakeholders,USD,SBQQ__Quantity__c,Sum,#N/A,#N/A,#N/A,No_Stakeholder_Rate_Plan_Charge__c,FALSE,equals,Quote,Product Option,#N/A,#N/A
+ca785083-bc8b-4139-8dd9-0e4f667f0acc,Sum Of PD Runbook Automation Add-On,USD,Quantity,Sum,#N/A,#N/A,#N/A,Product Code,PDRB-AO-SS-CPQ,equals,Quote,Quote Line,#N/A,#N/A
+cf1ced2b-ab62-4689-8c24-c8de60aea524,Sum Of Premium Support Quote Lines,USD,Quantity,Sum,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Premium Support,starts with,Quote,Quote Line,#N/A,#N/A
+d6c9e3ab-ff28-487c-826c-4e9485843f0b,Two Base Products,USD,Quantity,Sum,#N/A,#N/A,#N/A,SBQQ__ProductFamily__c,Base Product,equals,Quote,Quote Line,#N/A,#N/A
+e89f274c-b207-45c6-97d4-0d4e5d161aa6,Quantity Of Rundeck Users,USD,Quantity,Count,#N/A,#N/A,#N/A,fml_Feature_Name__c,Users,equals,Quote,Product Option,#N/A,#N/A
+f01439d9-462e-4316-8f95-7850261d3cf5,Count of PagerDuty Status Page,USD,Quantity,Count,#N/A,#N/A,#N/A,Product Code,PSP,starts with,Quote,Product Option,#N/A,#N/A
+f1874792-25c9-4c76-816b-1522961e9814,Quantity Of Legacy Business Product Options,USD,Quantity,Max,#N/A,#N/A,#N/A,SBQQ__ProductCode__c,PBSL,starts with,Quote,Product Option,#N/A,#N/A
+f7cfdf44-18b4-41a1-9dc0-b07d9e607f9e,10 % of Max Base Product Quantity (non-Stakeholder),USD,SBQQ__Quantity__c,Max,#N/A,Multiply,#N/A,NonStakeholderBaseProduct__c,TRUE,equals,Quote,Quote Line,0.1,#N/A
+fc1ab34e-583e-46bd-95c7-1bdb3e1df25a,Count of Gold and Silver Services,USD,Quantity,Count,#N/A,#N/A,#N/A,SilverGoldServices__c,TRUE,equals,Quote,Quote Line,#N/A,#N/A
+ffd1b9b7-3c45-40d0-98f7-db89b19122c5,Max Quantity of TBAG SKUs (Quote Line),USD,Quantity,Sum,#N/A,#N/A,#N/A,SBQQ__ProductName__c,Time-based Alert Grouping,contains,Quote,Quote Line,#N/A,#N/A
