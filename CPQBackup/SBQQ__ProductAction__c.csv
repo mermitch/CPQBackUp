@@ -1,0 +1,47 @@
+Guid,CurrencyIsoCode,SBQQ__Rule__c,SBQQ__FilterField__c,SBQQ__FilterValue__c,SBQQ__Operator__c,SBQQ__ParentRuleIsActive__c,SBQQ__Product__c,SBQQ__Required__c,SBQQ__Type__c,SBQQ__ValueField__c,SBQQ__ValueObject__c,ProductActionExternalID__c
+0247faa9-a5bb-4cd0-b109-14700c4551a0,USD,24723c84-42d9-4228-bb37-22972c183b19,IncludedInDigitalOperations__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+02d58cf0-993e-4b41-bce1-fb4a1baf02ba,USD,30c454a1-de02-41bd-af93-73cab3492681,#N/A,#N/A,#N/A,false,#N/A,false,Disable,#N/A,#N/A,#N/A
+083b1dc1-66a6-4928-b536-4f7b863bd149,USD,22aaea2f-73e2-4a92-b350-14cd84349b9e,Product Code,PTS-BP-XX-CPQ,equals,false,51a01acd-c95b-4c11-a90e-abb5c9167908,true,Add,#N/A,#N/A,#N/A
+0996e686-d3a1-4895-80a5-d6a0e3d0dc44,USD,fff77191-4cc9-44cc-b209-5be296d946c4,Excluded_from_Purchasing_CS_licenses__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,#N/A,#N/A
+10b3c1f0-eb85-44e3-9822-ac65a2cdea24,USD,e593dadc-cbca-4711-8d19-89f36004e92a,CSBusinessFilterFormula__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+16bce972-14f5-44fa-b107-6f20976c7f39,USD,53a99a3f-0664-4e99-930f-1b7eeed283fe,#N/A,#N/A,#N/A,false,#N/A,false,Enable,#N/A,#N/A,#N/A
+2d26f1ea-8263-483c-ba3e-2b2096cae81e,USD,d1fa6501-1f91-4f6d-ae13-6030ac2ee0d9,Product Code,SSU-AO-SS-CPQ,equals,true,#N/A,false,Disable & Remove,#N/A,#N/A,#N/A
+3364120a-f336-491d-91ba-9bc1f6dcd159,USD,c2a2f220-bf10-43bf-b364-2a0974326f7e,Is_Rundeck_Add_on__c,#N/A,not equals,true,#N/A,false,Disable,#N/A,Product,#N/A
+3708507f-115b-4141-9336-7ed2cbdb8a19,USD,e9a0e6ab-050e-41a4-a60b-fbdbbe8eb893,Product Code,PDA,starts with,false,#N/A,false,Enable,#N/A,#N/A,#N/A
+49b19561-60e4-4de8-a02f-df91c1d83843,USD,249e429b-1639-4a83-9625-b71323eff3c7,Excluded_from_Purchasing_CS_licenses__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+4ca7eaab-c45d-4e8e-8294-b03f6dac2244,USD,e6f39ea7-60bb-4b85-bc48-3b1aa3ecd138,Is_Rundeck_Add_on__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+4fea17c5-f97e-4a75-bba6-dbc347f3ad8e,USD,d2e6a92b-0a3b-4e79-af06-616acfc61149,fml_EnterpriseFilterFormula__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+51c3c84a-e7a2-4ffa-bdbb-b2b2390b33a6,USD,e9a0e6ab-050e-41a4-a60b-fbdbbe8eb893,Product Code,MIR,starts with,false,#N/A,false,Enable,#N/A,#N/A,#N/A
+530cbb22-a8e7-461d-a24d-f3b19c56ea98,USD,2da52a79-f301-4f3c-acb7-77967369887b,fml_AddOnRequiresPrimaryBaseProduct__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+53104d34-668b-4ad9-bac0-a459b760d856,USD,0b6b79d9-08c8-48b1-83ad-c4b0acffc7eb,IncludedInDigitalOperations__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,SBQQ__ProductOption__c,#N/A
+5e57894f-820c-4724-984a-3b0e132632f0,USD,b760aec0-e61a-4c6b-a0a8-d0d4e9112249,Product Code,EIE,starts with,true,#N/A,false,Disable & Remove,#N/A,#N/A,#N/A
+74ac3a17-bcac-4f5d-b952-4f1fac6f95b0,USD,53a99a3f-0664-4e99-930f-1b7eeed283fe,#N/A,#N/A,#N/A,false,#N/A,false,Enable,#N/A,#N/A,#N/A
+7c086049-9032-4b0e-a23e-bd93d9617eee,USD,1cdd7d4e-6804-4846-9942-d2de15ed9361,Product Code,SSU-AO-SS-CPQ,equals,true,#N/A,false,Enable,#N/A,#N/A,#N/A
+7ead46a9-23ec-4927-8762-a153945af462,USD,a4093f60-79a6-479c-b347-e85d9254800f,CSDigOpsFilterFormula__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+80863844-b740-48af-85bb-e79e4ab9aa1c,USD,34e92ca5-e95f-4a09-9469-e84a9f06c1af,IncludedInDigitalOperations__c,#N/A,not equals,false,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+895dd0f5-e8cf-4fc4-901e-9afb05500dfe,USD,011e258a-5645-43be-9aaa-ddf4737ef71e,#N/A,#N/A,#N/A,true,314de6ba-0588-4090-9030-b6df6e79556f,false,Hide & Remove,#N/A,#N/A,#N/A
+8e9c4e77-bccf-4e7d-95a4-60f88a03f40a,USD,9e69e0c6-6502-4600-85e6-a4606d65bbc2,CanNotSellWithProfessional__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+915a4e76-2d45-4fa3-b8ca-fa5c84d6b0d5,USD,fb35d713-a355-43bb-8e62-a3516feba10d,#N/A,#N/A,#N/A,true,7225f2f0-89a5-4857-911d-49b3a637f7eb,false,Remove,#N/A,#N/A,#N/A
+9b5595d1-0c44-44f0-b2ee-00a4fb9a746e,USD,b308521c-220c-4702-bb9a-7dc9d61dd2c2,fml_AddOnRequiresPrimaryBaseProduct__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+a7eaa3d4-14c0-4f78-a277-9599a9372ed6,USD,60ac932a-c3ff-40ac-b54e-e2dcf0453c47,#N/A,#N/A,#N/A,false,#N/A,false,Enable,#N/A,#N/A,#N/A
+a9ab3989-f807-408b-86d7-aa46eba22c5b,USD,82cc1fe0-983d-462f-9176-be32ca42a569,Product Code,AIO,starts with,true,#N/A,false,Disable & Remove,#N/A,#N/A,#N/A
+acefc81d-9869-4236-8d1b-75ca6726da81,USD,48dfe4ce-6366-4a3c-bc8a-e7f392c1769a,Product Code,PDA,starts with,false,#N/A,false,Disable & Remove,#N/A,#N/A,#N/A
+b03f3e67-dfbd-49f6-be6a-d8e1809459a7,USD,ce45cc44-a08c-48a7-bb19-7f052947e7f9,CSProfessionalFilterFormula__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+b68c4ca1-a28d-4f5b-99f3-7da78b05d287,USD,0cea268f-feaa-45aa-8463-b559cb6bb2a0,fml_EnterpriseFilterFormula__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+b7309f2d-53c2-4ce7-b9ac-fc1883af01c4,USD,a264f0e8-a69c-4a13-bad8-c3a0f4068bcf,CanNotSellWithProfessional__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+d04cea7b-7f15-46fc-a512-55f185c80aad,USD,68869034-43c2-48a0-94f6-2471e157d15d,CSDigOpsFilterFormula__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+d44e592f-73f1-4f33-a0af-4f107701cad9,USD,af97d0ab-c267-47d5-89a5-a884a3c05b32,CanNotSellWithProfessional__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+d52db7d7-c6a4-4ac1-819c-076b9166e863,USD,2a0820a2-9a0b-41ce-9937-02a3f02af456,Product Code,AIO,starts with,true,#N/A,false,Enable,#N/A,#N/A,#N/A
+d7622111-0e0d-45cd-abfb-5cb442696609,USD,687f461d-ec98-4753-9bdb-067983d262b8,SunsetProduct__c,#N/A,not equals,true,#N/A,false,Hide,#N/A,#N/A,#N/A
+d9ccc2d4-1624-4aab-b05a-8e209f04734b,USD,dbf3399c-d389-40ab-a643-d9be78658827,CSBusinessFilterFormula__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+dd2e0fb4-0be7-4b51-a10a-4b7cb2f639e0,USD,2d7c713a-3256-42ff-b425-1795e4489238,#N/A,#N/A,#N/A,false,#N/A,true,Add,#N/A,#N/A,#N/A
+dd481539-498f-4d62-9490-9b8066dc64f2,USD,a6813fa2-7f6b-42b9-b7f7-634a6ced7b61,Product Code,PDADV,starts with,true,#N/A,false,Hide & Remove,#N/A,Product,#N/A
+dd6ed760-3620-4016-ae92-f083d3ccc6fc,USD,fc1d0419-19a6-410e-91bd-cb21c9c87f98,#N/A,#N/A,#N/A,true,7225f2f0-89a5-4857-911d-49b3a637f7eb,true,Add,#N/A,#N/A,#N/A
+e7468b26-a355-4164-8fef-f70e7d1b7ca7,USD,1df3c7b0-4a1e-4a40-a0ac-721ca0bc989f,Excluded_from_Purchasing_CS_licenses__c,#N/A,not equals,false,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+ef930923-5041-43ec-9beb-37c36333608f,USD,30c454a1-de02-41bd-af93-73cab3492681,#N/A,#N/A,#N/A,false,#N/A,false,Disable,#N/A,#N/A,#N/A
+efa53011-7b84-4f1c-a011-1d2c48cb1144,USD,a94c4ddc-eb43-4ab8-a77b-61a52b1d329e,CSProfessionalFilterFormula__c,#N/A,not equals,true,#N/A,false,Disable & Remove,#N/A,Product,#N/A
+f71e41ee-3880-49bd-9c2f-e69a00112560,USD,bbb3fb90-ddd5-47c4-9d1c-522c78e36740,Excluded_from_Purchasing_CS_licenses__c,#N/A,not equals,true,#N/A,false,Disable,#N/A,Product,#N/A
+f72588a7-5550-46ce-91e2-7925bba3253a,USD,48dfe4ce-6366-4a3c-bc8a-e7f392c1769a,Product Code,MIR,starts with,false,#N/A,false,Disable & Remove,#N/A,#N/A,#N/A
+fa57504c-4df0-4ab6-b5a3-3076cafc0310,USD,69309582-2f3c-4042-bccd-9925c4a2b12a,#N/A,#N/A,#N/A,true,c43722d8-46f7-4a53-95b0-500b513e0b0d,false,Enable & Add,#N/A,#N/A,a8B0t0000000CTXEA220190603221250Z20190603221250Z
+fa84f1fd-2d0c-4b8c-bccf-14e92a2380f0,USD,8693f151-f8d8-4a4d-aa7c-37b3cec5e90d,CanNotSellWithProfessional__c,#N/A,not equals,true,#N/A,false,Enable,#N/A,Product,#N/A
+fe56ac55-5697-436d-bd5e-0270b8c5ebb2,USD,60ac932a-c3ff-40ac-b54e-e2dcf0453c47,#N/A,#N/A,#N/A,false,#N/A,false,Enable,#N/A,#N/A,#N/A
